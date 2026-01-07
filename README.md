@@ -1,6 +1,6 @@
-# AsusTufFanControl (Windows Port)
+# AsusTufFanControl (Windows)
 
-A native Windows port of the [AsusTufFanControl](https://github.com/flukejones/asus-fan-control) tool for Linux. This application provides advanced control over fan speeds, system styling (Aura Sync), and battery charging limits for ASUS TUF Gaming laptops.
+A native Windows application for ASUS TUF Gaming laptops. This tool provides advanced control over fan speeds, system styling (Aura Sync), and battery charging limits.
 
 > **Note:** This project is currently in active development.
 
@@ -56,5 +56,4 @@ This project is licensed under the same license as the original Linux project (G
 
 ## Credits
 
--   **Original Linux Project**: [flukejones/asus-fan-control](https://github.com/flukejones/asus-fan-control)
--   **Windows Port Author**: Karthigaiselvam R
+-   **Author**: Karthigaiselvam R
