@@ -1,0 +1,14 @@
+build/
+*.user
+*.jom
+*.log
+*.obj
+*.exe
+*.dll
+*.lib
+*.pdb
+*.idb
+*.ilk
+.vs/
+CMakeUserPresets.json
+/AsusWinIO64.dll
