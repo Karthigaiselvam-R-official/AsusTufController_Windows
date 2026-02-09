@@ -24,20 +24,39 @@ Item {
         else if (activeMode === "Rainbow") aura.setRainbow(initSpeed)
         else if (activeMode === "Strobing") aura.setPulsing(selectedColor, initSpeed)
         
-        aura.saveState(activeMode, selectedColor);
+        aura.saveState(activeMode, selectedColor, brightnessLevel, initSpeed);
     }
 
     Component.onCompleted: { initTimer.start() }
+    
+    // Real-time Sync from C++ Backend
+    Connections {
+        target: aura
+        function onModeChanged(mode) {
+            console.log("AuraPage: Mode synced from HW ->", mode);
+            activeMode = mode;
+        }
+        function onBrightnessChanged(level) {
+            console.log("AuraPage: Brightness synced from HW ->", level);
+            brightnessLevel = level;
+        }
+    }
     
     Timer {
         id: initTimer
         interval: 100; repeat: false
         onTriggered: {
-             var sysB = aura.getSystemBrightness(); 
-             if (sysB !== -1) brightnessLevel = sysB; 
+             // Read hardware brightness first
+             var hwBrightness = aura.getHardwareBrightness();
+             if (hwBrightness >= 0) {
+                 brightnessLevel = hwBrightness;
+             }
              
+             // Mode, color, speed from saved settings (hardware can't provide these reliably)
              var lastM = aura.getLastMode();
              var lastC = aura.getLastColor();
+             var lastS = aura.getLastSpeed();
+             
              if (lastM && lastM !== "") activeMode = lastM;
              if (lastC && lastC !== "") {
                  selectedColor = lastC;
@@ -45,7 +64,9 @@ Item {
                  if (c.hslSaturation > 0) colorHue = Math.max(0, c.hslHue);
                  else colorHue = 0;
              }
-             applyAura();
+             if (lastS >= 0 && lastS <= 2) initSpeed = lastS;
+             
+             // Do NOT call applyAura() - keyboard keeps its state
         }
     }
 
@@ -91,7 +112,7 @@ Item {
                         GradientStop { position: 1.0; color: Qt.rgba(59/255, 130/255, 246/255, 0.15) }
                     }
                     border.width: 1
-                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.05)
+                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.5)
                 }
                 
                 RowLayout {
@@ -444,7 +465,7 @@ Item {
                 radius: 16
                 color: theme.isDark ? Qt.rgba(25/255, 25/255, 30/255, 0.95) : Qt.rgba(255/255, 255/255, 255/255, 0.98)
                 border.width: 1
-                border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.06)
+                border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.5)
                 
                 ColumnLayout {
                     id: controlsColumn
@@ -495,7 +516,7 @@ Item {
                                     radius: 12
                                     color: isActive ? theme.accent : (modeHover.containsMouse ? theme.accent : "transparent")
                                     border.width: isActive || modeHover.containsMouse ? 0 : 1
-                                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.15) : Qt.rgba(0,0,0,0.25)
+                                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.15) : Qt.rgba(0,0,0,0.5)
                                     
                                     property bool isActive: activeMode === modelData.name
                                     
@@ -548,7 +569,7 @@ Item {
                     }
                     
                     // Divider
-                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.06) }
+                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5) }
                     
                     // Initialize Button Removed (Auto-Init Implemented)
                     
@@ -585,9 +606,9 @@ Item {
                             Layout.fillWidth: true
                             height: 50
                             radius: 14
-                            color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.05)
+                            color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.1)
                             border.width: 1
-                            border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.08)
+                            border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.5)
                             
                             Rectangle {
                                 anchors.fill: parent
@@ -663,7 +684,7 @@ Item {
                                     property bool isSelected: ("#" + selectedColor).toLowerCase() === modelData.toLowerCase()
                                     
                                     border.width: isSelected ? 3 : (presetHover.containsMouse ? 2 : 1)
-                                    border.color: isSelected ? "#ffffff" : (presetHover.containsMouse ? "#ffffff" : Qt.rgba(0,0,0,0.2))
+                                    border.color: isSelected ? "#ffffff" : (presetHover.containsMouse ? "#ffffff" : Qt.rgba(0,0,0,0.5))
                                     
                                     scale: presetHover.containsMouse ? 1.1 : 1.0
                                     z: presetHover.containsMouse ? 10 : 1
@@ -713,7 +734,7 @@ Item {
                     }
                     
                     // Divider
-                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.06) }
+                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5) }
                     
                     // ===== CONTROLS SECTION =====
                     ColumnLayout {
@@ -745,9 +766,9 @@ Item {
                                 Layout.fillWidth: true
                                 height: 90
                                 radius: 12
-                                color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.02)
+                                color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.1)
                                 border.width: 1
-                                border.color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.04)
+                                border.color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5)
                                 
                                 ColumnLayout {
                                     anchors.fill: parent
@@ -781,7 +802,7 @@ Item {
                                                 radius: 8
                                                 color: initSpeed === modelData.val ? "#a855f7" : (speedBtnHover.containsMouse ? Qt.rgba(168/255, 85/255, 247/255, 0.2) : "transparent")
                                                 border.width: initSpeed === modelData.val ? 0 : 1
-                                                border.color: speedBtnHover.containsMouse ? "#a855f7" : (theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.1))
+                                                border.color: speedBtnHover.containsMouse ? "#a855f7" : (theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.5))
                                                 
                                                 Behavior on color { ColorAnimation { duration: 150 } }
                                                 
@@ -811,9 +832,9 @@ Item {
                                 Layout.fillWidth: true
                                 height: 90
                                 radius: 12
-                                color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.02)
+                                color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.1)
                                 border.width: 1
-                                border.color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.04)
+                                border.color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5)
                                 
                                 ColumnLayout {
                                     anchors.fill: parent
@@ -854,7 +875,7 @@ Item {
                                                 radius: 8
                                                 color: brightnessLevel === modelData.val ? "#f59e0b" : (brightBtnHover.containsMouse ? Qt.rgba(245/255, 158/255, 11/255, 0.2) : "transparent")
                                                 border.width: brightnessLevel === modelData.val ? 0 : 1
-                                                border.color: brightBtnHover.containsMouse ? "#f59e0b" : (theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.1))
+                                                border.color: brightBtnHover.containsMouse ? "#f59e0b" : (theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.5))
                                                 
                                                 Behavior on color { ColorAnimation { duration: 150 } }
                                                 
