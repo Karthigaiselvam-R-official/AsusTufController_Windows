@@ -1,5 +1,6 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
+import AsusTufFanControl 1.0
 
 Rectangle {
     id: root
@@ -346,11 +347,12 @@ Rectangle {
                         }
                         
                         Text {
-                            text: root.temp.toFixed(0) + "°C"
+                            text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(root.temp).toFixed(0) : root.temp.toFixed(0)) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                             color: {
                                 if (!appTheme) return "#00d563"
-                                if (root.temp > 80) return _danger
-                                if (root.temp > 65) return _warning
+                                var displayTemp = root.temp // Always use Celsius for color logic
+                                if (displayTemp > 80) return _danger
+                                if (displayTemp > 65) return _warning
                                 return _success
                             }
                             font.pixelSize: 22
