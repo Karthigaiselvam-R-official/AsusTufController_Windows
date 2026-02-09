@@ -113,7 +113,22 @@ A truly global application, designed for everyone.
 
 ---
 
-## 🛠️  Architecture & Under the Hood
+## � Supported Hardware
+
+This application is designed to work on **all modern ASUS Gaming Laptops** (2020+).
+
+| Series | Models |
+| :--- | :--- |
+| **TUF Gaming** | F15, F17, A15, A17, Dash F15, FX506, FX507, FA506, FA507 |
+| **ROG Strix** | G15, G17, Scar 15, Scar 17, G513, G713, G533, G733 |
+| **ROG Zephyrus** | G14, G15, M15, M16, Duo 15/16 |
+| **ROG Flow** | X13, X16, Z13 |
+
+*If you have the "ASUS System Control Interface" driver installed, it will likely work!*
+
+---
+
+## �🛠️  Architecture & Under the Hood
 
 How does it work without ASUS services? By talking directly to the metal.
 
@@ -262,6 +277,6 @@ Copyright © 2024-2026 Karthigaiselvam R. All Rights Reserved.
 
 <div align="center">
 
-**Made with ❤️ for ASUS Gamers**
+**Made with ❤️ for ASUS Community**
 
 </div>
