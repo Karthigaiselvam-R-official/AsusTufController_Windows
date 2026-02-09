@@ -134,15 +134,15 @@ How does it work without ASUS services? By talking directly to the metal.
 
 ```mermaid
 graph TD
-    User["User Interface (QML)"] -->|Commands| Core["C++ Core Logic"]
-    Core -->|Thermal Policies| WMI["Windows Management Instrumentation"]
-    Core -->|Fan Speed (Read/Write)| IO["AsusWinIO Driver"]
-    Core -->|Battery Limit| Reg["Windows Registry"]
-    Core -->|GPU Stats| NV["NVIDIA SMI / Driver"]
+    User["User Interface (QML)"] -->|"Commands"| Core["C++ Core Logic"]
+    Core -->|"Thermal Policies"| WMI["Windows Management Instrumentation"]
+    Core -->|"Fan Speed (Read/Write)"| IO["AsusWinIO Driver"]
+    Core -->|"Battery Limit"| Reg["Windows Registry"]
+    Core -->|"GPU Stats"| NV["NVIDIA SMI / Driver"]
 
-    WMI -->|ACPI Calls| BIOS["System BIOS"]
-    IO -->|Memory Mapping| EC["Embedded Controller (Chip)"]
-    Reg -->|Config| ASUS_Svc["Asus Optimization Service"]
+    WMI -->|"ACPI Calls"| BIOS["System BIOS"]
+    IO -->|"Memory Mapping"| EC["Embedded Controller (Chip)"]
+    Reg -->|"Config"| ASUS_Svc["Asus Optimization Service"]
 
     BIOS --> Fans
     EC --> Fans
