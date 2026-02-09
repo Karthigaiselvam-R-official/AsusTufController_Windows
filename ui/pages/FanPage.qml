@@ -11,9 +11,8 @@ Item {
     property var theme
     
     // Auto Fan Curve Controller
-    FanCurveController {
-        id: curveController
-    }
+    // Auto Fan Curve Controller - Now a Singleton
+    property var curveController: FanCurveController
     
     // Timer to refresh stats (syncs with Dashboard)
     // Timer removed: FanController now pushes updates automatically via cache mechanism
@@ -63,7 +62,7 @@ Item {
                     GradientStop { position: 1.0; color: Qt.rgba(59/255, 130/255, 246/255, 0.15) }
                 }
                 border.width: 1
-                border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.05)
+                border.color: theme.isDark ? Qt.rgba(255,255,255,0.1) : Qt.rgba(0,0,0,0.5)
             }
             
             RowLayout {
@@ -197,7 +196,7 @@ Item {
             color: Qt.rgba(theme.surface.r, theme.surface.g, theme.surface.b, 0.7)
             radius: 16
             border.width: 1
-            border.color: theme.isDark ? Qt.rgba(1,1,1,0.08) : Qt.rgba(0,0,0,0.08)
+            border.color: theme.isDark ? Qt.rgba(1,1,1,0.08) : Qt.rgba(0,0,0,0.5)
             
             // Gradient overlay
             Rectangle {
@@ -222,9 +221,12 @@ Item {
                         Layout.alignment: Qt.AlignHCenter
                         width: 220
                         height: 220
-                        value: backend.cpuFanRpm
+                        // Smooth transition: Use ramp speed in Manual Mode, Sensor RPM in Auto
+                        value: backend.isManualModeActive 
+                               ? (backend.currentRampSpeed / 100.0 * 6000) 
+                               : backend.cpuFanRpm
                         maxValue: 6000
-                        text: backend.cpuFanRpm + " " + qsTr("RPM")
+                        text: backend.cpuFanRpm + " " + qsTr("RPM") // ALWAYS show real sensor value
                         subText: qsTr("CPU FAN")
                         progressColor: theme ? theme.accent : "#0078d4"
                         appTheme: theme
@@ -242,7 +244,7 @@ Item {
                         }
                         
                         Text {
-                            text: backend.cpuTemp + "°C"
+                            text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(backend.cpuTemp) : backend.cpuTemp) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                             font.pixelSize: 16
                             font.bold: true
                             anchors.verticalCenter: parent.verticalCenter
@@ -282,9 +284,12 @@ Item {
                         Layout.alignment: Qt.AlignHCenter
                         width: 220
                         height: 220
-                        value: backend.gpuFanRpm
+                        // Smooth transition for GPU Fan too
+                        value: backend.isManualModeActive 
+                               ? (backend.currentRampSpeed / 100.0 * 6000) 
+                               : backend.gpuFanRpm
                         maxValue: 6000
-                        text: backend.gpuFanRpm + " " + qsTr("RPM")
+                        text: backend.gpuFanRpm + " " + qsTr("RPM") // ALWAYS show real sensor value
                         subText: qsTr("GPU FAN")
                         progressColor: "#448aff"
                         appTheme: theme
@@ -302,7 +307,7 @@ Item {
                         }
                         
                         Text {
-                            text: backend.gpuTemp + "°C"
+                            text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(backend.gpuTemp) : backend.gpuTemp) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                             font.pixelSize: 16
                             font.bold: true
                             anchors.verticalCenter: parent.verticalCenter
@@ -338,7 +343,7 @@ Item {
             color: Qt.rgba(theme.surface.r, theme.surface.g, theme.surface.b, 0.85)
             radius: 16
             border.width: 1
-            border.color: theme.isDark ? Qt.rgba(1,1,1,0.1) : Qt.rgba(0,0,0,0.1)
+            border.color: theme.isDark ? Qt.rgba(1,1,1,0.1) : Qt.rgba(0,0,0,0.5)
             
             ColumnLayout {
                 id: controlColumn
@@ -405,15 +410,16 @@ Item {
                             anchors.fill: parent
                             cursorShape: Qt.PointingHandCursor
                             onClicked: {
-                                if (backend.isManualModeActive) {
-                                    backend.enableAutoMode()
-                                } else {
-                                    // Disable Auto Curve when enabling Manual Mode
-                                    if (curveController.autoCurveEnabled) {
-                                        curveController.autoCurveEnabled = false
+                                    if (backend.isManualModeActive) {
+                                        backend.enableAutoMode()
+                                    } else {
+                                        // Disable Auto Curve when enabling Manual Mode
+                                        if (curveController.autoCurveEnabled) {
+                                            curveController.autoCurveEnabled = false
+                                        }
+                                        // backend.setFanSpeed(0) // OLD: Start in Silent mode
+                                        backend.enableManualModeWithSync() // NEW: Sync to current speed
                                     }
-                                    backend.setFanSpeed(0) // Start in Silent mode
-                                }
                             }
                         }
                     }
@@ -426,7 +432,7 @@ Item {
                     Layout.fillWidth: true
                     Layout.preferredHeight: sliderContent.height + 30
                     radius: 12
-                    color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.05)
+                    color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.15)
                     opacity: backend.isManualModeActive ? 1.0 : 0.4
                     
                     Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -439,6 +445,22 @@ Item {
                         anchors.margins: 15
                         spacing: 12
                         enabled: backend.isManualModeActive
+                        
+                        // Force slider update when backend signal fires (Critical for Sync)
+                        // Force slider update when backend signal fires (Critical for Sync)
+                        Connections {
+                            target: backend
+                            function onTargetFanSpeedChanged() {
+                                if (backend.isManualModeActive) {
+                                    fanSlider.value = backend.targetFanSpeed
+                                }
+                            }
+                            function onIsManualModeActiveChanged() {
+                                if (backend.isManualModeActive) {
+                                    fanSlider.value = backend.targetFanSpeed
+                                }
+                            }
+                        }
                         
                         RowLayout {
                             Layout.fillWidth: true
@@ -478,7 +500,8 @@ Item {
                             Slider {
                                 id: fanSlider
                                 anchors.fill: parent
-                                from: 0; to: 100; value: 0
+                                from: 0; to: 100
+                                value: backend.targetFanSpeed // Bind to backend property
                                 
                                 background: Rectangle {
                                     x: fanSlider.leftPadding
@@ -542,7 +565,13 @@ Item {
                             MouseArea {
                                 anchors.fill: parent
                                 preventStealing: true
-                                function update(xVal) { fanSlider.value = Math.round(Math.max(0, Math.min(1, xVal/width))*100) }
+                                function update(xVal) { 
+                                    var newVal = Math.round(Math.max(0, Math.min(1, xVal/width))*100)
+                                    // Only update if substantially different to avoid jitter fighting binding
+                                    if (Math.abs(newVal - fanSlider.value) > 1) {
+                                        fanSlider.value = newVal
+                                    }
+                                }
                                 onPressed: update(mouseX)
                                 onPositionChanged: update(mouseX)
                                 onReleased: backend.setFanSpeed(fanSlider.value)
@@ -766,7 +795,7 @@ Item {
             color: Qt.rgba(theme.surface.r, theme.surface.g, theme.surface.b, 0.85)
             radius: 16
             border.width: 1
-            border.color: theme.isDark ? Qt.rgba(1,1,1,0.1) : Qt.rgba(0,0,0,0.1)
+            border.color: theme.isDark ? Qt.rgba(1,1,1,0.1) : Qt.rgba(0,0,0,0.5)
             
             ColumnLayout {
                 id: autoCurveColumn
@@ -843,7 +872,7 @@ Item {
                     Layout.fillWidth: true
                     Layout.preferredHeight: thresholdCol.height + 30
                     radius: 12
-                    color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.05)
+                    color: theme.isDark ? Qt.rgba(0,0,0,0.3) : Qt.rgba(0,0,0,0.15)
                     opacity: curveController.autoCurveEnabled ? 1.0 : 0.4
                     
                     Behavior on opacity { NumberAnimation { duration: 200 } }
@@ -863,15 +892,15 @@ Item {
                             radius: 10
                             color: {
                                 if (!curveController.autoCurveEnabled) return Qt.rgba(0.5, 0.5, 0.5, 0.1)
-                                if (curveController.currentAutoMode === "Silent") return Qt.rgba(0.15, 0.68, 0.38, 0.2)
-                                if (curveController.currentAutoMode === "Balanced") return Qt.rgba(0.95, 0.61, 0.07, 0.2)
+                                if (curveController.currentPolicy === "Silent") return Qt.rgba(0.15, 0.68, 0.38, 0.2)
+                                if (curveController.currentPolicy === "Balanced") return Qt.rgba(0.95, 0.61, 0.07, 0.2)
                                 return Qt.rgba(0.91, 0.30, 0.24, 0.2)
                             }
                             border.width: 1
                             border.color: {
                                 if (!curveController.autoCurveEnabled) return "#666"
-                                if (curveController.currentAutoMode === "Silent") return "#27ae60"
-                                if (curveController.currentAutoMode === "Balanced") return "#f39c12"
+                                if (curveController.currentPolicy === "Silent") return "#27ae60"
+                                if (curveController.currentPolicy === "Balanced") return "#f39c12"
                                 return "#e74c3c"
                             }
                             
@@ -897,11 +926,11 @@ Item {
                                 }
                                 
                                 Text {
-                                    text: curveController.autoCurveEnabled ? qsTr(curveController.currentAutoMode) : qsTr("Auto Curve Off")
+                                    text: FanCurveController.autoCurveEnabled ? FanCurveController.currentPolicy : qsTr("Auto Curve Off")
                                     color: {
-                                        if (!curveController.autoCurveEnabled) return "#888"
-                                        if (curveController.currentAutoMode === "Silent") return "#27ae60"
-                                        if (curveController.currentAutoMode === "Balanced") return "#f39c12"
+                                        if (!FanCurveController.autoCurveEnabled) return "#888"
+                                        if (FanCurveController.currentPolicy === "Silent") return "#27ae60"
+                                        if (FanCurveController.currentPolicy === "Balanced") return "#f39c12"
                                         return "#e74c3c"
                                     }
                                     font.pixelSize: 16
@@ -925,7 +954,7 @@ Item {
                                 }
                                 Item { Layout.fillWidth: true }
                                 Text {
-                                    text: curveController.silentThreshold + "°C"
+                                    text: FanCurveController.silentThreshold + "°C"
                                     color: theme.textPrimary
                                     font.pixelSize: 13
                                     font.bold: true
