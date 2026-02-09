@@ -23,9 +23,9 @@ ApplicationWindow {
     QtObject {
         id: theme
         
-        // Mode toggle
-        property bool isDark: true
-        function toggle() { isDark = !isDark }
+        // Mode toggle linked to C++ Controller
+        property bool isDark: ThemeController.isDark
+        function toggle() { ThemeController.toggle() }
         
         // Background Colors
         property color background: isDark ? "#0a0a0a" : "#f8f9fa"
@@ -95,9 +95,9 @@ ApplicationWindow {
         property int radiusFull: 9999
         
         // Shadow Definitions (using pure QML techniques)
-        property color shadowSmall: isDark ? Qt.rgba(0, 0, 0, 0.3) : Qt.rgba(0, 0, 0, 0.08)
-        property color shadowMedium: isDark ? Qt.rgba(0, 0, 0, 0.4) : Qt.rgba(0, 0, 0, 0.12)
-        property color shadowLarge: isDark ? Qt.rgba(0, 0, 0, 0.5) : Qt.rgba(0, 0, 0, 0.16)
+        property color shadowSmall: isDark ? Qt.rgba(0, 0, 0, 0.3) : Qt.rgba(0, 0, 0, 0.5)
+        property color shadowMedium: isDark ? Qt.rgba(0, 0, 0, 0.4) : Qt.rgba(0, 0, 0, 0.5)
+        property color shadowLarge: isDark ? Qt.rgba(0, 0, 0, 0.5) : Qt.rgba(0, 0, 0, 0.5)
         
         // Transition Durations
         property int transitionFast: 150
@@ -106,8 +106,7 @@ ApplicationWindow {
     }
     
     // --- Backend (Global) ---
-    // Note: FanController auto-initializes in constructor, no need for Component.onCompleted
-    FanController { id: backend }
+    // FanController is now a Singleton!
     SystemStatsMonitor { id: monitor }
     AuraController { id: aura }
 
@@ -140,7 +139,7 @@ ApplicationWindow {
                 // Index 0: Dashboard
                 DashboardPage {
                     id: dashboardPage
-                    backend: backend
+                    backend: FanController
                     monitor: monitor
                     theme: theme
                 }
@@ -148,7 +147,7 @@ ApplicationWindow {
                 // Index 1: Fan Control
                 FanPage {
                     id: fanPage
-                    backend: backend
+                    backend: FanController
                     theme: theme
                 }
                 
@@ -164,6 +163,13 @@ ApplicationWindow {
                     id: batteryPage
                     monitor: monitor
                     theme: theme
+                }
+                
+                // Index 4: Settings
+                SettingsPage {
+                    id: settingsPage
+                    theme: theme
+                    monitor: monitor
                 }
             }
         }
