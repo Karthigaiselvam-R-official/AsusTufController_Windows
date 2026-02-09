@@ -23,7 +23,7 @@ Rectangle {
         radius: 16
         color: theme.isDark ? Qt.rgba(25/255, 25/255, 30/255, 0.95) : Qt.rgba(255/255, 255/255, 255/255, 0.95)
         border.width: 1
-        border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.06)
+        border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.5)
         
         // Top accent glow line
         Rectangle {
