@@ -24,22 +24,30 @@ Item {
     Timer { 
         interval: 1000; running: true; repeat: true; 
         onTriggered: {
-            backend.statsUpdated(); // Fetch backend temps
+            // Backend updates stats via its own timer, we just collect history here
             
-            // Push values to history
-            var rh = ramHistory; rh.push(monitor.memoryUsage); if(rh.length>60) rh.shift(); ramHistory = rh;
-            var dh = diskHistory; dh.push(monitor.diskUsage); if(dh.length>60) dh.shift(); diskHistory = dh;
-            var th = tempHistory; th.push(backend.cpuTemp); if(th.length>60) th.shift(); tempHistory = th;
-            var nd = netDownHistory; nd.push(monitor.netDown); if(nd.length>60) nd.shift(); netDownHistory = nd;
-            var ch = cpuHistory; ch.push(monitor.cpuUsage); if(ch.length>60) ch.shift(); cpuHistory = ch;
-            var gh = gpuHistory; gh.push(monitor.gpuUsage); if(gh.length>60) gh.shift(); gpuHistory = gh;
+            // Push values to history (with null checks)
+            var cpuVal = monitor.cpuUsage || 0;
+            var gpuVal = monitor.gpuUsage || 0;
+            var memVal = monitor.memoryUsage || 0;
+            var diskVal = monitor.diskUsage || 0;
+            var netVal = monitor.netDown || 0;
+            var tempVal = backend.cpuTemp || 0;
+            
+            var rh = ramHistory; rh.push(memVal); if(rh.length>60) rh.shift(); ramHistory = rh;
+            var dh = diskHistory; dh.push(diskVal); if(dh.length>60) dh.shift(); diskHistory = dh;
+            var th = tempHistory; th.push(tempVal); if(th.length>60) th.shift(); tempHistory = th;
+            var nd = netDownHistory; nd.push(netVal); if(nd.length>60) nd.shift(); netDownHistory = nd;
+            var ch = cpuHistory; ch.push(cpuVal); if(ch.length>60) ch.shift(); cpuHistory = ch;
+            var gh = gpuHistory; gh.push(gpuVal); if(gh.length>60) gh.shift(); gpuHistory = gh;
         } 
     }
 
     // Helper
     function formatNet(kb) {
-        if (kb > 1024) return (kb/1024).toFixed(1) + " MB/s"
-        return kb.toFixed(1) + " KB/s"
+        var val = kb || 0;
+        if (val > 1024) return (val/1024).toFixed(1) + " MB/s"
+        return val.toFixed(1) + " KB/s"
     }
     
     // Battery Color Logic
@@ -73,6 +81,8 @@ Item {
                 Layout.preferredHeight: sysInfoContent.implicitHeight + 40
                 color: theme.surface
                 radius: 8
+                border.width: 1
+                border.color: theme.isDark ? Qt.rgba(1,1,1,0.08) : Qt.rgba(0,0,0,0.5)
                 
                 RowLayout {
                     id: sysInfoContent
@@ -222,7 +232,7 @@ Item {
                     title: qsTr("CPU USAGE")
                     icon: "⚡"
                     suffix: "%"
-                    currentValue: monitor.cpuUsage.toFixed(1)
+                    currentValue: (monitor.cpuUsage || 0).toFixed(1)
                     extraText: qsTr("History")
                     dataModel: cpuHistory
                     maxValue: 100
@@ -233,7 +243,7 @@ Item {
                     title: qsTr("GPU USAGE")
                     icon: "🎮"
                     suffix: "%"
-                    currentValue: monitor.gpuUsage.toFixed(1)
+                    currentValue: (monitor.gpuUsage || 0).toFixed(1)
                     extraText: qsTr("History")
                     dataModel: gpuHistory
                     maxValue: 100
@@ -244,7 +254,7 @@ Item {
                     title: qsTr("RAM USAGE")
                     icon: "💾"
                     suffix: "%"
-                    currentValue: monitor.memoryUsage.toFixed(1)
+                    currentValue: (monitor.memoryUsage || 0).toFixed(1)
                     extraText: qsTr("System Memory")
                     dataModel: ramHistory
                     maxValue: 100
@@ -277,7 +287,7 @@ Item {
                     radius: 16
                     color: theme.isDark ? Qt.rgba(30/255, 30/255, 35/255, 0.95) : Qt.rgba(250/255, 250/255, 252/255, 0.98)
                     border.width: 1
-                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.06)
+                    border.color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.5)
                     
                     // Top accent gradient line
                     Rectangle {
@@ -324,7 +334,7 @@ Item {
                         Item { Layout.fillWidth: true }
                     }
                     // Sleek Divider
-                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.06) }
+                    Rectangle { Layout.fillWidth: true; height: 1; color: theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5) }
                     
                     // Premium Drives List
                     Repeater {
@@ -333,9 +343,9 @@ Item {
                             Layout.fillWidth: true
                             height: modelData.hasUsage ? 100 : 70
                             radius: 12
-                            color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.02)
+                            color: theme.isDark ? Qt.rgba(255,255,255,0.03) : Qt.rgba(0,0,0,0.1)
                             border.width: driveHover.containsMouse ? 2 : 1
-                            border.color: driveHover.containsMouse ? theme.accent : (theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.04))
+                            border.color: driveHover.containsMouse ? theme.accent : (theme.isDark ? Qt.rgba(255,255,255,0.06) : Qt.rgba(0,0,0,0.5))
                             
                             Behavior on border.width { NumberAnimation { duration: 150 } }
                             Behavior on border.color { ColorAnimation { duration: 150 } }
@@ -415,7 +425,7 @@ Item {
                                         Layout.fillWidth: true
                                         height: 8
                                         radius: 4
-                                        color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.08)
+                                        color: theme.isDark ? Qt.rgba(255,255,255,0.08) : Qt.rgba(0,0,0,0.5)
                                         
                                         Rectangle {
                                             width: parent.width * (modelData.usage / 100.0)
