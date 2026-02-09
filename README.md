@@ -1,184 +1,267 @@
 <div align="center">
 
-# 🎮 ASUS TUF Fan Control (Windows)
+# 🎮 ASUS TUF Fan Control (Windows Edition)
 
 ![Platform](https://img.shields.io/badge/Platform-Windows_10%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Language](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Framework](https://img.shields.io/badge/Qt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Build](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
 ![License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)
-![Translations](https://img.shields.io/badge/Translations-22_Languages-orange?style=for-the-badge&logo=google-translate&logoColor=white)
+![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
 
-**The Ultimate System Control Center for ASUS Gaming Laptops on Windows**
+**The Ultimate System Control Center for ASUS Gaming Laptops**
+*Native. Lightweight. Powerful.*
 
-*A lightweight, open-source alternative to Armoury Crate & G-Helper*
+<p align="center">
+  <img src="resources/SystemInfo.png" width="800" alt="Dashboard Preview">
+</p>
+
+[⬇️ Download Latest Release](#-installation) • [✨ Features](#-features) • [🛠️ How It Works](#--architecture--under-the-hood) • [💬 Discord](#)
 
 </div>
 
 ---
 
-## 📸 Visual Tour
+## 📖 Introduction
+
+**AsusTufFanControl** is a custom-built, open-source control center designed specifically for ASUS TUF and ROG gaming laptops. Frustrated by the bloatware of *Armoury Crate* and the limitations of generic tools, this project aims to provide a **native, resource-efficient** alternative that gives you full control over your hardware.
+
+Built with **C++ and Qt 6**, it runs with minimal background usage while unlocking features often hidden by the manufacturer, such as precise fan control, battery charge limiting, and custom RGB lighting effects.
+
+### 🚀 Why use this over Armoury Crate?
+
+| Feature | ASUS Armoury Crate | AsusTufFanControl |
+| :--- | :---: | :---: |
+| **Resource Usage** | 🔴 Heavy (Hundreds of MBs RAM) | 🟢 **Ultra-Light (<50MB)** |
+| **Boot Time** | 🔴 Slows down startup | 🟢 **Instant Launch** |
+| **UI/UX** | 🔴 Cluttered, Slow, Ads | 🟢 **Clean, Glassmorphic, No Ads** |
+| **Privacy** | 🔴 Telemetry & Data Collection | 🟢 **100% Offline & Open Source** |
+| **Fan Control** | 🟡 Basic Presets | 🟢 **Advanced (Max RPM/Custom)** |
+| **Battery Limit** | 🟡 Sometimes resets | 🟢 **Enforced & Persistent** |
+
+---
+
+## 📸 Visual Tour & Features
+
+### 1. 🚀 Next-Gen Fan Control
+Take control of your thermals. Unlike standard tools that just offer "Silent", we give you the raw power of the hardware.
 
 <table>
   <tr>
-    <td><img src="resources/SystemInfo.png" width="400" alt="Dashboard"></td>
-    <td><img src="resources/FanControl.png" width="400" alt="Fan Control"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>🚀 System Dashboard</b><br>Real-time stats monitoring</td>
-    <td align="center"><b>Unknown Fan Control</b><br>Silent / Balanced / Turbo Modes</td>
-  </tr>
-  <tr>
-    <td><img src="resources/AuraSync.png" width="400" alt="Aura Sync"></td>
-    <td><img src="resources/BatteryManagement.png" width="400" alt="Battery"></td>
-  </tr>
-  <tr>
-    <td align="center"><b>💡 Aura Sync RGB</b><br>Static, Breathing, Strobing Effects</td>
-    <td align="center"><b>🔋 Battery Health</b><br>Limit Charge to 60/80%</td>
-  </tr>
-   <tr>
-    <td colspan="2" align="center"><img src="resources/Settings.png" width="400" alt="Settings"></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center"><b>⚙️ Advanced Settings</b><br>Language, Theme & Configuration</td>
+    <td width="60%"><img src="resources/FanControl.png" width="100%" alt="Fan Control UI"></td>
+    <td>
+      <h3>🌀 Operational Modes</h3>
+      <ul>
+        <li><b>🔇 Silent Mode:</b> Optimizes CPU logic for passive cooling. Fans turn off completely below 50°C.</li>
+        <li><b>⚖️ Balanced Mode:</b> The sweet spot between performance and acoustics. Perfect for daily tasks.</li>
+        <li><b>🚀 Turbo Mode:</b> Aggressive cooling curve for gaming. Prioritizes low temps over noise.</li>
+        <li><b>🌪️ MAX RPM Injection (New):</b> <br>
+        Bypasses standard limits to force fans to <b>100% (approx 6800 RPM)</b>. Essential for benchmarking or extreme overclocking. Uses direct EC (Embedded Controller) writes via <code>AsusWinIO</code>.</li>
+      </ul>
+    </td>
   </tr>
 </table>
 
+### 2. 🌈 Aura Sync RGB Lighting
+Your keyboard, your style. No heavy background services required.
+
+<table>
+  <tr>
+    <td>
+      <h3>💡 Lighting Effects</h3>
+      <ul>
+        <li><b>Static:</b> Choose any specific color from a full RGB palette.</li>
+        <li><b>Breathing:</b> A smooth, rhythmic pulse of light. Adjust speed and brightness.</li>
+        <li><b>Strobing:</b> Fast flashing effect for maximum visibility/alert.</li>
+        <li><b>Rainbow:</b> (Soak Test) A localized hardware effect that cycles through the spectrum.</li>
+      </ul>
+      <p><i>Note: Supports 4-Zone RGB and Single-Zone RGB keyboards automatically.</i></p>
+    </td>
+    <td width="60%"><img src="resources/AuraSync.png" width="100%" alt="Aura Sync UI"></td>
+  </tr>
+</table>
+
+### 3. 🔋 Intelligent Battery Health
+Protect your investment. Lithium-ion batteries degrade when kept at 100% charge.
+
+<table>
+  <tr>
+    <td width="60%"><img src="resources/BatteryManagement.png" width="100%" alt="Battery Management"></td>
+    <td>
+      <h3>🛡️ Charge Limiting</h3>
+      <ul>
+        <li><b>60% Mode:</b> Best for "Always Plugged In" usage. Maximizes long-term battery lifespan.</li>
+        <li><b>80% Mode:</b> Good balance for mixed usage.</li>
+        <li><b>100% Mode:</b> For travel days when you need max capacity.</li>
+      </ul>
+      <h3>⚡ Smart Enforcement</h3>
+      <p>Windows updates or BIOS resets often wipe these settings. Our <b>Enforcement Engine</b> checks the limit every 200ms and reapplies it instantly if tampered with, ensuring your battery <i>stays</i> protected.</p>
+    </td>
+  </tr>
+</table>
+
+### 4. ⚙️ Settings & Localization
+A truly global application, designed for everyone.
+
+<p align="center">
+  <img src="resources/Settings.png" width="800" alt="Settings Page">
+</p>
+
+*   **22 Languages Supported:** From English to Japanese, Arabic (RTL), Hindi, and more.
+*   **Theme Engine:** Seamlessly switch between Dark Mode (OLED friendly) and Light Mode.
+*   **Auto-Start:** Option to launch silently to tray on Windows boot.
+
 ---
 
-## ✨ Key Features
+## 🛠️  Architecture & Under the Hood
 
-### 🌀 Advanced Fan Control
-- **Presets:** Instantly switch between **Silent**, **Balanced**, and **Turbo** modes.
-- **Max RPM Mode:** Unlock the full potential of your fans (~6000 RPM) for extreme cooling.
-- **Custom Curves:** (Coming Soon) Define your own temperature-to-speed mapping.
-- **Visual Feedback:** Animated fan indicators responding to real-time speed.
-
-### 🔋 Intelligent Battery Health
-- **Charge Limiting:** Set a hard limit (e.g., **60%** or **80%**) to extend battery lifespan.
-- **Persistence:** Limits act at the firmware level and persist reboots.
-- **Smart Monitoring:** Accurate charging/discharging status display.
-- **Safety Checks:** Periodically enforces limits to prevent Windows overriding settings.
-
-### 💡 Aura Sync RGB Control
-- **Effects:** Access built-in keyboard effects:
-  - **Static:** Solid color of your choice.
-  - **Breathing:** Pulse effect with speed control.
-  - **Strobing:** Flash effect for alerts.
-  - **Rainbow:** Cycling colors (4-zone RGB support).
-- **Customization:** Fine-tune brightness, speed, and color using a visual picker.
-
-### 📊 Comprehensive Dashboard
-- **Real-Time Monitoring:**
-    - **CPU:** Usage, Temperature, Frequency.
-    - **GPU:** Detected dynamically (supports NVIDIA Optimus/Sleep states).
-    - **RAM & Disk:** Usage statistics.
-    - **Network:** Live Upload/Download speeds.
-- **Hardware Info:** Detects Laptop Model, CPU Model, and specific GPU variant (e.g., RTX 3050).
-
-### 🌍 Global Language Support
-- **22 Languages Supported:**
-  - 🇺🇸 English
-  - 🇮🇳 Tamil, Hindi, Bengali, Marathi, Punjabi, Urdu
-  - 🇪🇸 Spanish, 🇫🇷 French, 🇩🇪 German, 🇮🇹 Italian, 🇵🇹 Portuguese
-  - 🇨🇳 Chinese, 🇯🇵 Japanese, 🇰🇷 Korean
-  - 🇷🇺 Russian, 🇹🇷 Turkish, 🇸🇦 Arabic (RTL Support)
-  - And more (Indonesian, Polish, Swahili, Persian, Vietnamese)!
-- **Instant Switching:** Change languages on the fly without restarting the app.
-
-### 🎨 Modern UI/UX
-- **Glassmorphism:** Sleek, translucent design that blends with Windows 11.
-- **Responsive Sidebar:** Collapsible navigation for a cleaner look.
-- **Theme Support:** Toggle between Dark and Light modes.
-
----
-
-## 🛠️ Architecture
-
-This application bridges the gap between high-level UI and low-level hardware control:
+How does it work without ASUS services? By talking directly to the metal.
 
 ```mermaid
 graph TD
-    UI[Qt/QML User Interface] --> Controller[C++ Controllers]
-    Controller --> WMI[Windows Management Instrumentation]
-    Controller --> WinIO[AsusWinIO Driver]
-    Controller --> Reg[Windows Registry]
-    
-    WMI --> BIOS[System Firmware / BIOS]
-    WinIO --> EC[Embedded Controller]
-    Reg --> OS[OS Settings]
-    
-    BIOS --> Hardware[Fans / RGB / Battery]
-    EC --> Hardware
+    User[User Interface (QML)] -->|Commands| Core[C++ Core Logic]
+    Core -->|Thermal Policies| WMI[Windows Management Instrumentation]
+    Core -->|Fan Speed (Read/Write)| IO[AsusWinIO Driver]
+    Core -->|Battery Limit| Reg[Windows Registry]
+    Core -->|GPU Stats| NV[NVIDIA SMI / Driver]
+
+    WMI -->|ACPI Calls| BIOS[System BIOS]
+    IO -->|Memory Mapping| EC[Embedded Controller (Chip)]
+    Reg -->|Config| ASUS_Svc[Asus Optimization Service]
+
+    BIOS --> Fans
+    EC --> Fans
+    ASUS_Svc --> Battery
 ```
 
-- **WMI Wrapper:** Handles standard calls for Fan Modes and RGB.
-- **AsusWinIO:** Direct memory access to the EC for reading fan speeds and forcing max RPM.
-- **Registry:** Stores persistent user preferences and battery limits.
+### The Technology Stack
+*   **Language:** C++17 (Performance critical code)
+*   **UI Framework:** Qt 6.6 / QML (Hardware accelerated GPU rendering)
+*   **Build System:** CMake + MSVC
+*   **Interfacing:**
+    *   `AsusWinIO.dll`: Used to map physical memory and read EC registers directly.
+    *   `DeviceIoControl`: Sends IOCTL codes to the ACPI driver.
+    *   `nvidia-smi`: Spawns lightweight processes to query GPU sleep states/clocks.
 
 ---
 
-## 📋 Requirements
+## 📥 Installation Guide
 
-| Component | Requirement |
-|-----------|-------------|
-| **OS** | Windows 10 or Windows 11 (64-bit) |
-| **Privileges** | **Administrator** (Required for hardware access) |
-| **Driver** | ASUS System Control Interface (v3+) |
-| **Hardware** | ASUS TUF / ROG Gaming Laptops |
+### Option 1: Binary (Recommended)
+1.  Go to the [**Releases Page**](../../releases).
+2.  Download the latest `AsusTufFanControl_Windows.zip`.
+3.  Extract the folder to a permanent location (e.g., `C:\Program Files\AsusTufFanControl`).
+4.  Right-click `AsusTufFanControl_Windows.exe` and select **"Run as Administrator"**.
+    *   *Why Admin?* Reading CPU temps and controlling hardware requires high-level permissions.
 
----
+### Option 2: Build from Source
+Perfect for developers who want to contribute.
 
-## 📥 Installation
+**Prerequisites:**
+*   **Visual Studio 2022** (with "Desktop development with C++" workload).
+*   **Qt 6.6.0+** (MSVC 2019 64-bit component).
+*   **CMake 3.20+**.
+*   **Git**.
 
-1.  **Download:** Get the latest release from the [Releases Page](../../releases).
-2.  **Run:** Extract the zip file and run `AsusTufFanControl_Windows.exe` as **Administrator**.
-    - *Note: If asked, allow the application to make changes to your device.*
-
----
-
-## 🏗️ Building from Source
-
-### Prerequisites
-- **Qt 6.6+** (MSVC 2019 64-bit or newer)
-- **Visual Studio 2022** (C++ Desktop Development workload)
-- **CMake 3.16+**
-
-### Steps
-1.  **Clone the Repository:**
-    ```bash
+**Steps:**
+1.  **Clone the Repo:**
+    ```powershell
     git clone https://github.com/Karthigaiselvam-R-official/AsusTufFanControl_Windows.git
     cd AsusTufFanControl_Windows
     ```
 
-2.  **Configure & Build:**
-    ```bash
-    mkdir build && cd build
-    cmake ..
+2.  **Generate Project:**
+    ```powershell
+    mkdir build
+    cd build
+    cmake -DCMAKE_PREFIX_PATH="C:\Qt\6.6.0\msvc2019_64" ..
+    ```
+
+3.  **Compile:**
+    ```powershell
     cmake --build . --config Release
     ```
 
-3.  **Run:**
-    The executable will be located in `build/Release/`.
+4.  **Run:**
+    The binary will be in `build/Release/`.
 
 ---
 
-## 👥 Credits & Acknowledgements
+## ❓ Troubleshooting & FAQ
 
-- **Author:** [Karthigaiselvam R](https://github.com/Karthigaiselvam-R-official)
-- **Inspiration:** G-Helper, Armoury Crate
-- **Libraries:** Qt6, WinAPI
+**Q: The app doesn't open / crashes immediately.**
+*   **A:** Ensure you removed the zip file restriction. Right-click Zip -> Properties -> Unblock. Also, verify you have the *ASUS System Control Interface* driver installed (check Device Manager -> System Devices).
+
+**Q: Fan Control isn't working / Fans are stuck.**
+*   **A:** Some newer 2024/2025 models use a different ACPI interface. Check the `logs/` folder for "WMI Error" codes. Try restarting the app as Administrator.
+
+**Q: Battery limit is set to 80% but it charged to 81%.**
+*   **A:** This is normal calibration drift. The hardware cuts power *around* the limit. If it goes to 100%, check if the "Enforcement" timer is active in Settings.
+
+**Q: Does this void my warranty?**
+*   **A:** No software can void hardware warranties typically, but **use at your own risk**. Forcing fans to 0% while gaming *will* cause overheating. The app has fail-safes, but common sense is required.
+
+---
+
+## 🌍 Translation Credits
+
+A huge thank you to our community for localizing this project into **22 languages**:
+
+*   **Arabic (العربية)**
+*   **Bengali (বাংলা)**
+*   **Chinese (中文)**
+*   **French (Français)**
+*   **German (Deutsch)**
+*   **Hindi (हिन्दी)**
+*   **Indonesian (Bahasa Indonesia)**
+*   **Italian (Italiano)**
+*   **Japanese (日本語)**
+*   **Korean (한국어)**
+*   **Marathi (मराठी)**
+*   **Persian (فارسی)**
+*   **Polish (Polski)**
+*   **Portuguese (Português)**
+*   **Punjabi (ਪੰਜਾਬੀ)**
+*   **Russian (Русский)**
+*   **Spanish (Español)**
+*   **Swahili (Kiswahili)**
+*   **Tamil (தமிழ்)** - *Maintained by Author*
+*   **Turkish (Türkçe)**
+*   **Urdu (اردو)**
+*   **Vietnamese (Tiếng Việt)**
+
+*Want to add your language? Check `generate_translations.py` in the source!*
+
+---
+
+## 👤 Author & Support
+
+<div align="center">
+
+**Karthigaiselvam R**
+
+[![Email](https://img.shields.io/badge/Email-karthigaiselvamr.cs2022%40gmail.com-red?style=flat-square&logo=gmail)](mailto:karthigaiselvamr.cs2022@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Karthigaiselvam_R-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/karthigaiselvam-r-7b9197258/)
+[![GitHub](https://img.shields.io/badge/GitHub-Karthigaiselvam--R--official-181717?style=flat-square&logo=github)](https://github.com/Karthigaiselvam-R-official)
+
+</div>
 
 ---
 
 ## 📄 License
 
-This project is licensed under the **GNU General Public License v3.0**.
-Free to use, modify, and distribute. No warranty provided.
+This software is provided under the **GNU General Public License v3.0 (GPL-3.0)**.
+
+*   You are free to use, modify, and distribute this software.
+*   You may **NOT** sell this software (commercial use restriction applies under Commons Clause if applicable).
+*   Source code must remain open.
+
+Copyright © 2024-2026 Karthigaiselvam R. All Rights Reserved.
+
+---
 
 <div align="center">
 
-**Made with ❤️ for the ASUS Community**
-⭐ Star this repository if you find it useful!
+**Made with ❤️ for ASUS Gamers**
 
 </div>
