@@ -8,8 +8,8 @@ Rectangle {
     
     property int currentIndex: 0
     // i18n Fix: Use ListModel for dynamic translation instead of static array
-    property var menuItems: [qsTr("SYSTEM INFO"), qsTr("FAN CONTROL"), qsTr("AURA SYNC"), qsTr("BATTERY")]
-    property var menuColors: ["#00bcd4", "#ff9800", "#9b59b6", "#2ecc71"]
+    property var menuItems: [qsTr("SYSTEM INFO"), qsTr("FAN CONTROL"), qsTr("AURA SYNC"), qsTr("BATTERY"), qsTr("SETTINGS")]
+    property var menuColors: ["#00bcd4", "#ff9800", "#9b59b6", "#2ecc71", "#607d8b"]
     property var theme
     
     // Premium gradient background
@@ -51,9 +51,9 @@ Rectangle {
                 anchors.fill: parent
                 anchors.margins: -10
                 radius: 16
-                color: theme.isDark ? Qt.rgba(1, 1, 1, 0.03) : Qt.rgba(0, 0, 0, 0.02)
+                color: theme.isDark ? Qt.rgba(1, 1, 1, 0.03) : Qt.rgba(0, 0, 0, 0.1)
                 border.width: 1
-                border.color: theme.isDark ? Qt.rgba(1, 1, 1, 0.05) : Qt.rgba(0, 0, 0, 0.05)
+                border.color: theme.isDark ? Qt.rgba(1, 1, 1, 0.05) : Qt.rgba(0, 0, 0, 0.5)
             }
             
             RowLayout {
@@ -80,7 +80,7 @@ Rectangle {
                     }
                     
                     Image {
-                        source: "qrc:/ui/app_icon.png"
+                        source: "qrc:/AsusTufFanControl/ui/app_icon.png"
                         anchors.centerIn: parent
                         sourceSize.width: 40
                         sourceSize.height: 40
@@ -371,6 +371,47 @@ Rectangle {
                                     radius: 1
                                 }
                             }
+                            
+                            // SETTINGS Icon (Gear)
+                            Canvas {
+                                visible: index === 4
+                                anchors.fill: parent
+                                onPaint: {
+                                    var ctx = getContext("2d");
+                                    ctx.reset();
+                                    ctx.fillStyle = (navItem.selected || navItem.hovered) ? "#ffffff" : navItem.accentColor;
+                                    var cx = width/2; var cy = height/2;
+                                    
+                                    // Draw gear teeth
+                                    var outerRadius = 9;
+                                    var innerRadius = 6;
+                                    var teeth = 8;
+                                    
+                                    ctx.beginPath();
+                                    for (var i = 0; i < teeth * 2; i++) {
+                                        var angle = (i * Math.PI) / teeth;
+                                        var radius = (i % 2 === 0) ? outerRadius : innerRadius;
+                                        var x = cx + Math.cos(angle) * radius;
+                                        var y = cy + Math.sin(angle) * radius;
+                                        if (i === 0) ctx.moveTo(x, y);
+                                        else ctx.lineTo(x, y);
+                                    }
+                                    ctx.closePath();
+                                    ctx.fill();
+                                    
+                                    // Inner hole
+                                    ctx.fillStyle = (navItem.selected || navItem.hovered) 
+                                        ? Qt.rgba(navItem.accentColor.r, navItem.accentColor.g, navItem.accentColor.b, 1) 
+                                        : (theme.isDark ? "#0a0a0f" : "#f8f9fa");
+                                    ctx.beginPath();
+                                    ctx.arc(cx, cy, 3, 0, Math.PI * 2);
+                                    ctx.fill();
+                                }
+                                property bool sel: navItem.selected
+                                property bool hov: navItem.hovered
+                                onSelChanged: requestPaint()
+                                onHovChanged: requestPaint()
+                            }
                         }
                     }
                     
@@ -438,7 +479,7 @@ Rectangle {
                     radius: 12
                     color: themeToggle.hovered ? "#ffd700" : (theme.isDark ? "#18181c" : "#f5f5f7")
                     border.width: themeToggle.hovered ? 2 : 1
-                    border.color: themeToggle.hovered ? "#ffed4a" : (theme.isDark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0, 0, 0, 0.08))
+                    border.color: themeToggle.hovered ? "#ffed4a" : (theme.isDark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0, 0, 0, 0.5))
                     
                     Behavior on color { ColorAnimation { duration: 200 } }
                     Behavior on border.color { ColorAnimation { duration: 200 } }
@@ -482,9 +523,9 @@ Rectangle {
                 width: versionText.width + 20
                 height: 24
                 radius: 12
-                color: theme.isDark ? Qt.rgba(1, 1, 1, 0.05) : Qt.rgba(0, 0, 0, 0.03)
+                color: theme.isDark ? Qt.rgba(1, 1, 1, 0.05) : Qt.rgba(0, 0, 0, 0.1)
                 border.width: 1
-                border.color: theme.isDark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0, 0, 0, 0.05)
+                border.color: theme.isDark ? Qt.rgba(1, 1, 1, 0.08) : Qt.rgba(0, 0, 0, 0.5)
                 
                 Text {
                     id: versionText
