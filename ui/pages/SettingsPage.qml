@@ -225,14 +225,14 @@ Item {
                             spacing: 4
                             Layout.alignment: Qt.AlignVCenter
                             Text {
-                                text: settingsPage.tr("SETTINGS")
+                                text: qsTr("SETTINGS")
                                 color: "#607d8b"
                                 font.pixelSize: 22
                                 font.weight: Font.Bold
                                 font.letterSpacing: 2
                             }
                             Text {
-                                text: settingsPage.tr("Customize your experience")
+                                text: qsTr("Customize your experience")
                                 color: Qt.rgba(96/255, 125/255, 139/255, 0.8)
                                 font.pixelSize: 12
                                 font.letterSpacing: 0.5
@@ -331,13 +331,13 @@ Item {
                         ColumnLayout {
                             spacing: 4
                             Text {
-                                text: settingsPage.tr("Appearance")
+                                text: qsTr("Appearance")
                                 color: theme.textPrimary
                                 font.bold: true
                                 font.pixelSize: 16
                             }
                             Text {
-                                text: theme.isDark ? settingsPage.tr("Dark Mode active") : settingsPage.tr("Light Mode active")
+                                text: theme.isDark ? qsTr("Dark Mode active") : qsTr("Light Mode active")
                                 color: theme.textSecondary
                                 font.pixelSize: 13
                             }
@@ -482,13 +482,13 @@ Item {
                         ColumnLayout {
                             spacing: 4
                             Text {
-                                text: settingsPage.tr("Temperature Unit")
+                                text: qsTr("Temperature Unit")
                                 color: theme.textPrimary
                                 font.bold: true
                                 font.pixelSize: 16
                             }
                             Text {
-                                text: ThemeController.tempUnit === 0 ? settingsPage.tr("Celsius (°C)") : settingsPage.tr("Fahrenheit (°F)")
+                                text: ThemeController.tempUnit === 0 ? qsTr("Celsius (°C)") : qsTr("Fahrenheit (°F)")
                                 color: theme.textSecondary
                                 font.pixelSize: 13
                             }
@@ -662,14 +662,14 @@ Item {
                                 Layout.fillWidth: true
                                 
                                 Text {
-                                    text: "LANGUAGE"
+                                    text: qsTr("LANGUAGE")
                                     color: "#0078d4"
                                     font.bold: true
                                     font.pixelSize: 14
                                     font.letterSpacing: 2
                                 }
                                 Text {
-                                    text: "Select your preferred language"
+                                    text: qsTr("Select your preferred language")
                                     color: theme ? theme.textTertiary : "#888"
                                     font.pixelSize: 12
                                     opacity: 0.8
@@ -792,7 +792,7 @@ Item {
                                         spacing: 8
                                         
                                         Text {
-                                            text: settingsPage.tr("Choose Language")
+                                            text: qsTr("Choose Language")
                                             color: theme.textPrimary
                                             font.bold: true
                                             font.pixelSize: 14
@@ -833,7 +833,7 @@ Item {
                                                             if (modelData && modelData.code) {
                                                                 LanguageController.setLanguage(modelData.code)
                                                                 langPopup.close()
-                                                                toast.show("Language Changed")
+                                                                toast.show(qsTr("Language Changed"))
                                                             }
                                                         }
                                                     }
@@ -1036,13 +1036,13 @@ Item {
                                     ColumnLayout {
                                         spacing: 2
                                         Text {
-                                            text: settingsPage.tr("Author")
+                                            text: qsTr("Author")
                                             color: theme.textPrimary
                                             font.bold: true
                                             font.pixelSize: 16
                                         }
                                         Text {
-                                            text: settingsPage.tr("About the Developer")
+                                            text: qsTr("About the Developer")
                                             color: theme.textSecondary
                                             font.pixelSize: 13
                                         }
@@ -1183,7 +1183,7 @@ Item {
                                                     spacing: 4
                                                     
                                                     Text {
-                                                        text: "AUTHOR"
+                                                        text: qsTr("AUTHOR")
                                                         color: "#9b59b6"
                                                         font.bold: true
                                                         font.pixelSize: 10
@@ -1193,7 +1193,7 @@ Item {
                                                     // Typing Name
                                                     Text {
                                                         id: hybridNameText
-                                                        property string fullText: "Karthigaiselvam R"
+                                                        property string fullText: qsTr("Karthigaiselvam R")
                                                         property int currentIndex: 0
                                                         text: fullText.substring(0, currentIndex) + (cursorBlink2.visible ? "|" : "")
                                                         color: theme.textPrimary
@@ -1226,7 +1226,7 @@ Item {
                                                     Rectangle { Layout.fillWidth: true; height: 1; color: theme.divider }
 
                                                     Text {
-                                                        text: "Software Developer"
+                                                        text: qsTr("Software Developer")
                                                         color: theme.textSecondary
                                                         font.pixelSize: 13
                                                         font.family: "Segoe UI"
@@ -1236,7 +1236,7 @@ Item {
                                                         spacing: 6
                                                         Rectangle { width: 8; height: 8; radius: 4; color: "#2ecc71" }
                                                         Text {
-                                                            text: "Cyber Security Enthusiast"
+                                                            text: qsTr("Cyber Security Enthusiast")
                                                             color: "#2ecc71"
                                                             font.pixelSize: 12
                                                             font.bold: true
@@ -1247,7 +1247,7 @@ Item {
                                                     // New Quote Section
                                                     Text {
                                                         Layout.topMargin: 8
-                                                        text: "\"Security is not a product, but a process.\""
+                                                        text: qsTr("\"Security is not a product, but a process.\"")
                                                         color: theme.textDisabled
                                                         font.italic: true
                                                         font.pixelSize: 11
@@ -1275,7 +1275,7 @@ Item {
                             
                             // 1. LinkedIn
                             SocialBtn {
-                                label: "LinkedIn"
+                                label: qsTr("LinkedIn")
                                 btnColor: "#0077b5"
                                 hoverColor: "#006097"
                                 // Standard 24px LinkedIn Path
@@ -1285,7 +1285,7 @@ Item {
 
                             // 2. GitHub
                             SocialBtn {
-                                label: "GitHub"
+                                label: qsTr("GitHub")
                                 btnColor: theme && theme.isDark ? "#333" : "#24292e"
                                 hoverColor: "#2f363d"
                                 // Standard 24px GitHub Path
@@ -1295,7 +1295,7 @@ Item {
 
                             // 3. Email
                             SocialBtn {
-                                label: "Email"
+                                label: qsTr("Email")
                                 btnColor: "#d44638"
                                 hoverColor: "#e0584b"
                                 // Standard 24px Mail Path
@@ -1303,7 +1303,7 @@ Item {
                                 onClicked: {
                                     clipboardHelper.text = "karthigaiselvamr.cs2022@gmail.com"
                                     clipboardHelper.selectAll(); clipboardHelper.copy()
-                                    toast.show("Email Copied")
+                                    toast.show(qsTr("Email Copied"))
                                 }
                             }
                             
