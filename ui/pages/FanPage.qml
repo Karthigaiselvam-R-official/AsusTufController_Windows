@@ -8,6 +8,7 @@ Item {
     id: fanPage
     
     property var backend
+    property var monitor
     property var theme
     
     // Auto Fan Curve Controller
@@ -222,9 +223,7 @@ Item {
                         width: 220
                         height: 220
                         // Smooth transition: Use ramp speed in Manual Mode, Sensor RPM in Auto
-                        value: backend.isManualModeActive 
-                               ? (backend.currentRampSpeed / 100.0 * 6000) 
-                               : backend.cpuFanRpm
+                        value: backend.cpuFanRpm
                         maxValue: 6000
                         text: backend.cpuFanRpm + " " + qsTr("RPM") // ALWAYS show real sensor value
                         subText: qsTr("CPU FAN")
@@ -285,9 +284,7 @@ Item {
                         width: 220
                         height: 220
                         // Smooth transition for GPU Fan too
-                        value: backend.isManualModeActive 
-                               ? (backend.currentRampSpeed / 100.0 * 6000) 
-                               : backend.gpuFanRpm
+                        value: backend.gpuFanRpm
                         maxValue: 6000
                         text: backend.gpuFanRpm + " " + qsTr("RPM") // ALWAYS show real sensor value
                         subText: qsTr("GPU FAN")
@@ -307,12 +304,12 @@ Item {
                         }
                         
                         Text {
-                            text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(backend.gpuTemp) : backend.gpuTemp) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
+                            text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(monitor.gpuTemp) : monitor.gpuTemp) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                             font.pixelSize: 16
                             font.bold: true
                             anchors.verticalCenter: parent.verticalCenter
                             color: {
-                                var temp = backend.gpuTemp
+                                var temp = monitor.gpuTemp
                                 if (temp >= 85) return "#ff4757"
                                 if (temp >= 70) return "#ffa502"
                                 if (temp >= 55) return "#2ed573"
