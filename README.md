@@ -127,6 +127,15 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 | **ROG Zephyrus** | G14, G15, M15, M16, Duo 15/16 |
 | **ROG Flow** | X13, X16, Z13 |
 
+### 🧠 Processors & Graphics
+| Component | Support |
+| :--- | :--- |
+| **Intel Core** | i5, i7, i9 (10th Gen+) |
+| **AMD Ryzen** | Ryzen 4000, 5000, 6000, 7000 Series |
+| **NVIDIA GeForce** | GTX 1650/Ti, RTX 30/40 Series (Full Telemetry Support) |
+| **AMD Radeon** | RX 6000/7000 Series (Universal Usage Monitoring) |
+| **Intel Arc** | A-Series Mobile Graphics (Universal Usage Monitoring) |
+
 *If you have the "ASUS System Control Interface" driver installed, it will likely work!*
 
 ---
