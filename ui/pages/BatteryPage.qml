@@ -119,32 +119,23 @@ Item {
                             Behavior on height { NumberAnimation { duration: 500; easing.type: Easing.OutCubic } }
                         }
                         
-                        // Lightning bolt when charging
-                        Canvas {
-                            anchors.centerIn: parent
-                            width: 12; height: 16
-                            visible: monitor.isCharging
-                            
-                            property real boltGlow: 0.8
-                            SequentialAnimation on boltGlow {
-                                loops: Animation.Infinite
-                                running: monitor.isCharging
-                                NumberAnimation { to: 1.0; duration: 400 }
-                                NumberAnimation { to: 0.6; duration: 400 }
+                            // Lightning bolt when charging
+                            Text {
+                                anchors.centerIn: parent
+                                visible: monitor.isCharging
+                                text: "⚡"
+                                color: "#FFD700"
+                                font.pixelSize: 18
                             }
                             
-                            onPaint: {
-                                var ctx = getContext("2d");
-                                ctx.reset();
-                                ctx.fillStyle = Qt.rgba(1, 1, 1, boltGlow);
-                                ctx.beginPath();
-                                ctx.moveTo(7, 0); ctx.lineTo(2, 7); ctx.lineTo(5, 7);
-                                ctx.lineTo(4, 16); ctx.lineTo(10, 6); ctx.lineTo(7, 6);
-                                ctx.closePath(); ctx.fill();
+                            // Plug icon when plugged in but NOT charging (Limit Reached)
+                            Text {
+                                anchors.centerIn: parent
+                                visible: monitor.isPluggedIn && !monitor.isCharging
+                                text: "🔌"
+                                color: "#ffffff" 
+                                font.pixelSize: 16
                             }
-                            onBoltGlowChanged: requestPaint()
-                            Component.onCompleted: requestPaint()
-                        }
                     }
                     
                     // Battery cap
@@ -168,8 +159,12 @@ Item {
                         font.letterSpacing: 2
                     }
                     Text {
-                        text: monitor.isCharging ? qsTr("Charging") + " • " + monitor.batteryPercent + "%" : qsTr("On Battery") + " • " + monitor.batteryPercent + "%"
-                        color: monitor.isCharging ? Qt.rgba(0, 217/255, 165/255, 0.9) : Qt.rgba(255/255, 152/255, 0, 0.8)
+                        text: {
+                             if (monitor.isCharging) return qsTr("Charging") + " • " + monitor.batteryPercent + "%"
+                             if (monitor.isPluggedIn) return qsTr("Plugged In") + " • " + monitor.batteryPercent + "%"
+                             return qsTr("On Battery") + " • " + monitor.batteryPercent + "%"
+                        }
+                        color: monitor.isPluggedIn ? Qt.rgba(0, 217/255, 165/255, 0.9) : Qt.rgba(255/255, 152/255, 0, 0.8)
                         font.pixelSize: 12
                         font.letterSpacing: 0.5
                     }
@@ -182,9 +177,9 @@ Item {
                     Layout.preferredWidth: Math.max(120, statusRow.implicitWidth + 30) // Adaptive
                     Layout.preferredHeight: 34
                     radius: 17
-                    color: monitor.isCharging ? Qt.rgba(46/255, 204/255, 113/255, 0.15) : Qt.rgba(255/255, 152/255, 0/255, 0.15)
+                    color: monitor.isPluggedIn ? Qt.rgba(46/255, 204/255, 113/255, 0.15) : Qt.rgba(255/255, 152/255, 0/255, 0.15)
                     border.width: 1
-                    border.color: monitor.isCharging ? Qt.rgba(46/255, 204/255, 113/255, 0.4) : Qt.rgba(255/255, 152/255, 0/255, 0.4)
+                    border.color: monitor.isPluggedIn ? Qt.rgba(46/255, 204/255, 113/255, 0.4) : Qt.rgba(255/255, 152/255, 0/255, 0.4)
                     
                     Row {
                         id: statusRow
@@ -204,8 +199,12 @@ Item {
                             }
                         }
                         Text {
-                            text: monitor.isCharging ? qsTr("CHARGING") : qsTr("DISCHARGING")
-                            color: monitor.isCharging ? "#2ecc71" : "#FF9800"
+                            text: {
+                                if (monitor.isCharging) return qsTr("CHARGING")
+                                if (monitor.isPluggedIn) return qsTr("PLUGGED IN")
+                                return qsTr("DISCHARGING")
+                            }
+                            color: monitor.isPluggedIn ? "#2ecc71" : "#FF9800"
                             font.pixelSize: 11
                             font.bold: true
                             font.letterSpacing: 1.2
@@ -305,7 +304,11 @@ Item {
                     Text {
                         anchors.horizontalCenter: parent.horizontalCenter
                         anchors.bottom: parent.bottom
-                        text: monitor.isCharging ? qsTr("Charging") : qsTr("Battery")
+                        text: {
+                            if (monitor.isCharging) return qsTr("Charging")
+                            if (monitor.isPluggedIn) return qsTr("Plugged In")
+                            return qsTr("Battery")
+                        }
                         color: theme ? theme.textSecondary : "#888"
                         font.pixelSize: 12
                         font.bold: true
