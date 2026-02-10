@@ -380,19 +380,18 @@ void SystemStatsMonitor::readBattery() {
 
     // ACLineStatus: 1 = Online, 0 = Offline, 255 = Unknown
     bool isPluggedIn = (sps.ACLineStatus == 1);
+    m_isPluggedIn = isPluggedIn;
 
     // BatteryFlag: 1=High, 2=Low, 4=Critical, 8=Charging, 128=No System Battery
-    // If Plugged In but NOT Charging (Flag 8 not set), it's likely "Full" or
-    // "Limit Reached"
+    // Strictly use hardware flag for charging status
     bool isHardwareCharging = (sps.BatteryFlag & 8);
-
-    m_isCharging = isHardwareCharging; // For UI animations
+    m_isCharging = isHardwareCharging;
 
     if (isPluggedIn) {
       if (isHardwareCharging) {
         m_batteryState = "Charging";
       } else {
-        // Plugged in but not charging
+        // Plugged in but not actively charging (e.g. Limit Reached or Full)
         if (m_batteryPercent >= m_chargeLimit - 2) {
           m_batteryState = "Full (Limit)";
         } else if (m_batteryPercent >= 95) {
@@ -400,15 +399,13 @@ void SystemStatsMonitor::readBattery() {
         } else {
           m_batteryState = "Plugged In";
         }
-        m_isCharging = true;
       }
     } else {
       m_batteryState = "Discharging";
-      m_isCharging = false;
+      m_isCharging = false; // Safety: Cannot charge if unplugged
     }
 
     // EMIT SIGNAL IF CHANGED so UI updates!
-    // We check against old values (implied, or just emit always)
     emit batteryStatsChanged();
   }
 }
