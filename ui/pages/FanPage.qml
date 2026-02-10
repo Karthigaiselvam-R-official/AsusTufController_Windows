@@ -923,7 +923,13 @@ Item {
                                 }
                                 
                                 Text {
-                                    text: FanCurveController.autoCurveEnabled ? FanCurveController.currentPolicy : qsTr("Auto Curve Off")
+                                    text: {
+                                        if (!FanCurveController.autoCurveEnabled) return qsTr("Auto Curve Off")
+                                        if (FanCurveController.currentPolicy === "Silent") return qsTr("Silent")
+                                        if (FanCurveController.currentPolicy === "Balanced") return qsTr("Balanced")
+                                        if (FanCurveController.currentPolicy === "Turbo") return qsTr("Turbo")
+                                        return FanCurveController.currentPolicy
+                                    }
                                     color: {
                                         if (!FanCurveController.autoCurveEnabled) return "#888"
                                         if (FanCurveController.currentPolicy === "Silent") return "#27ae60"
