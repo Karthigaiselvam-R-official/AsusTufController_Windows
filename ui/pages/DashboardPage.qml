@@ -124,10 +124,10 @@ Item {
                                     x: 3; y: 3; radius: 2
                                     color: parent.border.color
                                 }
-                                // Charging Bolt
+                                // Charging Bolt / Plug Icon
                                 Text {
-                                    visible: monitor.isCharging
-                                    text: "⚡"
+                                    visible: monitor.isPluggedIn
+                                    text: monitor.isCharging ? "⚡" : "🔌"
                                     color: "#fff"
                                     font.pixelSize: 14
                                     anchors.centerIn: parent
@@ -141,8 +141,8 @@ Item {
                                 font.pixelSize: 18
                             }
                              Text { 
-                                visible: monitor.isCharging
-                                text: qsTr("(Charging)")
+                                visible: monitor.isPluggedIn
+                                text: monitor.isCharging ? qsTr("(Charging)") : qsTr("(Plugged In)")
                                 color: theme.textSecondary
                                 font.pixelSize: 12
                                 Layout.alignment: Qt.AlignVCenter
