@@ -107,7 +107,7 @@ A truly global application, designed for everyone.
   <img src="resources/Settings.png" width="800" alt="Settings Page">
 </p>
 
-*   **22 Languages Supported:** From English to Japanese, Arabic (RTL), Hindi, and more.
+*   **22 Languages Supported:** From Tamil to Japanese, Arabic (RTL), English, and more.
 *   **Theme Engine:** Seamlessly switch between Dark Mode (OLED friendly) and Light Mode.
 *   **Auto-Start:** Option to launch silently to tray on Windows boot.
 
