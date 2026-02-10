@@ -33,8 +33,6 @@ int main(int argc, char *argv[]) {
   static FanCurveController fanCurveController;
 
   // Link Controllers (Crucial Fix: Connect Brain to Hands)
-
-  // Link Controllers (Crucial Fix: Connect Brain to Hands)
   fanCurveController.setFanController(&fanController);
 
   // Register Types exposed to QML
