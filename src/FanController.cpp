@@ -8,6 +8,8 @@
 #include <algorithm>
 #include <windows.h> // For Sleep
 
+#define qsTr tr
+
 FanController::FanController(QObject *parent)
     : QObject(parent), m_cpuFanRpm(0), m_gpuFanRpm(0), m_cpuTemp(0),
       m_gpuTemp(0), m_isManualModeActive(false), m_statusMessage("Ready"),
@@ -21,7 +23,7 @@ FanController::FanController(QObject *parent)
       m_fanCount = 2; // Default to 2 fans
     }
   } else {
-    setStatusMessage("Error: WinIO Driver Failed");
+    setStatusMessage(qsTr("Error: WinIO Driver Failed"));
   }
 
   WmiWrapper::instance().initialize(); // Attempt WMI init
@@ -85,9 +87,9 @@ void FanController::setFanSpeed(int percentage) {
   m_targetFanSpeed = percentage;
   startRamp(percentage); // Use Ramp
 
-  QString msg = QString("Manual: %1%").arg(percentage);
+  QString msg = qsTr("Manual: %1%").arg(percentage);
   if (percentage > 99)
-    msg += " (OVERDRIVE)";
+    msg += qsTr(" (OVERDRIVE)");
   setStatusMessage(msg);
 }
 
@@ -104,7 +106,7 @@ void FanController::enableAutoMode() {
   // 0 = Balanced, 1 = Turbo, 2 = Silent (Check mapping)
   WmiWrapper::instance().setDevice(0x00110019, 0);
 
-  setStatusMessage("Auto Mode Active");
+  setStatusMessage(qsTr("Auto Mode Active"));
 }
 
 void FanController::enableManualModeWithSync() {
@@ -139,7 +141,7 @@ void FanController::enableManualModeWithSync() {
   startRamp(
       safeStartPercent); // Effectively holds current speed or minor adjustment
 
-  setStatusMessage(QString("Manual: %1% (Synced)").arg(safeStartPercent));
+  setStatusMessage(qsTr("Manual: %1% (Synced)").arg(safeStartPercent));
 }
 
 void FanController::setAutoFanSpeed(int percentage) {
@@ -150,7 +152,7 @@ void FanController::setAutoFanSpeed(int percentage) {
   m_targetFanSpeed = percentage;
   startRamp(percentage); // Use Ramp
 
-  setStatusMessage(QString("Auto (Curve): %1%").arg(percentage));
+  setStatusMessage(qsTr("Auto (Curve): %1%").arg(percentage));
 }
 
 void FanController::setThermalPolicy(int policy) {
@@ -160,15 +162,15 @@ void FanController::setThermalPolicy(int policy) {
 
   QString modeName;
   if (policy == 2)
-    modeName = "Silent";
+    modeName = qsTr("Silent");
   else if (policy == 0)
-    modeName = "Balanced";
+    modeName = qsTr("Balanced");
   else
-    modeName = "Turbo";
+    modeName = qsTr("Turbo");
 
   if (success) {
 
-    setStatusMessage(QString("Auto: %1 Mode").arg(modeName));
+    setStatusMessage(qsTr("Auto: %1 Mode").arg(modeName));
     m_rampTimer->stop(); // Ensure manual ramp is stopped
     return;
   }
@@ -190,7 +192,7 @@ void FanController::setThermalPolicy(int policy) {
   m_targetFanSpeed = fanPercent;
   startRamp(fanPercent); // Use Ramp for smooth fallback transition
 
-  setStatusMessage(QString("Auto (Fallback): %1%").arg(fanPercent));
+  setStatusMessage(qsTr("Auto (Fallback): %1%").arg(fanPercent));
 }
 
 void FanController::applyFanSpeed(int percentage) {
