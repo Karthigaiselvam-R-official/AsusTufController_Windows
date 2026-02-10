@@ -198,7 +198,7 @@ Item {
                     Layout.preferredHeight: 360
                     title: "CPU"
                     usage: monitor.cpuUsage
-                    temp: backend.cpuTemp
+                    temp: monitor.cpuTemp
                     freq: monitor.cpuFreq
                     rpm: backend.cpuFanRpm
                     accentColor: theme ? theme.accent : "#0078d4"
@@ -210,7 +210,7 @@ Item {
                     Layout.preferredHeight: 360
                     title: "GPU"
                     usage: monitor.gpuUsage
-                    temp: backend.gpuTemp
+                    temp: monitor.gpuTemp
                     freq: monitor.gpuFreq
                     rpm: backend.gpuFanRpm
                     accentColor: "#448aff"
