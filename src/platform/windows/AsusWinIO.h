@@ -18,6 +18,7 @@ public:
   int getFanCounts();       // Number of controllable fans
   int getFanRPM(int index); // RPM for specific fan (0=CPU, 1=GPU)
   int getCpuTemp();         // CPU Temperature in Celsius
+  int getGpuTemp();         // GPU Temperature in Celsius
 
   // Status
   bool isInitialized() const { return m_initialized; }
@@ -37,6 +38,7 @@ private:
   typedef int (*GetFanRPMFn)();
   typedef int (*GetFanCountsFn)();
   typedef unsigned long long (*GetCpuTempFn)();
+  typedef unsigned long long (*GetGpuTempFn)();
 
   InitializeWinIoFn m_initializeWinIo;
   ShutdownWinIoFn m_shutdownWinIo;
@@ -46,6 +48,7 @@ private:
   GetFanRPMFn m_getFanRPM;
   GetFanCountsFn m_getFanCounts;
   GetCpuTempFn m_getCpuTemp;
+  GetGpuTempFn m_getGpuTemp;
 
   bool m_initialized;
 };

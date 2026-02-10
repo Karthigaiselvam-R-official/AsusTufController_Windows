@@ -41,6 +41,16 @@ using Microsoft::WRL::ComPtr;
 #pragma comment(lib, "PortableDeviceGuids.lib") // Required for WPD CLSIDs
 #pragma comment(lib, "user32.lib")
 
+// Struct for Power Info if not fully defined in MinGW headers
+typedef struct _PROCESSOR_POWER_INFORMATION_EX {
+  ULONG Number;
+  ULONG MaxMhz;
+  ULONG CurrentMhz;
+  ULONG MhzLimit;
+  ULONG MaxIdleState;
+  ULONG CurrentIdleState;
+} PROCESSOR_POWER_INFORMATION_EX, *PPROCESSOR_POWER_INFORMATION_EX;
+
 SystemStatsMonitor::SystemStatsMonitor(QObject *parent) : QObject(parent) {
   // Initialize PDH for CPU Stats
   initPdh();
@@ -127,8 +137,35 @@ SystemStatsMonitor::~SystemStatsMonitor() {
 }
 
 void SystemStatsMonitor::initPdh() {
-  // PDH is no longer used for CPU Usage (switched to GetSystemTimes/Linux
-  // Logic) Kept empty to satisfy constructor call until refactor
+  // Initialize PDH Query
+  if (PdhOpenQuery(NULL, 0, (PDH_HQUERY *)&m_pdhQuery) != ERROR_SUCCESS) {
+    m_pdhQuery = nullptr;
+    return;
+  }
+
+  // Add Universal GPU Utilization Counter (Wildcard for all engines)
+  // We use PdhAddEnglishCounterW (Vista+) to ensure it works on non-English
+  // systems Path: \GPU Engine(*)\Utilization Percentage
+  if (PdhAddEnglishCounterW(
+          (PDH_HQUERY)m_pdhQuery, L"\\GPU Engine(*)\\Utilization Percentage", 0,
+          (PDH_HCOUNTER *)&m_pdhGpuCounter) != ERROR_SUCCESS) {
+    // Retry with Localized name if English fails (Fallback)
+    // But usually English API works. If it fails, GPU counters might be
+    // missing.
+    m_pdhGpuCounter = nullptr;
+  }
+
+  // Add Processor Frequency Counter
+  // \Processor Information(_Total)\Processor Frequency
+  // This returns the current frequency in MHz
+  // We use "% of Maximum Frequency" because "Processor Frequency" can be
+  // misleading on some Windows versions
+  if (PdhAddEnglishCounterW(
+          (PDH_HQUERY)m_pdhQuery,
+          L"\\Processor Information(_Total)\\% of Maximum Frequency", 0,
+          (PDH_HCOUNTER *)&m_pdhCpuFreqCounter) != ERROR_SUCCESS) {
+    m_pdhCpuFreqCounter = nullptr;
+  }
 }
 
 void SystemStatsMonitor::fetchStaticInfo() {
@@ -165,6 +202,24 @@ void SystemStatsMonitor::fetchStaticInfo() {
   m_cpuModel = cpuKey.value("ProcessorNameString", "Unknown CPU").toString();
   // Cleanup CPU string (remove extra spaces like Linux does)
   m_cpuModel = m_cpuModel.simplified();
+
+  // 4. Max CPU Frequency (Base)
+  int numCpus = QThread::idealThreadCount();
+  if (numCpus <= 0)
+    numCpus = 1;
+  int size = numCpus * sizeof(PROCESSOR_POWER_INFORMATION_EX);
+  std::vector<PROCESSOR_POWER_INFORMATION_EX> buffer(numCpus);
+  // SystemProcessorPowerInformation = 11
+  long status = CallNtPowerInformation(static_cast<POWER_INFORMATION_LEVEL>(11),
+                                       NULL, 0, buffer.data(), size);
+
+  if (status == 0 && buffer.size() > 0) {
+    // MaxMhz is usually the same for all cores on consumer CPUs
+    m_maxCpuMhz = buffer[0].MaxMhz;
+  }
+  if (m_maxCpuMhz <= 0) {
+    m_maxCpuMhz = 2500; // Fallback
+  }
 
   // 4. GPU Models
   // On Linux: lspci parsing
@@ -209,10 +264,9 @@ void SystemStatsMonitor::updateStats() {
   readGpuStats(); // Async
   readBattery();
 
-  // CPU Freq approximation (Windows doesn't easily give real-time per core freq
-  // without WMI/Performance Ctr overhead)
+  // CPU Freq approximation
   readCpuFreq();
-  readCpuTemp(); // New: Read Temp from Driver
+  readCpuTemp();
 
   emit statsChanged();
 }
@@ -800,19 +854,76 @@ void SystemStatsMonitor::onMtpDevicesFound(QVariantList devices) {
 // --- Missing Linux Port Implementations ---
 
 void SystemStatsMonitor::readGpuStats() {
+  int pdhUsage = 0;
+  int ecTemp = 0;
+
+  // 1. PDH READOUT (Universal - AMD/Intel/NVIDIA)
+  if (m_pdhQuery && m_pdhGpuCounter) {
+    PdhCollectQueryData((PDH_HQUERY)m_pdhQuery);
+
+    PDH_FMT_COUNTERVALUE_ITEM *pItems = NULL;
+    DWORD dwBufferSize = 0;
+    DWORD dwItemCount = 0;
+
+    // First call to get buffer size
+    PdhGetFormattedCounterArray((PDH_HCOUNTER)m_pdhGpuCounter, PDH_FMT_DOUBLE,
+                                &dwBufferSize, &dwItemCount, NULL);
+
+    if (dwBufferSize > 0) {
+      pItems = (PDH_FMT_COUNTERVALUE_ITEM *)malloc(dwBufferSize);
+      if (PdhGetFormattedCounterArray((PDH_HCOUNTER)m_pdhGpuCounter,
+                                      PDH_FMT_DOUBLE, &dwBufferSize,
+                                      &dwItemCount, pItems) == ERROR_SUCCESS) {
+
+        double maxUsage = 0;
+        for (DWORD i = 0; i < dwItemCount; i++) {
+          if (pItems[i].FmtValue.CStatus == PDH_CSTATUS_VALID_DATA) {
+            double val = pItems[i].FmtValue.doubleValue;
+            if (val > maxUsage)
+              maxUsage = val;
+          }
+        }
+        pdhUsage = static_cast<int>(std::round(maxUsage));
+      }
+      free(pItems);
+    }
+  }
+
+  // 1b. ASUS EC GPU TEMP (Universal Base)
+  ecTemp = AsusWinIO::instance().getGpuTemp();
+
+  // 4. Apply Updates Conditionally
+  // If NVIDIA is present, we SKIP these updates and rely on
+  // onGpuProcessFinished to prevent race conditions.
+  bool hasNvidia = false;
+  for (const auto &gpu : m_gpuModels) {
+    if (gpu.contains("NVIDIA", Qt::CaseInsensitive)) {
+      hasNvidia = true;
+      break;
+    }
+  }
+
+  if (!hasNvidia) {
+    m_gpuUsage = pdhUsage;
+
+    if (ecTemp > 0) {
+      m_gpuTemp = ecTemp;
+    } else {
+      m_gpuTemp = 0;
+    }
+  }
+
+  // 2. NVIDIA SMI CHECK (Tier 1 - Only for NVIDIA)
   if (!m_gpuProcess)
     return;
   if (m_gpuProcess->state() != QProcess::NotRunning)
     return;
 
-  // Calls nvidia-smi exactly like Linux version
-  // Arguments: --query-gpu=name,clocks.gr,utilization.gpu
-  // --format=csv,noheader,nounits
-  // We include NAME to detect RTX 3050 when it wakes up
-  m_gpuProcess->start("nvidia-smi",
-                      QStringList()
-                          << "--query-gpu=name,clocks.gr,utilization.gpu"
-                          << "--format=csv,noheader,nounits");
+  m_gpuProcess->start(
+      "nvidia-smi",
+      QStringList()
+          << "--query-gpu=name,clocks.gr,utilization.gpu,temperature.gpu"
+          << "--format=csv,noheader,nounits");
 }
 
 void SystemStatsMonitor::onGpuProcessFinished(int exitCode,
@@ -849,7 +960,7 @@ void SystemStatsMonitor::onGpuProcessFinished(int exitCode,
 
     // Reset stats
     m_gpuFreq = 0;
-    m_gpuUsage = 0;
+    // Don't reset usage - let PDH fallback handle it (Fixes flicker)
     emit statsChanged();
     return;
   }
@@ -859,6 +970,13 @@ void SystemStatsMonitor::onGpuProcessFinished(int exitCode,
     QString gpuName = parts[0].trimmed();
     m_gpuFreq = parts[1].trimmed().toDouble();
     m_gpuUsage = parts[2].trimmed().toInt();
+
+    // If SMI gives us temperature (we need to ask for it), use it.
+    // For now, we didn't ask SMI for temp in the command line below.
+    // Let's rely on ASUS EC for temp as it's consistent.
+    // Or we could add temperature.gpu to the query?
+    // User complaint: "task manager showing gpu temp 42 c but application
+    // showing 0 c" If ASUS EC works, likely fixed.
 
     // DYNAMIC GPU DISCOVERY
     // If this GPU is not in our list, add it!
@@ -872,6 +990,16 @@ void SystemStatsMonitor::onGpuProcessFinished(int exitCode,
       emit gpuModelsChanged(); // Notify UI to refresh list
     }
 
+    // Read Temp if available (Index 3)
+    if (parts.size() >= 4) {
+      m_gpuTemp = parts[3].trimmed().toInt();
+    } else {
+      // Fallback to ASUS EC if nvidia-smi doesn't return temp
+      int ecTemp = AsusWinIO::instance().getGpuTemp();
+      if (ecTemp > 0)
+        m_gpuTemp = ecTemp;
+    }
+
   } else if (parts.length() >= 2) {
     // Fallback relative to old query
     m_gpuFreq = parts[0].trimmed().toDouble();
@@ -881,17 +1009,28 @@ void SystemStatsMonitor::onGpuProcessFinished(int exitCode,
 }
 
 // Struct for Power Info if not fully defined in MinGW headers
-typedef struct _PROCESSOR_POWER_INFORMATION_EX {
-  ULONG Number;
-  ULONG MaxMhz;
-  ULONG CurrentMhz;
-  ULONG MhzLimit;
-  ULONG MaxIdleState;
-  ULONG CurrentIdleState;
-} PROCESSOR_POWER_INFORMATION_EX, *PPROCESSOR_POWER_INFORMATION_EX;
 
 void SystemStatsMonitor::readCpuFreq() {
-  // Real-time Frequency using CallNtPowerInformation
+  // Use PDH if available (Accurate Real-time via % of Max Frequency)
+  if (m_pdhQuery && m_pdhCpuFreqCounter) {
+    PDH_FMT_COUNTERVALUE displayValue;
+    if (PdhGetFormattedCounterValue((PDH_HCOUNTER)m_pdhCpuFreqCounter,
+                                    PDH_FMT_DOUBLE, NULL,
+                                    &displayValue) == ERROR_SUCCESS) {
+      if (displayValue.CStatus == PDH_CSTATUS_VALID_DATA) {
+        // Value is Percentage (e.g. 100.0 or 140.0)
+        // m_maxCpuMhz is base clock (e.g. 2500)
+        if (m_maxCpuMhz > 0) {
+          m_cpuFreq = (displayValue.doubleValue / 100.0) * m_maxCpuMhz;
+        } else {
+          m_cpuFreq = displayValue.doubleValue * 25.0; // Fallback
+        }
+        return;
+      }
+    }
+  }
+
+  // Fallback to CallNtPowerInformation (Legacy)
   int numCpus = QThread::idealThreadCount();
   if (numCpus <= 0)
     numCpus = 1;
@@ -899,7 +1038,6 @@ void SystemStatsMonitor::readCpuFreq() {
   int size = numCpus * sizeof(PROCESSOR_POWER_INFORMATION_EX);
   std::vector<PROCESSOR_POWER_INFORMATION_EX> buffer(numCpus);
 
-  // CallNtPowerInformation (11 = ProcessorInformation)
   long status = CallNtPowerInformation(static_cast<POWER_INFORMATION_LEVEL>(11),
                                        NULL, 0, buffer.data(), size);
 
@@ -915,10 +1053,9 @@ void SystemStatsMonitor::readCpuFreq() {
     }
 
     if (activeCount > 0) {
-      m_cpuFreq = (totalFreq / activeCount) / 1000.0;
+      m_cpuFreq = (totalFreq / activeCount);
     }
   } else {
-    // Fallback to static base clock if real-time fails
     m_cpuFreq = 0.0;
   }
 }

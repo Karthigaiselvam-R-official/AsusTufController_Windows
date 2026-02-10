@@ -9,7 +9,7 @@ AsusWinIO::AsusWinIO()
     : m_hModule(nullptr), m_initialized(false), m_initializeWinIo(nullptr),
       m_shutdownWinIo(nullptr), m_setFanIndex(nullptr),
       m_setFanTestMode(nullptr), m_setFanPwmDuty(nullptr), m_getFanRPM(nullptr),
-      m_getFanCounts(nullptr), m_getCpuTemp(nullptr) {}
+      m_getFanCounts(nullptr), m_getCpuTemp(nullptr), m_getGpuTemp(nullptr) {}
 
 AsusWinIO::~AsusWinIO() {
   // Call ShutdownWinIo before unloading
@@ -47,6 +47,8 @@ bool AsusWinIO::initialize() {
       (GetFanCountsFn)GetProcAddress(m_hModule, "HealthyTable_FanCounts");
   m_getCpuTemp =
       (GetCpuTempFn)GetProcAddress(m_hModule, "Thermal_Read_Cpu_Temperature");
+  m_getGpuTemp =
+      (GetGpuTempFn)GetProcAddress(m_hModule, "Thermal_Read_Gpu_Temperature");
 
   if (!m_initializeWinIo || !m_setFanIndex || !m_setFanTestMode ||
       !m_setFanPwmDuty) {
@@ -110,6 +112,13 @@ int AsusWinIO::getFanRPM(int index) {
 int AsusWinIO::getCpuTemp() {
   if (m_initialized && m_getCpuTemp) {
     return static_cast<int>(m_getCpuTemp());
+  }
+  return 0;
+}
+
+int AsusWinIO::getGpuTemp() {
+  if (m_initialized && m_getGpuTemp) {
+    return static_cast<int>(m_getGpuTemp());
   }
   return 0;
 }

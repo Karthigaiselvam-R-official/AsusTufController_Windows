@@ -37,7 +37,8 @@ class SystemStatsMonitor : public QObject {
 
   // Live Stats
   Q_PROPERTY(int cpuUsage READ cpuUsage NOTIFY statsChanged)
-  Q_PROPERTY(int cpuTemp READ cpuTemp NOTIFY statsChanged) // New
+  Q_PROPERTY(int cpuTemp READ cpuTemp NOTIFY statsChanged)
+  Q_PROPERTY(int gpuTemp READ gpuTemp NOTIFY statsChanged) // New
   Q_PROPERTY(int ramUsage READ ramUsage NOTIFY statsChanged)
   Q_PROPERTY(int memoryUsage READ ramUsage NOTIFY
                  statsChanged) // Alias for QML compatibility
@@ -71,7 +72,8 @@ public:
   int chargeLimit() const { return m_chargeLimit; }
 
   int cpuUsage() const { return m_cpuUsage; }
-  int cpuTemp() const { return m_cpuTemp; } // New
+  int cpuTemp() const { return m_cpuTemp; }
+  int gpuTemp() const { return m_gpuTemp; }
   int ramUsage() const { return m_ramUsage; }
   int diskUsage() const { return m_diskUsage; }
   int gpuUsage() const { return m_gpuUsage; }
@@ -121,7 +123,8 @@ private:
   int m_pendingChargeLimit = 80;
 
   int m_cpuUsage = 0;
-  int m_cpuTemp = 0; // New
+  int m_cpuTemp = 0;
+  int m_gpuTemp = 0;
   int m_ramUsage = 0;
   int m_diskUsage = 0; // Overall %
   int m_gpuUsage = 0;
@@ -138,6 +141,9 @@ private:
 
   double m_netDown = 0;
   double m_netUp = 0;
+
+  // CPU Freq Helper
+  int m_maxCpuMhz = 0;
 
   // State Tracking
   int m_cachedVolumeCount = 0;
@@ -183,7 +189,9 @@ private:
 
   // Windows PDH Handles
   void *m_pdhQuery = nullptr;
-  void *m_pdhCpuCounter = nullptr;
+  void *m_pdhCpuCounter = nullptr;     // Unused
+  void *m_pdhCpuFreqCounter = nullptr; // New for Freq
+  void *m_pdhGpuCounter = nullptr;
 };
 
 #endif // SYSTEMSTATSMONITOR_H
