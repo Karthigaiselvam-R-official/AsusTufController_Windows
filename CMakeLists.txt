@@ -51,7 +51,9 @@ set(PROJECT_SOURCES
 )
 
 qt_add_executable(AsusTufFanControl_Windows
+    WIN32
     MANUAL_FINALIZATION
+    src/app.rc
     ${PROJECT_SOURCES}
 )
 
@@ -103,6 +105,24 @@ add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
     "${CMAKE_SOURCE_DIR}/AsusWinIO64.dll"
     "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/AsusWinIO64.dll"
+)
+
+# Copy PsExec.exe and run.bat to the build directory
+add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/PsExec.exe"
+    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/PsExec.exe"
+)
+add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_if_different
+    "${CMAKE_SOURCE_DIR}/run.bat"
+    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/run.bat"
+)
+
+add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+    COMMAND ${CMAKE_COMMAND} -E copy_directory
+    "${CMAKE_SOURCE_DIR}/resources"
+    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/resources"
 )
 
 install(TARGETS AsusTufFanControl_Windows
