@@ -107,9 +107,12 @@ A truly global application, designed for everyone.
   <img src="resources/Settings.png" width="800" alt="Settings Page">
 </p>
 
+
+> **Note:** This project is currently in **Active Development**. New features are being rolled out regularly.
+
 *   **22 Languages Supported:** From Tamil to Japanese, Arabic (RTL), English, and more.
 *   **Theme Engine:** Seamlessly switch between Dark Mode (OLED friendly) and Light Mode.
-*   **Auto-Start:** Option to launch silently to tray on Windows boot.
+*   **Auto-Start:** Option to launch silently to tray on Windows boot **(Coming Soon)**.
 
 ---
 
