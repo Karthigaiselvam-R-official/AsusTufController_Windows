@@ -148,6 +148,7 @@ ApplicationWindow {
                 FanPage {
                     id: fanPage
                     backend: FanController
+                    monitor: monitor
                     theme: theme
                 }
                 
