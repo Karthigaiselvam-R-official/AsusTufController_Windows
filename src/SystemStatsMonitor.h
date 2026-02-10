@@ -31,6 +31,8 @@ class SystemStatsMonitor : public QObject {
   // Core Properties
   Q_PROPERTY(int batteryPercent READ batteryPercent NOTIFY batteryStatsChanged)
   Q_PROPERTY(bool isCharging READ isCharging NOTIFY batteryStatsChanged)
+  Q_PROPERTY(
+      bool isPluggedIn READ isPluggedIn NOTIFY batteryStatsChanged) // New
   Q_PROPERTY(QString batteryState READ batteryState NOTIFY batteryStatsChanged)
   Q_PROPERTY(int chargeLimit READ chargeLimit WRITE setChargeLimit NOTIFY
                  chargeLimitChanged)
@@ -68,6 +70,7 @@ public:
   // Getters
   int batteryPercent() const { return m_batteryPercent; }
   bool isCharging() const { return m_isCharging; }
+  bool isPluggedIn() const { return m_isPluggedIn; }
   QString batteryState() const { return m_batteryState; }
   int chargeLimit() const { return m_chargeLimit; }
 
@@ -118,6 +121,7 @@ private:
   // Data
   int m_batteryPercent = 0;
   bool m_isCharging = false;
+  bool m_isPluggedIn = false;
   QString m_batteryState = "Unknown";
   int m_chargeLimit = 80;
   int m_pendingChargeLimit = 80;
