@@ -11,4 +11,7 @@ build/
 *.ilk
 .vs/
 CMakeUserPresets.json
-/AsusWinIO64.dll
+# Essential Hardware Binaries
+!AsusWinIO64.dll
+!PsExec.exe
+!run.bat
