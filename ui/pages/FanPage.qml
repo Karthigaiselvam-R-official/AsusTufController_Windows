@@ -975,6 +975,13 @@ Item {
                                     from: 0; to: 100
                                     value: curveController.silentThreshold
                                     
+                                    Connections {
+                                        target: curveController
+                                        function onThresholdsChanged() {
+                                            silentSlider.value = curveController.silentThreshold
+                                        }
+                                    }
+                                    
                                     background: Rectangle {
                                         x: silentSlider.leftPadding
                                         y: silentSlider.topPadding + silentSlider.availableHeight / 2 - height / 2
@@ -1060,6 +1067,13 @@ Item {
                                     anchors.fill: parent
                                     from: 0; to: 100
                                     value: curveController.balancedThreshold
+                                    
+                                    Connections {
+                                        target: curveController
+                                        function onThresholdsChanged() {
+                                            turboSlider.value = curveController.balancedThreshold
+                                        }
+                                    }
                                     
                                     background: Rectangle {
                                         x: turboSlider.leftPadding
