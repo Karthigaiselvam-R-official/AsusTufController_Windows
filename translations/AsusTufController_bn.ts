@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <TS version="2.1" language="bn">
 <context>
     <name>AuraPage</name>
@@ -500,7 +500,7 @@
     <name>Main</name>
     <message>
         <location filename="../ui/Main.qml" line="16" />
-        <source>ASUS TUF Fan Control</source>
+        <source>ASUS TUF Controller</source>
         <translation>ASUS TUF ফ্যান নিয়ন্ত্রণ</translation>
     </message>
 <message><source>Language Changed</source><translation>ভাষা পরিবর্তন করা হয়েছে</translation></message></context>
