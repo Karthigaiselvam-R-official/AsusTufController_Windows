@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>ASUS TUF 팬 컨트롤</translation>
+        <translation>ASUS TUF 컨트롤러</translation>
     </message>
 <message><source>Language Changed</source><translation>언어가 변경되었습니다</translation></message></context>
 <context>

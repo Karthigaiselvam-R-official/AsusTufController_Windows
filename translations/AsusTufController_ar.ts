@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>تحكم مروحة ASUS TUF</translation>
+        <translation>ASUS TUF وحدة التحكم</translation>
     </message>
 <message><source>Language Changed</source><translation>تم تغيير اللغة</translation></message></context>
 <context>

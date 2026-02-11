@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>Udhibiti wa Feni ASUS TUF</translation>
+        <translation>Kidhibiti cha ASUS TUF</translation>
     </message>
 <message><source>Language Changed</source><translation>Lugha Imebadilishwa</translation></message></context>
 <context>

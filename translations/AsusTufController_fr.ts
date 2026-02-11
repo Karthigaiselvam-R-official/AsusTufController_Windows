@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>Contrôle Ventilateur ASUS TUF</translation>
+        <translation>Contrôleur ASUS TUF</translation>
     </message>
 <message><source>Language Changed</source><translation>Langue changée</translation></message></context>
 <context>

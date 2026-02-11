@@ -604,7 +604,7 @@
     <location filename="../build/AsusTufController/ui/Main.qml" line="16" />
     <location filename="../ui/Main.qml" line="16" />
     <source>ASUS TUF Controller</source>
-<translation>ASUS TUF விசிறி கட்டுப்பாடு</translation>
+<translation>ASUS TUF கட்டுப்பாட்டாளர்</translation>
 </message>
 <message>
     <source>Language Changed</source>

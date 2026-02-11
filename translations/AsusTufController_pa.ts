@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>ASUS TUF ਪੱਖਾ ਕੰਟਰੋਲ</translation>
+        <translation>ASUS TUF ਕੰਟਰੋਲਰ</translation>
     </message>
 <message><source>Language Changed</source><translation>ਭਾਸ਼ਾ ਬਦਲੀ ਗਈ</translation></message></context>
 <context>

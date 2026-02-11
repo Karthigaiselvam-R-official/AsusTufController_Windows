@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>Sterowanie Wentylatorami ASUS TUF</translation>
+        <translation>Sterownik ASUS TUF</translation>
     </message>
 <message><source>Language Changed</source><translation>Język zmieniony</translation></message></context>
 <context>

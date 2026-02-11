@@ -501,7 +501,7 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Controller</source>
-        <translation>华硕TUF风扇控制</translation>
+        <translation>华硕 TUF 控制器</translation>
     </message>
 <message><source>Language Changed</source><translation>语言已更改</translation></message></context>
 <context>
