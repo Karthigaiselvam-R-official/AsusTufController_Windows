@@ -972,7 +972,7 @@ Item {
                                 Slider {
                                     id: silentSlider
                                     anchors.fill: parent
-                                    from: 0; to: 100
+                                    from: 20; to: 95
                                     value: curveController.silentThreshold
                                     
                                     background: Rectangle {
@@ -1015,7 +1015,9 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        silentSlider.value = Math.round(ratio * 100) // 0 to 100
+                                        var newVal = Math.round(20 + ratio * 75) // 20 to 95
+                                        // Enforce: Silent must stay at least 5°C below Turbo
+                                        silentSlider.value = Math.min(newVal, turboSlider.value - 5)
                                     }
                                     
                                     onPressed: updateValue(mouseX)
@@ -1055,7 +1057,7 @@ Item {
                                 Slider {
                                     id: turboSlider
                                     anchors.fill: parent
-                                    from: 0; to: 100
+                                    from: 25; to: 100
                                     value: curveController.balancedThreshold
                                     
                                     background: Rectangle {
@@ -1098,7 +1100,9 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        turboSlider.value = Math.round(ratio * 100) // 0 to 100
+                                        var newVal = Math.round(25 + ratio * 75) // 25 to 100
+                                        // Enforce: Turbo must stay at least 5°C above Silent
+                                        turboSlider.value = Math.max(newVal, silentSlider.value + 5)
                                     }
                                     
                                     onPressed: updateValue(mouseX)
