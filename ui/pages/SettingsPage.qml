@@ -346,10 +346,12 @@ Item {
                         Item { Layout.fillWidth: true }
                         
                         // Auto / System Mode Button
-                         Rectangle {
-                             id: autoBtn
-                             width: Math.max(68, autoText.contentWidth + 24)
-                             height: 34
+                          Rectangle {
+                              id: autoBtn
+                              implicitWidth: autoText.contentWidth + 32
+                              width: Math.max(72, implicitWidth)
+                              height: 34
+                              Behavior on width { NumberAnimation { duration: 150; easing.type: Easing.OutQuad } }
                              radius: 12
                              // Gold (#FFC107) when active, transparent otherwise
                              color: ThemeController.themeMode === 0 ? "#FFC107" : "transparent"
