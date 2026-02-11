@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation type="unfinished" />
     </message>
-</context>
+<message><source>PLUGGED IN</source><translation>پلگ ان</translation></message><message><source>Plugged In</source><translation>پلگ ان ہے</translation></message><message><source>Full (Limit)</source><translation>مکمل (حد)</translation></message><message><source>Minimum 60%</source><translation>کم از کم ۶۰٪</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>اسٹوریج استعمال شدہ</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(چارجنگ)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(پلگ ان)</translation></message><message><source>Up:</source><translation>اپ:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-</context>
+<message><source> (OVERDRIVE)</source><translation> (اوور ڈرائیو)</translation></message><message><source>Manual: %1%</source><translation>دستی: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>دستی: %1% (مطابقت شدہ)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">ٹربو</translation>
+        <translation>ٹربو</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">خاموش</translation>
+        <translation>خاموش</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF فین کنٹرول</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>زبان تبدیل ہو گئی</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>لائٹ موڈ</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>ترتیبات</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU کی شناخت ناکام</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>ترتیبات</translation></message><message><source>Customize your experience</source><translation>اپنے تجربے کو حسب ضرورت بنائیں</translation></message><message><source>Karthigaiselvam R</source><translation>کارتھیگائیسیلوام آر</translation></message><message><source>Author</source><translation>مصنف</translation></message><message><source>AUTHOR</source><translation>مصنف</translation></message><message><source>About the Developer</source><translation>ڈیولپر کے بارے میں</translation></message><message><source>Software Developer</source><translation>سافٹ ویئر ڈیولپر</translation></message><message><source>Cyber Security Enthusiast</source><translation>سائبر سیکیورٹی کے شوقین</translation></message><message><source>LinkedIn</source><translation>لنکڈ ان</translation></message><message><source>GitHub</source><translation>گٹ ہب</translation></message><message><source>Email</source><translation>ای میل</translation></message><message><source>Email Copied</source><translation>ای میل کاپی ہو گئی</translation></message><message><source>Appearance</source><translation>ظاہری شکل</translation></message><message><source>LANGUAGE</source><translation>زبان</translation></message><message><source>Select your preferred language</source><translation>اپنی پسندیدہ زبان منتخب کریں</translation></message><message><source>Choose Language</source><translation>زبان منتخب کریں</translation></message><message><source>Temperature Unit</source><translation>درجہ حرارت کی اکائی</translation></message><message><source>Celsius (°C)</source><translation>سیلسیئس (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>فارن ہائیٹ (°F)</translation></message><message><source>Dark Mode active</source><translation>ڈارک موڈ فعال</translation></message><message><source>Light Mode active</source><translation>لائٹ موڈ فعال</translation></message><message><source>"Security is not a product, but a process."</source><translation>"سیکیورٹی کوئی پروڈکٹ نہیں بلکہ ایک عمل ہے۔"</translation></message><message><source>Auto</source><translation>خودکار</translation></message></context></TS>
