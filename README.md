@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🎮 ASUS TUF Fan Control (Windows Edition)
+# 🎮 ASUS TUF Controller (Windows Edition)
 
 ![Platform](https://img.shields.io/badge/Platform-Windows_10%2F11-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 ![Language](https://img.shields.io/badge/C++17-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
 ![Framework](https://img.shields.io/badge/Qt6-41CD52?style=for-the-badge&logo=qt&logoColor=white)
 ![Build](https://img.shields.io/badge/CMake-064F8C?style=for-the-badge&logo=cmake&logoColor=white)
 ![License](https://img.shields.io/badge/License-GPLv3-blue?style=for-the-badge)
-![Status](https://img.shields.io/badge/Status-Active_Development-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stable_Release-success?style=for-the-badge)
 
 **The Ultimate System Control Center for ASUS Gaming Laptops**
 *Native. Lightweight. Powerful.*
@@ -16,7 +16,9 @@
   <img src="resources/SystemInfo.png" width="800" alt="Dashboard Preview">
 </p>
 
-[⬇️ Download Latest Release](#-installation) • [✨ Features](#-features) • [🛠️ How It Works](#--architecture--under-the-hood) • [💬 Discord](#)
+[![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.0_Stable-0078D6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases/download/v1.0.0/AsusTufController_v1.0.0.zip)
+
+[✨ Features](#-features) • [🛠️ How It Works](#--architecture--under-the-hood) • [💬 Discord](#)
 
 </div>
 
@@ -24,13 +26,13 @@
 
 ## 📖 Introduction
 
-**AsusTufFanControl** is a custom-built, open-source control center designed specifically for ASUS TUF and ROG gaming laptops. Frustrated by the bloatware of *Armoury Crate* and the limitations of generic tools, this project aims to provide a **native, resource-efficient** alternative that gives you full control over your hardware.
+**AsusTufController** is a custom-built, open-source control center designed specifically for ASUS TUF and ROG gaming laptops. Frustrated by the bloatware of *Armoury Crate* and the limitations of generic tools, this project aims to provide a **native, resource-efficient** alternative that gives you full control over your hardware.
 
 Built with **C++ and Qt 6**, it runs with minimal background usage while unlocking features often hidden by the manufacturer, such as precise fan control, battery charge limiting, and custom RGB lighting effects.
 
 ### 🚀 Why use this over Armoury Crate?
 
-| Feature | ASUS Armoury Crate | AsusTufFanControl |
+| Feature | ASUS Armoury Crate | AsusTufController |
 | :--- | :---: | :---: |
 | **Resource Usage** | 🔴 Heavy (Hundreds of MBs RAM) | 🟢 **Ultra-Light (<50MB)** |
 | **Boot Time** | 🔴 Slows down startup | 🟢 **Instant Launch** |
@@ -108,15 +110,15 @@ A truly global application, designed for everyone.
 </p>
 
 
-> **Note:** This project is currently in **Active Development**. New features are being rolled out regularly.
+> **Note:** This project is currently in **Stable Release v1.0.0**.
 
-*   **22 Languages Supported:** From Tamil to Japanese, Arabic (RTL), English, and more.
+*   **23 Languages Supported:** From Tamil to Japanese, Arabic (RTL), English, and more.
 *   **Theme Engine:** Seamlessly switch between Dark Mode (OLED friendly) and Light Mode.
-*   **Auto-Start:** Option to launch silently to tray on Windows boot **(Coming Soon)**.
+*   **Auto-Start:** Option to launch silently to tray on Windows boot.
 
 ---
 
-## � Supported Hardware
+## 🛠️ Supported Hardware
 
 This application is designed to work on **all modern ASUS Gaming Laptops** (2020+).
 
@@ -140,7 +142,7 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 
 ---
 
-## �🛠️  Architecture & Under the Hood
+## 🏗️ Architecture & Under the Hood
 
 How does it work without ASUS services? By talking directly to the metal.
 
@@ -163,10 +165,10 @@ graph TD
 
 ### The Technology Stack
 *   **Language:** C++17 (Performance critical code)
-*   **UI Framework:** Qt 6.6 / QML (Hardware accelerated GPU rendering)
+*   **UI Framework:** Qt 6.8 / QML (Hardware accelerated GPU rendering)
 *   **Build System:** CMake + MSVC
 *   **Interfacing:**
-    *   `AsusWinIO.dll`: Used to map physical memory and read EC registers directly.
+    *   `AsusWinIO64.dll`: Used to map physical memory and read EC registers directly.
     *   `DeviceIoControl`: Sends IOCTL codes to the ACPI driver.
     *   `nvidia-smi`: Spawns lightweight processes to query GPU sleep states/clocks.
 
@@ -175,18 +177,17 @@ graph TD
 ## 📥 Installation Guide
 
 ### Option 1: Binary (Recommended)
-1.  Go to the [**Releases Page**](../../releases).
-2.  Download the latest `AsusTufFanControl_v1.0.0.zip`.
-3.  Extract the folder to a permanent location (e.g., `C:\Program Files\AsusTufFanControl`).
+1.  **[Download the latest AsusTufController_v1.0.0.zip](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases/download/v1.0.0/AsusTufController_v1.0.0.zip)**.
+2.  Extract the folder to a permanent location (e.g., `C:\Program Files\AsusTufController`).
 
-4.  **🚀 Primary Launch Method:**  
+3.  **🚀 Primary Launch Method:**  
     > [!IMPORTANT]
     > **Always launch via `run.bat` for full control!**  
     > ![Run with Admin](https://img.shields.io/badge/Launch-run.bat-FF0000?style=for-the-badge&logo=powershell&logoColor=white)  
     > This script automatically requests **Administrator** privileges and uses **PsExec** to launch the software as a **SYSTEM** service. This is strictly required to bypass firmware locks on fan speeds and battery limits.  
     > *Ensure `AsusWinIO64.dll` is in the same folder.*
 
-5.  **Alternative Launch Method:**  
+4.  **Alternative Launch Method:**  
     Right-click `AsusTufController_Windows.exe` and select **"Run as Administrator"**.  
     *   *Note: This may have limited control over certain hardware registers compared to the `run.bat` method.*
 
@@ -195,7 +196,7 @@ Perfect for developers who want to contribute.
 
 **Prerequisites:**
 *   **Visual Studio 2022** (with "Desktop development with C++" workload).
-*   **Qt 6.6.0+** (MSVC 2019 64-bit component).
+*   **Qt 6.8.3+** (MSVC 2022 64-bit component).
 *   **CMake 3.20+**.
 *   **Git**.
 
@@ -210,7 +211,7 @@ Perfect for developers who want to contribute.
     ```powershell
     mkdir build
     cd build
-    cmake -DCMAKE_PREFIX_PATH="C:\Qt\6.6.0\msvc2019_64" ..
+    cmake ..
     ```
 
 3.  **Compile:**
@@ -245,9 +246,9 @@ Perfect for developers who want to contribute.
 
 ---
 
-## 🌍 Translation Credits
+## 🌍 Global Localization
 
-A huge thank you to our community for localizing this project into **22 languages**:
+This project is built for a global audience, with **23 languages** fully supported and manually localized by the author to ensure technical accuracy:
 
 *   **Arabic (العربية)**
 *   **Bengali (বাংলা)**
@@ -267,12 +268,11 @@ A huge thank you to our community for localizing this project into **22 language
 *   **Russian (Русский)**
 *   **Spanish (Español)**
 *   **Swahili (Kiswahili)**
-*   **Tamil (தமிழ்)** - *Maintained by Author*
+*   **Tamil (தமிழ்)**
 *   **Turkish (Türkçe)**
 *   **Urdu (اردو)**
 *   **Vietnamese (Tiếng Việt)**
-
-*Want to add your language? Check `generate_translations.py` in the source!*
+*   **English**
 
 ---
 
@@ -304,6 +304,6 @@ Copyright © 2024-2026 Karthigaiselvam R. All Rights Reserved.
 
 <div align="center">
 
-**Made with ❤️ for ASUS Community**
+**Made with ❤️ for ASUS TUF Gaming Laptop users facing heating issues**
 
 </div>
