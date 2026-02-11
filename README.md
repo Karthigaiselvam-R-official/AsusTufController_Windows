@@ -16,7 +16,7 @@
   <a href="https://drive.google.com/file/d/1gzrBFWGWBN8fweB-L-DPERvdoOlELrUA/view?usp=sharing">
     <img src="resources/SystemInfo.png" width="800" alt="Watch the Demo Video">
     <br>
-    ▶️ <b>Click to Watch the Application Demo</b> 🎬
+    <img src="https://img.shields.io/badge/▶️_Watch_Video_Demo-Play-red?style=for-the-badge&logo=google-drive&logoColor=white" alt="Play Demo">
   </a>
 </p>
 
