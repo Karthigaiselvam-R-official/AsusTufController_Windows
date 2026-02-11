@@ -346,32 +346,34 @@ Item {
                         Item { Layout.fillWidth: true }
                         
                         // Auto / System Mode Button
-                          Rectangle {
-                              id: autoBtn
-                              implicitWidth: autoText.contentWidth + 32
-                              width: Math.max(72, implicitWidth)
-                              height: 34
-                              Behavior on width { NumberAnimation { duration: 150; easing.type: Easing.OutQuad } }
-                             radius: 12
-                             // Gold (#FFC107) when active, transparent otherwise
-                             color: ThemeController.themeMode === 0 ? "#FFC107" : "transparent"
-                             border.width: 1
-                             // Active: Gold outline. Inactive: Dark Grey (Dark Mode) or Medium Grey (Light Mode) for visibility
-                             border.color: ThemeController.themeMode === 0 ? "#FFCA28" : (theme.isDark ? "#666" : "#888")
-                             
-                             scale: autoBtnMouse.pressed ? 0.95 : 1.0
-                             Behavior on scale { NumberAnimation { duration: 100; easing.type: Easing.OutQuad } }
-                             Behavior on color { ColorAnimation { duration: 200 } }
-                             
-                             Text {
-                                 id: autoText
-                                 anchors.centerIn: parent
-                                 text: qsTr("Auto")
-                                 // Black text on Gold for better contrast, else normal theme text
-                                 color: ThemeController.themeMode === 0 ? "#000000" : theme.textSecondary
-                                 font.pixelSize: 12
-                                 font.bold: true
-                             }
+                        Rectangle {
+                            id: autoBtn
+                            width: 90
+                            height: 34
+                            radius: 12
+                            // Gold (#FFC107) when active, transparent otherwise
+                            color: ThemeController.themeMode === 0 ? "#FFC107" : "transparent"
+                            border.width: 1
+                            // Active: Gold outline. Inactive: Dark Grey (Dark Mode) or Medium Grey (Light Mode) for visibility
+                            border.color: ThemeController.themeMode === 0 ? "#FFCA28" : (theme.isDark ? "#666" : "#888")
+                            
+                            scale: autoBtnMouse.pressed ? 0.95 : 1.0
+                            Behavior on scale { NumberAnimation { duration: 100; easing.type: Easing.OutQuad } }
+                            Behavior on color { ColorAnimation { duration: 200 } }
+                            
+                            Text {
+                                id: autoText
+                                anchors.centerIn: parent
+                                width: parent.width - 16
+                                text: qsTr("Auto")
+                                // Black text on Gold for better contrast, else normal theme text
+                                color: ThemeController.themeMode === 0 ? "#000000" : theme.textSecondary
+                                font.pixelSize: 13
+                                font.bold: true
+                                fontSizeMode: Text.HorizontalFit
+                                minimumPixelSize: 9
+                                horizontalAlignment: Text.AlignHCenter
+                            }
                             
                             MouseArea {
                                 id: autoBtnMouse
