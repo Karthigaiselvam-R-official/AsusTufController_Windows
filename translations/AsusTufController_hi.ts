@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="vi">
+<TS version="2.1" language="hi">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>ĐỒNG BỘ AURA</translation>
+        <translation>ऑरा सिंक</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>Điều khiển ánh sáng bàn phím RGB</translation>
+        <translation>RGB कीबोर्ड लाइटिंग कंट्रोल</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>Đã Kết Nối</translation>
+        <translation>कनेक्टेड</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>CHẾ ĐỘ ÁNH SÁNG</translation>
+        <translation>लाइटिंग मोड</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>Tĩnh</translation>
+        <translation>स्थिर</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>Thở</translation>
+        <translation>ब्रीदिंग</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>Cầu Vồng</translation>
+        <translation>इंद्रधनुष</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>Nhấp Nháy</translation>
+        <translation>स्ट्रोबिंग</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>ÁP DỤNG ÁNH SÁNG</translation>
+        <translation>लाइटिंग लागू करें</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>Khởi tạo</translation>
+        <translation>आरंभ करें</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>CHỌN MÀU</translation>
+        <translation>रंग चयन</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>ĐIỀU KHIỂN</translation>
+        <translation>नियंत्रण</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>TỐC ĐỘ</translation>
+        <translation>गति</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation>Chậm</translation>
+        <translation>धीमा</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation>Vừa</translation>
+        <translation>मध्यम</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation>Nhanh</translation>
+        <translation>तेज</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>ĐỘ SÁNG</translation>
+        <translation>चमक</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation>Tắt</translation>
+        <translation>बंद</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation>Thấp</translation>
+        <translation>कम</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation>Vừa</translation>
+        <translation>मध्यम</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation>Cao</translation>
+        <translation>उच्च</translation>
     </message>
 </context>
 <context>
@@ -113,192 +113,192 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>QUẢN LÝ PIN</translation>
+        <translation>बैटरी प्रबंधन</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>Đang sạc</translation>
+        <translation>चार्ज हो रहा है</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>Dùng pin</translation>
+        <translation>बैटरी पर</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>ĐANG SẠC</translation>
+        <translation>चार्ज हो रहा है</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>ĐANG XẢ</translation>
+        <translation>डिस्चार्ज हो रहा है</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <source>Battery</source>
-        <translation>Pin</translation>
+        <translation>बैटरी</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>MỨC HIỆN TẠI</translation>
+        <translation>वर्तमान स्तर</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>GIỚI HẠN SẠC</translation>
+        <translation>चार्ज सीमा</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>TRẠNG THÁI</translation>
+        <translation>स्थिति</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>Đang xả</translation>
+        <translation>डिस्चार्ज हो रहा है</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>Đầy</translation>
+        <translation>पूर्ण</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>Không sạc</translation>
+        <translation>चार्ज नहीं हो रहा</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>CHẾ ĐỘ SỨC KHỎE</translation>
+        <translation>स्वास्थ्य मोड</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>ĐÃ BẬT</translation>
+        <translation>सक्षम</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>ĐÃ TẮT</translation>
+        <translation>अक्षम</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>Giới hạn sạc để kéo dài tuổi thọ pin</translation>
+        <translation>बैटरी जीवन बढ़ाने के लिए चार्जिंग सीमित करें</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>Tùy Chỉnh</translation>
+        <translation>कस्टम</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>Tuổi Thọ Tối Đa</translation>
+        <translation>अधिकतम जीवनकाल</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>Khuyến Nghị</translation>
+        <translation>अनुशंसित</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>Dung Lượng Đầy</translation>
+        <translation>पूर्ण क्षमता</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation>Giới hạn sạc ở mức 60-80% có thể kéo dài đáng kể tuổi thọ pin, lý tưởng cho laptop luôn cắm sạc.</translation>
+        <translation>चार्ज को 60-80% तक सीमित करने से बैटरी का जीवन काफी बढ़ सकता है, यह प्लग किए गए लैपटॉप के लिए आदर्श है।</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Tối đa 100%</translation></message><message><source>Minimum 60%</source><translation>Tối thiểu 60%</translation></message><message><source>PLUGGED IN</source><translation>ĐÃ CẮM SẠC</translation></message><message><source>Plugged In</source><translation>Đã cắm sạc</translation></message><message><source>Full (Limit)</source><translation>Đầy (Giới hạn)</translation></message></context>
+<message><source>Maximum 100%</source><translation>अधिकतम 100%</translation></message><message><source>Minimum 60%</source><translation>न्यूनतम 60%</translation></message><message><source>PLUGGED IN</source><translation>प्लग इन किया गया</translation></message><message><source>Plugged In</source><translation>प्लग इन</translation></message><message><source>Full (Limit)</source><translation>पूर्ण (सीमा)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>Tổng Quan Lưu Trữ</translation>
+        <translation>स्टोरेज अवलोकन</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>ổ đĩa phát hiện</translation>
+        <translation>ड्राइव पाए गए</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>SỬ DỤNG CPU</translation>
+        <translation>CPU उपयोग</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>SỬ DỤNG GPU</translation>
+        <translation>GPU उपयोग</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>SỬ DỤNG RAM</translation>
+        <translation>RAM उपयोग</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>MẠNG</translation>
+        <translation>नेटवर्क</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>Lịch Sử</translation>
+        <translation>इतिहास</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>Bộ Nhớ Hệ Thống</translation>
+        <translation>सिस्टम मेमोरी</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>Lên: </translation>
+        <translation>Up: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>GB đã dùng</translation>
+        <translation>GB उपयोग</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>GB trống</translation>
+        <translation>GB खाली</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>bộ nhớ đã sử dụng</translation>
+        <translation>उपयोग किया गया स्टोरेज</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>Ổ đĩa chưa gắn</translation>
+        <translation>ड्राइव माउंट नहीं</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(Đang Sạc)</translation>
+        <translation>(चार्जिंग)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(Đã cắm sạc)</translation></message><message><source>Up:</source><translation>Tải lên:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(प्लग इन)</translation></message><message><source>Up:</source><translation>अप:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>Đang Khởi Tạo...</translation>
+        <translation>आरंभ हो रहा...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
@@ -325,95 +325,95 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Chế độ: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Im lặng (Yên tĩnh tuyệt đối)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Cân bằng (Bắt đầu &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Luôn hoạt động)</translation></message><message><source>Unknown Mode</source><translation>Chế độ không xác định</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Thủ công: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Thủ công: %1% (Đã đồng bộ)</translation></message></context>
+<message><source>Mode: %1</source><translation>मोड: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>शांत (पूर्ण मौन)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>संतुलित (&gt; 60°C पर शुरू)</translation></message><message><source>Turbo (Always Active)</source><translation>टर्बो (हमेशा सक्रिय)</translation></message><message><source>Unknown Mode</source><translation>अज्ञात मोड</translation></message><message><source> (OVERDRIVE)</source><translation> (ओवरड्राइव)</translation></message><message><source>Manual: %1%</source><translation>मैनुअल: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>मैनुअल: %1% (सिंक किया गया)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>THỦ CÔNG</translation>
+        <translation>मैनुअल</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>AUTO</source>
-        <translation>TỰ ĐỘNG</translation>
+        <translation>ऑटो</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="221" />
         <location filename="../ui/pages/FanPage.qml" line="281" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>आरपीएम</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>QUẠT CPU</translation>
+        <translation>CPU पंखा</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>QUẠT GPU</translation>
+        <translation>GPU पंखा</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>THỤ ĐỘNG (0 dB)</translation>
+        <translation>PASSIVE (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation type="unfinished">ĐIỀU KHIỂN QUẠT</translation>
+        <translation>फैन कंट्रोल</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>Ghi đè thủ công đang hoạt động</translation>
+        <translation>मैन्युअल ओवरराइड सक्रिय</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>Chế độ tự động</translation>
+        <translation>स्वचालित मोड</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>CHẾ ĐỘ THỦ CÔNG</translation>
+        <translation>मैनुअल मोड</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>Ghi đè đường cong quạt tự động</translation>
+        <translation>स्वचालित फैन कर्व्स को ओवरराइड करें</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>Tốc Độ Quạt Mục Tiêu</translation>
+        <translation>लक्ष्य पंखा गति</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation>IM LẶNG</translation>
+        <translation>शांत</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation>CÂN BẰNG</translation>
+        <translation>संतुलित</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
         <source>TURBO</source>
-        <translation>TURBO</translation>
+        <translation>टर्बो</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>ĐƯỜNG CONG QUẠT TỰ ĐỘNG</translation>
+        <translation>ऑटो फैन कर्व</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>Tự động điều chỉnh chế độ quạt theo nhiệt độ</translation>
+        <translation>तापमान के आधार पर फैन मोड को स्वचालित रूप से समायोजित करें</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
@@ -423,77 +423,77 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>Tắt đường cong tự động</translation>
+        <translation>ऑटो कर्व बंद</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>Chế độ im lặng (dưới)</translation>
+        <translation>शांत मोड (नीचे)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>Chế độ Turbo (trên)</translation>
+        <translation>टर्बो मोड (ऊपर)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>Im lặng &lt; </translation>
+        <translation>साइलेंट &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Cân bằng </translation>
+        <translation>संतुलित </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>Turbo &gt; </translation>
+        <translation>टर्बो &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>Cài đặt sẵn</translation>
+        <translation>प्रीसेट</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>Chơi game</translation>
+        <translation>गेमिंग</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Cân bằng</translation>
+        <translation>संतुलित</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>Yên tĩnh</translation>
+        <translation>शांत</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>Hiệu suất</translation>
+        <translation>प्रदर्शन</translation>
     </message>
     <message>
         <source>Turbo</source>
-        <translation>Turbo</translation>
+        <translation>टर्बो</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation>Im lặng</translation>
+        <translation>साइलेंट</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">Hiệu Năng Thông Minh</translation>
+        <translation type="vanished">Intelligent Performance</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">Hiệu Năng Tối Đa</translation>
+        <translation type="vanished">अधिकतम प्रदर्शन</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">Hoạt Động Yên Tĩnh</translation>
+        <translation type="vanished">शांत संचालन</translation>
     </message>
 </context>
 <context>
@@ -501,68 +501,68 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>Điều Khiển Quạt ASUS TUF</translation>
+        <translation>ASUS TUF पंखा नियंत्रण</translation>
     </message>
-<message><source>Language Changed</source><translation>Đã thay đổi ngôn ngữ</translation></message></context>
+<message><source>Language Changed</source><translation>भाषा बदल दी गई</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>THÔNG TIN HỆ THỐNG</translation>
+        <translation>सिस्टम जानकारी</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>ĐIỀU KHIỂN QUẠT</translation>
+        <translation>फैन कंट्रोल</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>ĐỒNG BỘ AURA</translation>
+        <translation>ऑरा सिंक</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>BATTERY</source>
-        <translation>PIN</translation>
+        <translation>बैटरी</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>BỘ ĐIỀU KHIỂN</translation>
+        <translation>नियंत्रक</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>Chế độ Tối</translation>
+        <translation>डार्क मोड</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>Chế độ Sáng</translation>
+        <translation>लाइट मोड</translation>
     </message>
-<message><source>SETTINGS</source><translation>CÀI ĐẶT</translation></message></context>
+<message><source>SETTINGS</source><translation>सेटिंग्स</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>आरपीएम</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>SỬ DỤNG</translation>
+        <translation>उपयोग</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>NHIỆT ĐỘ</translation>
+        <translation>तापमान</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>TẦN SỐ</translation>
+        <translation>आवृत्ति</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>Hệ Thống</translation>
+        <translation>सिस्टम</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>Trang Chủ</translation>
+        <translation>होम</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>Phân Vùng</translation>
+        <translation>वॉल्यूम</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>Đĩa Cục Bộ</translation>
+        <translation>स्थानीय डिस्क</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>GPU Chung</translation>
+        <translation>सामान्य GPU</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>Phát Hiện GPU Thất Bại</translation>
+        <translation>GPU पहचान विफल</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>CÀI ĐẶT</translation></message><message><source>Customize your experience</source><translation>Tùy chỉnh trải nghiệm của bạn</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Tác giả</translation></message><message><source>AUTHOR</source><translation>TÁC GIẢ</translation></message><message><source>About the Developer</source><translation>Về nhà phát triển</translation></message><message><source>Software Developer</source><translation>Nhà phát triển phần mềm</translation></message><message><source>Cyber Security Enthusiast</source><translation>Người đam mê an ninh mạng</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>Email</translation></message><message><source>Email Copied</source><translation>Đã sao chép email</translation></message><message><source>Appearance</source><translation>Giao diện</translation></message><message><source>LANGUAGE</source><translation>NGÔN NGỮ</translation></message><message><source>Select your preferred language</source><translation>Chọn ngôn ngữ ưa thích của bạn</translation></message><message><source>Choose Language</source><translation>Chọn ngôn ngữ</translation></message><message><source>Temperature Unit</source><translation>Đơn vị nhiệt độ</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Chế độ tối đang bật</translation></message><message><source>Light Mode active</source><translation>Chế độ sáng đang bật</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Bảo mật không phải là sản phẩm, mà là một quy trình."</translation></message><message><source>Auto</source><translation>Tự động</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>सेटिंग्स</translation></message><message><source>Customize your experience</source><translation>अपने अनुभव को अनुकूलित करें</translation></message><message><source>Karthigaiselvam R</source><translation>कार्तिकेयसेलवम आर</translation></message><message><source>Author</source><translation>लेखक</translation></message><message><source>AUTHOR</source><translation>लेखक</translation></message><message><source>About the Developer</source><translation>डेवलपर के बारे में</translation></message><message><source>Software Developer</source><translation>सॉफ्टवेयर डेवलपर</translation></message><message><source>Cyber Security Enthusiast</source><translation>साइबर सुरक्षा उत्साही</translation></message><message><source>LinkedIn</source><translation>लिंक्डइन</translation></message><message><source>GitHub</source><translation>गिटहब</translation></message><message><source>Email</source><translation>ईमेल</translation></message><message><source>Email Copied</source><translation>ईमेल कॉपी किया गया</translation></message><message><source>Appearance</source><translation>दिखावट</translation></message><message><source>LANGUAGE</source><translation>भाषा</translation></message><message><source>Select your preferred language</source><translation>अपनी पसंदीदा भाषा चुनें</translation></message><message><source>Choose Language</source><translation>भाषा चुनें</translation></message><message><source>Temperature Unit</source><translation>तापमान इकाई</translation></message><message><source>Celsius (°C)</source><translation>सेल्सियस (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>फारेनहाइट (°F)</translation></message><message><source>Dark Mode active</source><translation>डार्क मोड सक्रिय</translation></message><message><source>Light Mode active</source><translation>लाइट मोड सक्रिय</translation></message><message><source>Security is not a product, but a process.</source><translation>सुरक्षा एक उत्पाद नहीं, बल्कि एक प्रक्रिया है।</translation></message><message><source>Auto</source><translation>स्वचालित</translation></message><message><source>"Security is not a product, but a process."</source><translation>"सुरक्षा एक उत्पाद नहीं, बल्कि एक प्रक्रिया है।"</translation></message></context></TS>

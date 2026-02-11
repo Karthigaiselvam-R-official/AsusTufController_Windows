@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="pa">
+<TS version="2.1" language="it">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>ਔਰਾ ਸਿੰਕ</translation>
+        <translation>AURA SYNC</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>RGB ਕੀਬੋਰਡ ਲਾਈਟਿੰਗ ਕੰਟਰੋਲ</translation>
+        <translation>Controllo Illuminazione RGB Tastiera</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>ਕਨੈਕਟ ਹੈ</translation>
+        <translation>Connesso</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>ਲਾਈਟਿੰਗ ਮੋਡ</translation>
+        <translation>MODALITÀ ILLUMINAZIONE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>ਸਥਿਰ</translation>
+        <translation>Statico</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>ਸਾਹ</translation>
+        <translation>Respiro</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>ਸਤਰੰਗੀ</translation>
+        <translation>Arcobaleno</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>ਚਮਕ</translation>
+        <translation>Stroboscopico</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>ਲਾਈਟਿੰਗ ਲਾਗੂ ਕਰੋ</translation>
+        <translation>APPLICA ILLUMINAZIONE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>ਸ਼ੁਰੂ ਕਰੋ</translation>
+        <translation>Inizializza</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>ਰੰਗ ਚੋਣ</translation>
+        <translation>SELEZIONE COLORE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>ਕੰਟਰੋਲ</translation>
+        <translation>CONTROLLI</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>ਗਤੀ</translation>
+        <translation>VELOCITÀ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation type="unfinished" />
+        <translation>Lento</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation type="unfinished" />
+        <translation>Medio</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation type="unfinished" />
+        <translation>Veloce</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>ਚਮਕ</translation>
+        <translation>LUMINOSITÀ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation type="unfinished" />
+        <translation>Spento</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation type="unfinished" />
+        <translation>Basso</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation type="unfinished" />
+        <translation>Medio</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation type="unfinished" />
+        <translation>Alto</translation>
     </message>
 </context>
 <context>
@@ -113,192 +113,192 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>ਬੈਟਰੀ ਪ੍ਰਬੰਧਨ</translation>
+        <translation>GESTIONE BATTERIA</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>ਚਾਰਜ ਹੋ ਰਿਹਾ</translation>
+        <translation>In Carica</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>ਬੈਟਰੀ ‘ਤੇ</translation>
+        <translation>A Batteria</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>ਚਾਰਜ ਹੋ ਰਿਹਾ</translation>
+        <translation>IN CARICA</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>ਡਿਸਚਾਰਜ ਹੋ ਰਿਹਾ</translation>
+        <translation>SCARICAMENTO</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <source>Battery</source>
-        <translation>ਬੈਟਰੀ</translation>
+        <translation>Batteria</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>ਮੌਜੂਦਾ ਪੱਧਰ</translation>
+        <translation>LIVELLO ATTUALE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>ਚਾਰਜ ਸੀਮਾ</translation>
+        <translation>LIMITE CARICA</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>ਸਥਿਤੀ</translation>
+        <translation>STATO</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>ਡਿਸਚਾਰਜ ਹੋ ਰਿਹਾ</translation>
+        <translation>Scaricamento</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>ਪੂਰਾ</translation>
+        <translation>Completo</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>ਚਾਰਜ ਨਹੀਂ ਹੋ ਰਿਹਾ</translation>
+        <translation>Non in carica</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>ਸਿਹਤ ਮੋਡ</translation>
+        <translation>MODALITÀ SALUTE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>ਯੋਗ</translation>
+        <translation>ABILITATO</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>ਅਯੋਗ</translation>
+        <translation>DISABILITATO</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>Limit charging to extend battery lifespan</translation>
+        <translation>Limita ricarica per estendere durata batteria</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>ਕਸਟਮ</translation>
+        <translation>Personalizzato</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>ਵੱਧ ਤੋਂ ਵੱਧ ਉਮਰ</translation>
+        <translation>Durata Max</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>ਸਿਫਾਰਸ਼ੀ</translation>
+        <translation>Consigliato</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>ਪੂਰੀ ਸਮਰੱਥਾ</translation>
+        <translation>Capacità Piena</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation type="unfinished" />
+        <translation>Limitare la carica al 60-80% può estendere significativamente la vita della batteria, ideale per portatili sempre collegati.</translation>
     </message>
-<message><source>PLUGGED IN</source><translation>ਪਲੱਗ ਇਨ</translation></message><message><source>Plugged In</source><translation>ਪਲੱਗ ਇਨ ਕੀਤਾ</translation></message><message><source>Full (Limit)</source><translation>ਪੂਰਾ (ਸੀਮਾ)</translation></message><message><source>Minimum 60%</source><translation>ਘੱਟੋ-ਘੱਟ ੬੦%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Massimo 100%</translation></message><message><source>Minimum 60%</source><translation>Minimo 60%</translation></message><message><source>PLUGGED IN</source><translation>COLLEGATO</translation></message><message><source>Plugged In</source><translation>Collegato</translation></message><message><source>Full (Limit)</source><translation>Pieno (Limite)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>ਸਟੋਰੇਜ ਸੰਖੇਪ</translation>
+        <translation>Panoramica Archiviazione</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>ਡਰਾਈਵਾਂ ਮਿਲੀਆਂ</translation>
+        <translation>unità rilevate</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>CPU ਵਰਤੋਂ</translation>
+        <translation>USO CPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>GPU ਵਰਤੋਂ</translation>
+        <translation>USO GPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>RAM ਵਰਤੋਂ</translation>
+        <translation>USO RAM</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>ਨੈੱਟਵਰਕ</translation>
+        <translation>RETE</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>ਇਤਿਹਾਸ</translation>
+        <translation>Storico</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>ਸਿਸਟਮ ਮੈਮੋਰੀ</translation>
+        <translation>Memoria Sistema</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>Up: </translation>
+        <translation>Invio: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>GB ਵਰਤੀ</translation>
+        <translation>GB usati</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>GB ਖਾਲੀ</translation>
+        <translation>GB liberi</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>ਸਟੋਰੇਜ ਵਰਤਿਆ</translation>
+        <translation>di spazio utilizzato</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>ਡਰਾਈਵ ਮਾਊਂਟ ਨਹੀਂ</translation>
+        <translation>Unità non montata</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(ਚਾਰਜਿੰਗ)</translation>
+        <translation>(In Carica)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(ਪਲੱਗ ਇਨ)</translation></message><message><source>Up:</source><translation>ਅੱਪ:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(Collegato)</translation></message><message><source>Up:</source><translation>Invio:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>ਸ਼ੁਰੂ ਹੋ ਰਿਹਾ...</translation>
+        <translation>Inizializzazione...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
@@ -325,18 +325,18 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source> (OVERDRIVE)</source><translation> (ਓਵਰਡਰਾਈਵ)</translation></message><message><source>Manual: %1%</source><translation>ਮੈਨੂਅਲ: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>ਮੈਨੂਅਲ: %1% (ਸਿੰਕ ਕੀਤਾ)</translation></message></context>
+<message><source>Mode: %1</source><translation>Modalità: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silenzioso (Silenzio Assoluto)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Bilanciato (Avvia &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Sempre Attivo)</translation></message><message><source>Unknown Mode</source><translation>Modalità Sconosciuta</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manuale: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manuale: %1% (Sincronizzato)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>ਮੈਨੁਅਲ</translation>
+        <translation>MANUALE</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>AUTO</source>
-        <translation>ਆਟੋ</translation>
+        <translation>AUTO</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="221" />
@@ -347,153 +347,153 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>CPU ਪੱਖਾ</translation>
+        <translation>VENT. CPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>GPU ਪੱਖਾ</translation>
+        <translation>VENT. GPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>PASSIVE (0 dB)</translation>
+        <translation>PASSIVO (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation>ਫੈਨ ਕੰਟਰੋਲ</translation>
+        <translation>CONTROLLO VENTOLA</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>ਮੈਨੁਅਲ ਓਵਰਰਾਈਡ ਸਰਗਰਮ</translation>
+        <translation>Override Manuale Attivo</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>ਆਟੋਮੈਟਿਕ ਮੋਡ</translation>
+        <translation>Modalità Automatica</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>ਮੈਨੁਅਲ ਮੋਡ</translation>
+        <translation>MODALITÀ MANUALE</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>ਆਟੋਮੈਟਿਕ ਫੈਨ ਕਰਵ ਨੂੰ ਓਵਰਰਾਈਡ ਕਰੋ</translation>
+        <translation>Ignora curve automatiche ventola</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>ਟਾਰਗੇਟ ਪੱਖਾ ਸਪੀਡ</translation>
+        <translation>Velocità Obiettivo</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation type="unfinished" />
+        <translation>SILENZIOSO</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation type="unfinished" />
+        <translation>BILANCIATO</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
         <source>TURBO</source>
-        <translation type="unfinished" />
+        <translation>TURBO</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>ਆਟੋ ਫੈਨ ਕਰਵ</translation>
+        <translation>CURVA VENTOLA AUTO</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>ਤਾਪਮਾਨ ਦੇ ਆਧਾਰ ‘ਤੇ ਫੈਨ ਮੋਡ ਆਪਣੇ ਆਪ ਬਦਲੋ</translation>
+        <translation>Regola automaticamente la modalità ventola in base alla temperatura</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
         <source>CPU: </source>
-        <translation type="unfinished" />
+        <translation>CPU: </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>ਆਟੋ ਕਰਵ ਬੰਦ</translation>
+        <translation>Curva Auto Disattivata</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>ਸਾਈਲੈਂਟ ਮੋਡ (ਅਧੀਨ)</translation>
+        <translation>Modalità Silenziosa (sotto)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>ਟਰਬੋ ਮੋਡ (ਉੱਪਰ)</translation>
+        <translation>Modalità Turbo (sopra)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>ਸਾਈਲੈਂਟ &lt; </translation>
+        <translation>Silenzioso &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>ਸੰਤੁਲਿਤ </translation>
+        <translation>Bilanciato </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>ਟਰਬੋ &gt; </translation>
+        <translation>Turbo &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>ਪ੍ਰੀਸੈੱਟ</translation>
+        <translation>Preimpostazioni</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>ਗੇਮਿੰਗ</translation>
+        <translation>Gaming</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>ਸੰਤੁਲਿਤ</translation>
+        <translation>Bilanciato</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>ਸ਼ਾਂਤ</translation>
+        <translation>Silenzioso</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>ਕਾਰਗੁਜ਼ਾਰੀ</translation>
+        <translation>Prestazioni</translation>
     </message>
     <message>
         <source>Turbo</source>
-        <translation>ਟਰਬੋ</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation>ਸਾਈਲੈਂਟ</translation>
+        <translation>Silenzioso</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">Intelligent Performance</translation>
+        <translation type="vanished">Prestazioni Intelligenti</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">ਵੱਧ ਤੋਂ ਵੱਧ ਕਾਰਗੁਜ਼ਾਰੀ</translation>
+        <translation type="vanished">Prestazioni Max</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">ਸ਼ਾਂਤ ਸੰਚਾਲਨ</translation>
+        <translation type="vanished">Funzionamento Silenzioso</translation>
     </message>
 </context>
 <context>
@@ -501,47 +501,47 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>ASUS TUF ਪੱਖਾ ਕੰਟਰੋਲ</translation>
+        <translation>Controllo Ventola ASUS TUF</translation>
     </message>
-<message><source>Language Changed</source><translation>ਭਾਸ਼ਾ ਬਦਲੀ ਗਈ</translation></message></context>
+<message><source>Language Changed</source><translation>Lingua cambiata</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>ਸਿਸਟਮ ਜਾਣਕਾਰੀ</translation>
+        <translation>INFO SISTEMA</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>ਫੈਨ ਕੰਟਰੋਲ</translation>
+        <translation>CONTROLLO VENTOLA</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>ਔਰਾ ਸਿੰਕ</translation>
+        <translation>AURA SYNC</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>BATTERY</source>
-        <translation>ਬੈਟਰੀ</translation>
+        <translation>BATTERIA</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>ਕੰਟਰੋਲਰ</translation>
+        <translation>CONTROLLER</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>ਡਾਰਕ ਮੋਡ</translation>
+        <translation>Modalità Scura</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>ਲਾਈਟ ਮੋਡ</translation>
+        <translation>Modalità Cheara</translation>
     </message>
-<message><source>SETTINGS</source><translation>ਸੈਟਿੰਗਾਂ</translation></message></context>
+<message><source>SETTINGS</source><translation>IMPOSTAZIONI</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -552,17 +552,17 @@
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>ਵਰਤੋਂ</translation>
+        <translation>UTILIZZO</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>ਤਾਪਮਾਨ</translation>
+        <translation>TEMPERATURA</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>ਫ੍ਰੀਕੁਐਂਸੀ</translation>
+        <translation>FREQUENZA</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>ਸਿਸਟਮ</translation>
+        <translation>Sistema</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>ਹੋਮ</translation>
+        <translation>Home</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>ਵਾਲੀਅਮ</translation>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>ਲੋਕਲ ਡਿਸਕ</translation>
+        <translation>Disco Locale</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>ਆਮ GPU</translation>
+        <translation>GPU Generica</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>GPU ਖੋਜ ਅਸਫਲ</translation>
+        <translation>Rilevamento GPU Fallito</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>ਸੈਟਿੰਗਾਂ</translation></message><message><source>Customize your experience</source><translation>ਆਪਣੇ ਅਨੁਭਵ ਨੂੰ ਅਨੁਕੂਲਿਤ ਕਰੋ</translation></message><message><source>Karthigaiselvam R</source><translation>ਕਾਰਤਿਗੈਸੇਲਵਮ ਆਰ</translation></message><message><source>Author</source><translation>ਲੇਖਕ</translation></message><message><source>AUTHOR</source><translation>ਲੇਖਕ</translation></message><message><source>About the Developer</source><translation>ਡਿਵੈਲਪਰ ਬਾਰੇ</translation></message><message><source>Software Developer</source><translation>ਸਾਫ਼ਟਵੇਅਰ ਡਿਵੈਲਪਰ</translation></message><message><source>Cyber Security Enthusiast</source><translation>ਸਾਈਬਰ ਸੁਰੱਖਿਆ ਉਤਸ਼ਾਹੀ</translation></message><message><source>LinkedIn</source><translation>ਲਿੰਕਡਇਨ</translation></message><message><source>GitHub</source><translation>ਗਿੱਟਹੱਬ</translation></message><message><source>Email</source><translation>ਈਮੇਲ</translation></message><message><source>Email Copied</source><translation>ਈਮੇਲ ਕਾਪੀ ਕੀਤੀ</translation></message><message><source>Appearance</source><translation>ਦਿੱਖ</translation></message><message><source>LANGUAGE</source><translation>ਭਾਸ਼ਾ</translation></message><message><source>Select your preferred language</source><translation>ਆਪਣੀ ਪਸੰਦੀਦਾ ਭਾਸ਼ਾ ਚੁਣੋ</translation></message><message><source>Choose Language</source><translation>ਭਾਸ਼ਾ ਚੁਣੋ</translation></message><message><source>Temperature Unit</source><translation>ਤਾਪਮਾਨ ਇਕਾਈ</translation></message><message><source>Celsius (°C)</source><translation>ਸੈਲਸੀਅਸ (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>ਫ਼ਾਰਨਹਾਈਟ (°F)</translation></message><message><source>Dark Mode active</source><translation>ਡਾਰਕ ਮੋਡ ਸਰਗਰਮ</translation></message><message><source>Light Mode active</source><translation>ਲਾਈਟ ਮੋਡ ਸਰਗਰਮ</translation></message><message><source>"Security is not a product, but a process."</source><translation>"ਸੁਰੱਖਿਆ ਕੋਈ ਉਤਪਾਦ ਨਹੀਂ, ਸਗੋਂ ਇੱਕ ਪ੍ਰਕਿਰਿਆ ਹੈ।"</translation></message><message><source>Auto</source><translation>ਆਟੋ</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>IMPOSTAZIONI</translation></message><message><source>Customize your experience</source><translation>Personalizza la tua esperienza</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autore</translation></message><message><source>AUTHOR</source><translation>AUTORE</translation></message><message><source>About the Developer</source><translation>Informazioni sullo sviluppatore</translation></message><message><source>Software Developer</source><translation>Sviluppatore software</translation></message><message><source>Cyber Security Enthusiast</source><translation>Appassionato di sicurezza informatica</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-mail</translation></message><message><source>Email Copied</source><translation>E-mail copiata</translation></message><message><source>Appearance</source><translation>Aspetto</translation></message><message><source>LANGUAGE</source><translation>LINGUA</translation></message><message><source>Select your preferred language</source><translation>Seleziona la lingua preferita</translation></message><message><source>Choose Language</source><translation>Scegli lingua</translation></message><message><source>Temperature Unit</source><translation>Unità di temperatura</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Modalità scura attiva</translation></message><message><source>Light Mode active</source><translation>Modalità chiara attiva</translation></message><message><source>"Security is not a product, but a process."</source><translation>"La sicurezza non è un prodotto, ma un processo."</translation></message><message><source>Auto</source><translation>Automatico</translation></message></context></TS>

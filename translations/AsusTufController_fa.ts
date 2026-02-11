@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="ko">
+<TS version="2.1" language="fa">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>AURA 싱크</translation>
+        <translation>همگام‌سازی AURA</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>RGB 키보드 조명 제어</translation>
+        <translation>کنترل نورپردازی صفحه کلید RGB</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>연결됨</translation>
+        <translation>متصل</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>조명 모드</translation>
+        <translation>حالت روشنایی</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>정적</translation>
+        <translation>ثابت</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>브리딩</translation>
+        <translation>نفس</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>레인보우</translation>
+        <translation>رنگین‌کمان</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>스트로빙</translation>
+        <translation>چشمک‌زن</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>조명 적용</translation>
+        <translation>اعمال روشنایی</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>초기화</translation>
+        <translation>راه‌اندازی</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>색상 선택</translation>
+        <translation>انتخاب رنگ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>제어</translation>
+        <translation>کنترل‌ها</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>속도</translation>
+        <translation>سرعت</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation>느림</translation>
+        <translation>کند</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation>중간</translation>
+        <translation>متوسط</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation>빠름</translation>
+        <translation>سریع</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>밝기</translation>
+        <translation>روشنایی</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation>꺼짐</translation>
+        <translation>خاموش</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation>낮음</translation>
+        <translation>کم</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation>중간</translation>
+        <translation>متوسط</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation>높음</translation>
+        <translation>زیاد</translation>
     </message>
 </context>
 <context>
@@ -113,192 +113,192 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>배터리 관리</translation>
+        <translation>مدیریت باتری</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>충전 중</translation>
+        <translation>در حال شارژ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>배터리 사용 중</translation>
+        <translation>روی باتری</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>충전 중</translation>
+        <translation>در حال شارژ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>방전 중</translation>
+        <translation>در حال تخلیه</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <source>Battery</source>
-        <translation>배터리</translation>
+        <translation>باتری</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>현재 레벨</translation>
+        <translation>سطح فعلی</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>충전 제한</translation>
+        <translation>حد شارژ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>상태</translation>
+        <translation>وضعیت</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>방전 중</translation>
+        <translation>در حال تخلیه</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>완충됨</translation>
+        <translation>پر</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>충전 중 아님</translation>
+        <translation>شارژ نمی‌شود</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>상태 모드</translation>
+        <translation>حالت سلامت</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>활성화됨</translation>
+        <translation>فعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>비활성화됨</translation>
+        <translation>غیرفعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>배터리 수명을 연장하기 위해 충전 제한</translation>
+        <translation>محدود کردن شارژ برای افزایش عمر باتری</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>사용자 지정</translation>
+        <translation>سفارشی</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>최대 수명</translation>
+        <translation>حداکثر عمر</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>권장</translation>
+        <translation>پیشنهادی</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>전체 용량</translation>
+        <translation>ظرفیت کامل</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation>충전을 60-80%로 제한하면 배터리 수명을 크게 늘릴 수 있으며, 전원이 계속 연결된 노트북에 이상적입니다.</translation>
+        <translation>محدود کردن شارژ به 60-80٪ می تواند عمر باتری را به طور قابل توجهی افزایش دهد، ایده آل برای لپ تاپ هایی که همیشه به برق متصل هستند.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>최대 100%</translation></message><message><source>Minimum 60%</source><translation>최소 60%</translation></message><message><source>PLUGGED IN</source><translation>연결됨</translation></message><message><source>Plugged In</source><translation>전원 연결됨</translation></message><message><source>Full (Limit)</source><translation>완충 (제한)</translation></message></context>
+<message><source>Maximum 100%</source><translation>حداکثر 100%</translation></message><message><source>Minimum 60%</source><translation>حداقل ۶۰٪</translation></message><message><source>PLUGGED IN</source><translation>متصل</translation></message><message><source>Plugged In</source><translation>متصل به شارژر</translation></message><message><source>Full (Limit)</source><translation>پر (محدودیت)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>스토리지 개요</translation>
+        <translation>نمای کلی فضا</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>드라이브 감지됨</translation>
+        <translation>درایوها شناسایی شد</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>CPU 사용량</translation>
+        <translation>مصرف پردازنده</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>GPU 사용량</translation>
+        <translation>مصرف گرافیک</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>RAM 사용량</translation>
+        <translation>مصرف حافظه</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>네트워크</translation>
+        <translation>شبکه</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>기록</translation>
+        <translation>تاریخچه</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>시스템 메모리</translation>
+        <translation>حافظه سیستم</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>업로드: </translation>
+        <translation>Up: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>GB 사용</translation>
+        <translation>گیگابایت استفاده</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>GB 여유</translation>
+        <translation>گیگابایت آزاد</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>저장 공간 사용 중</translation>
+        <translation>از حافظه مصرف شده</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>드라이브 미연결</translation>
+        <translation>درایو متصل نیست</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(충전 중)</translation>
+        <translation>(شارژ)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(연결됨)</translation></message><message><source>Up:</source><translation>업로드:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(متصل)</translation></message><message><source>Up:</source><translation>بالا:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>초기화 중...</translation>
+        <translation>در حال راه‌اندازی...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
@@ -325,175 +325,175 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>모드: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>저소음 (완전 조용함)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>균형 (60°C 이상 시작)</translation></message><message><source>Turbo (Always Active)</source><translation>터보 (항상 활성)</translation></message><message><source>Unknown Mode</source><translation>알 수 없는 모드</translation></message><message><source> (OVERDRIVE)</source><translation> (오버드라이브)</translation></message><message><source>Manual: %1%</source><translation>수동: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>수동: %1% (동기화됨)</translation></message></context>
+<message><source>Mode: %1</source><translation>حالت: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>ساکت (سکوت مطلق)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>متعادل (شروع &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>توربو (همیشه فعال)</translation></message><message><source>Unknown Mode</source><translation>حالت ناشناخته</translation></message><message><source> (OVERDRIVE)</source><translation> (اوردرایو)</translation></message><message><source>Manual: %1%</source><translation>دستی: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>دستی: %1% (همگام‌سازی شده)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>수동</translation>
+        <translation>دستی</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>AUTO</source>
-        <translation>자동</translation>
+        <translation>خودکار</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="221" />
         <location filename="../ui/pages/FanPage.qml" line="281" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>دور</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>CPU 팬</translation>
+        <translation>فن پردازنده</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>GPU 팬</translation>
+        <translation>فن گرافیک</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>패시브 (0 dB)</translation>
+        <translation>PASSIVE (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation type="unfinished">팬 제어</translation>
+        <translation type="unfinished">کنترل فن</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>수동 오버라이드 활성</translation>
+        <translation>لغو دستی فعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>자동 모드</translation>
+        <translation>حالت خودکار</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>수동 모드</translation>
+        <translation>حالت دستی</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>자동 팬 곡선 재정의</translation>
+        <translation>لغو منحنی‌های فن خودکار</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>목표 팬 속도</translation>
+        <translation>سرعت هدف فن</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation>저소음</translation>
+        <translation>ساکت</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation>균형</translation>
+        <translation>متعادل</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
         <source>TURBO</source>
-        <translation>터보</translation>
+        <translation>توربو</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>자동 팬 곡선</translation>
+        <translation>منحنی فن خودکار</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>온도에 따라 팬 모드 자동 조절</translation>
+        <translation>تنظیم خودکار حالت فن بر اساس دما</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
         <source>CPU: </source>
-        <translation>CPU: </translation>
+        <translation>پردازنده: </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>자동 곡선 끄기</translation>
+        <translation>منحنی خودکار خاموش</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>저소음 모드 (아래)</translation>
+        <translation>حالت ساکت (پایین)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>터보 모드 (위)</translation>
+        <translation>حالت توربو (بالا)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>저소음 &lt; </translation>
+        <translation>بی صدا &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>균형 </translation>
+        <translation>متعادل </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>터보 &gt; </translation>
+        <translation>توربو &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>사전 설정</translation>
+        <translation>پیش‌تنظیم‌ها</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>게이밍</translation>
+        <translation>بازی</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>균형</translation>
+        <translation>متعادل</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>조용함</translation>
+        <translation>آرام</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>성능</translation>
+        <translation>عملکرد</translation>
     </message>
     <message>
         <source>Turbo</source>
-        <translation>터보</translation>
+        <translation>توربو</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation>저소음</translation>
+        <translation>بی صدا</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">지능형 성능</translation>
+        <translation type="vanished">Intelligent Performance</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">최대 성능</translation>
+        <translation type="vanished">حداکثر کارایی</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">저소음 작동</translation>
+        <translation type="vanished">عملکرد آرام</translation>
     </message>
 </context>
 <context>
@@ -501,68 +501,68 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>ASUS TUF 팬 컨트롤</translation>
+        <translation>کنترل فن ASUS TUF</translation>
     </message>
-<message><source>Language Changed</source><translation>언어가 변경되었습니다</translation></message></context>
+<message><source>Language Changed</source><translation>زبان تغییر کرد</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>시스템 정보</translation>
+        <translation>اطلاعات سیستم</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>팬 제어</translation>
+        <translation>کنترل فن</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>AURA 싱크</translation>
+        <translation>همگام‌سازی AURA</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>BATTERY</source>
-        <translation>배터리</translation>
+        <translation>باتری</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>컨트롤러</translation>
+        <translation>کنترلر</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>다크 모드</translation>
+        <translation>حالت تاریک</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>라이트 모드</translation>
+        <translation>حالت روشن</translation>
     </message>
-<message><source>SETTINGS</source><translation>설정</translation></message></context>
+<message><source>SETTINGS</source><translation>تنظيمات</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>دور</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>사용량</translation>
+        <translation>مصرف</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>온도</translation>
+        <translation>دما</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>주파수</translation>
+        <translation>فرکانس</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>시스템</translation>
+        <translation>سیستم</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>홈</translation>
+        <translation>خانه</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>볼륨</translation>
+        <translation>حجم</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>로컬 디스크</translation>
+        <translation>دیسک محلی</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>일반 GPU</translation>
+        <translation>گرافیک عمومی</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>GPU 감지 실패</translation>
+        <translation>شناسایی گرافیک ناموفق</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>설정</translation></message><message><source>Customize your experience</source><translation>경험을 사용자 정의하세요</translation></message><message><source>Karthigaiselvam R</source><translation>카르티가이셀밤 아르</translation></message><message><source>Author</source><translation>저자</translation></message><message><source>AUTHOR</source><translation>저자</translation></message><message><source>About the Developer</source><translation>개발자 소개</translation></message><message><source>Software Developer</source><translation>소프트웨어 개발자</translation></message><message><source>Cyber Security Enthusiast</source><translation>사이버 보안 애호가</translation></message><message><source>LinkedIn</source><translation>링크드인</translation></message><message><source>GitHub</source><translation>깃허브</translation></message><message><source>Email</source><translation>이메일</translation></message><message><source>Email Copied</source><translation>이메일이 복사되었습니다</translation></message><message><source>Appearance</source><translation>외관</translation></message><message><source>LANGUAGE</source><translation>언어</translation></message><message><source>Select your preferred language</source><translation>원하는 언어를 선택하세요</translation></message><message><source>Choose Language</source><translation>언어 선택</translation></message><message><source>Temperature Unit</source><translation>온도 단위</translation></message><message><source>Celsius (°C)</source><translation>섭씨 (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>화씨 (°F)</translation></message><message><source>Dark Mode active</source><translation>다크 모드 활성</translation></message><message><source>Light Mode active</source><translation>라이트 모드 활성</translation></message><message><source>"Security is not a product, but a process."</source><translation>"보안은 제품이 아니라 과정이다."</translation></message><message><source>Auto</source><translation>자동</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>تنظيمات</translation></message><message><source>Customize your experience</source><translation>تجربه خود را شخصی سازی کنید</translation></message><message><source>Karthigaiselvam R</source><translation>کارتیگایسلوان را</translation></message><message><source>Author</source><translation>نویسنده</translation></message><message><source>AUTHOR</source><translation>نویسنده</translation></message><message><source>About the Developer</source><translation>درباره توسعه دهنده</translation></message><message><source>Software Developer</source><translation>توسعه دهنده نرم افزار</translation></message><message><source>Cyber Security Enthusiast</source><translation>علاقه مند به امنیت سایبری</translation></message><message><source>LinkedIn</source><translation>لینکدین</translation></message><message><source>GitHub</source><translation>گیت‌هاب</translation></message><message><source>Email</source><translation>ایمیل</translation></message><message><source>Email Copied</source><translation>ایمیل کپی شد</translation></message><message><source>Appearance</source><translation>ظاهر</translation></message><message><source>LANGUAGE</source><translation>زبان</translation></message><message><source>Select your preferred language</source><translation>زبان مورد نظر خود را انتخاب کنید</translation></message><message><source>Choose Language</source><translation>انتخاب زبان</translation></message><message><source>Temperature Unit</source><translation>واحد دما</translation></message><message><source>Celsius (°C)</source><translation>سلسیوس (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>فارنهایت (°F)</translation></message><message><source>Dark Mode active</source><translation>حالت تیره فعال</translation></message><message><source>Light Mode active</source><translation>حالت روشن فعال</translation></message><message><source>Security is not a product, but a process.</source><translation>امنیت یک محصول نیست، بلکه یک فرآیند است.</translation></message><message><source>Auto</source><translation>خودکار</translation></message><message><source>"Security is not a product, but a process."</source><translation>"امنیت یک محصول نیست، بلکه یک فرآیند است."</translation></message></context></TS>

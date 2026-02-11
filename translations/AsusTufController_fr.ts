@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="de">
+<TS version="2.1" language="fr">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>AURA SYNC</translation>
+        <translation>SYNCHRONISATION AURA</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>RGB-Tastaturbeleuchtungssteuerung</translation>
+        <translation>Contrôle d'Éclairage Clavier RGB</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>Verbunden</translation>
+        <translation>Connecté</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>BELEUCHTUNGSMODUS</translation>
+        <translation>MODE D'ÉCLAIRAGE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>Statisch</translation>
+        <translation>Statique</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>Atmend</translation>
+        <translation>Respiration</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>Regenbogen</translation>
+        <translation>Arc-en-ciel</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>Stroboskop</translation>
+        <translation>Stroboscopique</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>BELEUCHTUNG ANWENDEN</translation>
+        <translation>APPLIQUER L'ÉCLAIRAGE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>Initialisieren</translation>
+        <translation>Initialiser</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>FARBAUSWAHL</translation>
+        <translation>SÉLECTION DE COULEUR</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>STEUERUNG</translation>
+        <translation>COMMANDES</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>GESCHWINDIGKEIT</translation>
+        <translation>VITESSE</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation>Langsam</translation>
+        <translation>Lent</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation>Mittel</translation>
+        <translation>Moyen</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation>Schnell</translation>
+        <translation>Rapide</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>HELLIGKEIT</translation>
+        <translation>LUMINOSITÉ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation>Aus</translation>
+        <translation>Arrêt</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation>Niedrig</translation>
+        <translation>Bas</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation>Mittel</translation>
+        <translation>Moy.</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation>Hoch</translation>
+        <translation>Haut</translation>
     </message>
 </context>
 <context>
@@ -113,29 +113,29 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>BATTERIEMANAGEMENT</translation>
+        <translation>GESTION BATTERIE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>Lädt</translation>
+        <translation>En Charge</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>Auf Batterie</translation>
+        <translation>Sur Batterie</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>LADEN</translation>
+        <translation>CHARGE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>ENTLADEN</translation>
+        <translation>DÉCHARGE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
@@ -145,193 +145,193 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>AKTUELLES NIVEAU</translation>
+        <translation>NIVEAU ACTUEL</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>LADELIMIT</translation>
+        <translation>LIMITE DE CHARGE</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>STATUS</translation>
+        <translation>STATUT</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>Entlädt</translation>
+        <translation>Décharge</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>Voll</translation>
+        <translation>Plein</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>Lädt nicht</translation>
+        <translation>Pas en charge</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>GESUNDHEITSMODUS</translation>
+        <translation>MODE SANTÉ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>AKTIVIERT</translation>
+        <translation>ACTIVÉ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>DEAKTIVIERT</translation>
+        <translation>DÉSACTIVÉ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>Laden begrenzen für längere Lebensdauer</translation>
+        <translation>Limiter la charge pour prolonger la batterie</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>Benutzerdefiniert</translation>
+        <translation>Personnalisé</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>Max. Lebensdauer</translation>
+        <translation>Durée Max</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>Empfohlen</translation>
+        <translation>Recommandé</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>Volle Kapazität</translation>
+        <translation>Pleine Capacité</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation>Eine Begrenzung der Ladung auf 60-80% kann die Lebensdauer Ihres Akkus erheblich verlängern, ideal für Laptops im Netzbetrieb.</translation>
+        <translation>Limiter la charge à 60-80% peut prolonger considérablement la durée de vie de la batterie, idéal pour les portables sur secteur.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Maximum 100%</translation></message><message><source>Minimum 60%</source><translation>Mindestens 60%</translation></message><message><source>PLUGGED IN</source><translation>ANGESCHLOSSEN</translation></message><message><source>Plugged In</source><translation>Angeschlossen</translation></message><message><source>Full (Limit)</source><translation>Voll (Limit)</translation></message></context>
+<message><source>Maximum 100%</source><translation>Maximum 100%</translation></message><message><source>Minimum 60%</source><translation>Minimum 60 %</translation></message><message><source>PLUGGED IN</source><translation>BRANCHÉ</translation></message><message><source>Plugged In</source><translation>Branché</translation></message><message><source>Full (Limit)</source><translation>Plein (limite)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>Speicherübersicht</translation>
+        <translation>Aperçu Stockage</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>Laufwerke erkannt</translation>
+        <translation>disques détectés</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>CPU-NUTZUNG</translation>
+        <translation>UTIL. CPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>GPU-NUTZUNG</translation>
+        <translation>UTIL. GPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>RAM-NUTZUNG</translation>
+        <translation>UTIL. RAM</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>NETZWERK</translation>
+        <translation>RÉSEAU</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>Verlauf</translation>
+        <translation>Historique</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>Systemspeicher</translation>
+        <translation>Mémoire Système</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>Upload: </translation>
+        <translation>Envoi: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>GB verwendet</translation>
+        <translation>Go utilisés</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>GB frei</translation>
+        <translation>Go libres</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>des Speichers belegt</translation>
+        <translation>de stockage utilisé</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>Laufwerk nicht eingehängt</translation>
+        <translation>Disque non monté</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(Laden)</translation>
+        <translation>(En charge)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(Am Netz)</translation></message><message><source>Up:</source><translation>Hoch:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(Branché)</translation></message><message><source>Up:</source><translation>Envoi:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>Initialisiere...</translation>
+        <translation>Initialisation...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
         <source>Ready - Using Direct ACPI Control</source>
-        <translation>Bereit - Direkte ACPI-Steuerung</translation>
+        <translation>Prêt - Contrôle ACPI Direct</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="85" />
         <source>Ready - Using WMI PWM Control</source>
-        <translation>Bereit - WMI PWM-Steuerung</translation>
+        <translation>Prêt - Contrôle PWM WMI</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="88" />
         <source>Ready - Using Thermal Policy</source>
-        <translation>Bereit - Thermalrichtlinie</translation>
+        <translation>Prêt - Politique Thermique</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="91" />
         <source>Ready - Using Direct EC Injection (Driverless)</source>
-        <translation>Bereit - Direkte EC-Injektion</translation>
+        <translation>Prêt - Injection EC Directe</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="96" />
         <source>Error: No fan control methods found. Run with sudo?</source>
-        <translation>Fehler: Keine Steuerungsmethoden. Mit sudo ausführen?</translation>
+        <translation>Erreur: Aucune méthode de contrôle. Exécuter avec sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Modus: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Leise (Absolut Ruhig)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Ausgewogen (Startet &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Immer Aktiv)</translation></message><message><source>Unknown Mode</source><translation>Unbekannter Modus</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manuell: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manuell: %1% (Synchronisiert)</translation></message></context>
+<message><source>Mode: %1</source><translation>Mode : %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silencieux (Silence Absolu)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Équilibré (Démarre &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Toujours Actif)</translation></message><message><source>Unknown Mode</source><translation>Mode Inconnu</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manuel : %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manuel : %1% (Synchronisé)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>MANUELL</translation>
+        <translation>MANUEL</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
@@ -347,58 +347,58 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>CPU-LÜFTER</translation>
+        <translation>VENT. CPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>GPU-LÜFTER</translation>
+        <translation>VENT. GPU</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>PASSIV (0 dB)</translation>
+        <translation>PASSIF (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation>LÜFTERSTEUERUNG</translation>
+        <translation>CONTRÔLE VENTILATEUR</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>Manuelle Überschreibung Aktiv</translation>
+        <translation>Contournement Manuel Actif</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>Automatikmodus</translation>
+        <translation>Mode Automatique</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>MANUELLER MODUS</translation>
+        <translation>MODE MANUEL</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>Automatische Lüfterkurven überschreiben</translation>
+        <translation>Contourner les courbes auto</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>Ziel-Lüftergeschwindigkeit</translation>
+        <translation>Vitesse Cible</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation>LEISE</translation>
+        <translation>SILENCIEUX</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation>AUSGEWOGEN</translation>
+        <translation>ÉQUILIBRÉ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
@@ -408,42 +408,42 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>AUTO LÜFTERKURVE</translation>
+        <translation>COURBE AUTO VENTILATEUR</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>Lüftermodus automatisch basierend auf Temperatur anpassen</translation>
+        <translation>Ajuster automatiquement le mode ventilateur selon la température</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
         <source>CPU: </source>
-        <translation>CPU: </translation>
+        <translation>CPU :</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>Auto-Kurve Aus</translation>
+        <translation>Courbe Auto Désactivée</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>Leisemodus (unter)</translation>
+        <translation>Mode Silencieux (dessous)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>Turbomodus (über)</translation>
+        <translation>Mode Turbo (dessus)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>Leise &lt; </translation>
+        <translation>Silencieux &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Ausbalanciert </translation>
+        <translation>Équilibré </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
@@ -453,27 +453,27 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>Voreinstellungen</translation>
+        <translation>Préréglages</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>Gaming</translation>
+        <translation>Jeu</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Ausbalanciert</translation>
+        <translation>Équilibré</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>Ruhig</translation>
+        <translation>Calme</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>Leistung</translation>
+        <translation>Performance</translation>
     </message>
     <message>
         <source>Turbo</source>
@@ -481,19 +481,19 @@
     </message>
     <message>
         <source>Silent</source>
-        <translation>Leise</translation>
+        <translation>Silencieux</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">Intelligente Leistung</translation>
+        <translation type="vanished">Performance Intelligente</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">Maximale Leistung</translation>
+        <translation type="vanished">Performance Max</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">Leiser Betrieb</translation>
+        <translation type="vanished">Fonctionnement Silencieux</translation>
     </message>
 </context>
 <context>
@@ -501,25 +501,25 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>ASUS TUF Lüftersteuerung</translation>
+        <translation>Contrôle Ventilateur ASUS TUF</translation>
     </message>
-<message><source>Language Changed</source><translation>Sprache geändert</translation></message></context>
+<message><source>Language Changed</source><translation>Langue changée</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>SYSTEMINFO</translation>
+        <translation>INFO SYSTÈME</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>LÜFTERSTEUERUNG</translation>
+        <translation>CONTRÔLE VENTILATEUR</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>AURA SYNC</translation>
+        <translation>SYNCHRONISATION AURA</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
@@ -529,19 +529,19 @@
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>CONTROLLER</translation>
+        <translation>CONTRÔLEUR</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>Dunkelmodus</translation>
+        <translation>Mode Sombre</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>Heller Modus</translation>
+        <translation>Mode Clair</translation>
     </message>
-<message><source>SETTINGS</source><translation>EINSTELLUNGEN</translation></message></context>
+<message><source>SETTINGS</source><translation>PARAMÈTRES</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -552,17 +552,17 @@
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>NUTZUNG</translation>
+        <translation>UTILISATION</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>TEMPERATUR</translation>
+        <translation>TEMPÉRATURE</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>FREQUENZ</translation>
+        <translation>FRÉQUENCE</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>System</translation>
+        <translation>Système</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>Start</translation>
+        <translation>Accueil</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>Laufwerk</translation>
+        <translation>Volume</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>Lokaler Datenträger</translation>
+        <translation>Disque Local</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>Generische GPU</translation>
+        <translation>GPU Générique</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>GPU-Erkennung fehlgeschlagen</translation>
+        <translation>Échec Détection GPU</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>EINSTELLUNGEN</translation></message><message><source>Customize your experience</source><translation>Passen Sie Ihr Erlebnis an</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>AUTHOR</source><translation>AUTOR</translation></message><message><source>About the Developer</source><translation>Über den Entwickler</translation></message><message><source>Software Developer</source><translation>Softwareentwickler</translation></message><message><source>Cyber Security Enthusiast</source><translation>Cybersicherheits-Enthusiast</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-Mail</translation></message><message><source>Email Copied</source><translation>E-Mail kopiert</translation></message><message><source>Appearance</source><translation>Erscheinungsbild</translation></message><message><source>LANGUAGE</source><translation>SPRACHE</translation></message><message><source>Select your preferred language</source><translation>Wählen Sie Ihre bevorzugte Sprache</translation></message><message><source>Choose Language</source><translation>Sprache wählen</translation></message><message><source>Temperature Unit</source><translation>Temperatureinheit</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Dunkelmodus aktiv</translation></message><message><source>Light Mode active</source><translation>Hellmodus aktiv</translation></message><message><source>Security is not a product, but a process.</source><translation>Sicherheit ist kein Produkt, sondern ein Prozess.</translation></message><message><source>Auto</source><translation>Auto</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Sicherheit ist kein Produkt, sondern ein Prozess."</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>PARAMÈTRES</translation></message><message><source>Customize your experience</source><translation>Personnalisez votre expérience</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Auteur</translation></message><message><source>AUTHOR</source><translation>AUTEUR</translation></message><message><source>About the Developer</source><translation>À propos du développeur</translation></message><message><source>Software Developer</source><translation>Développeur logiciel</translation></message><message><source>Cyber Security Enthusiast</source><translation>Passionné de cybersécurité</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-mail</translation></message><message><source>Email Copied</source><translation>E-mail copié</translation></message><message><source>Appearance</source><translation>Apparence</translation></message><message><source>LANGUAGE</source><translation>LANGUE</translation></message><message><source>Select your preferred language</source><translation>Sélectionnez votre langue préférée</translation></message><message><source>Choose Language</source><translation>Choisir la langue</translation></message><message><source>Temperature Unit</source><translation>Unité de température</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Mode sombre actif</translation></message><message><source>Light Mode active</source><translation>Mode clair actif</translation></message><message><source>Security is not a product, but a process.</source><translation>La sécurité n'est pas un produit, mais un processus.</translation></message><message><source>Auto</source><translation>Auto</translation></message><message><source>"Security is not a product, but a process."</source><translation>"La sécurité n'est pas un produit, mais un processus."</translation></message></context></TS>

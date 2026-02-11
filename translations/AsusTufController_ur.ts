@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="fr">
+<TS version="2.1" language="ur">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>SYNCHRONISATION AURA</translation>
+        <translation>اورا سنک</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>Contrôle d'Éclairage Clavier RGB</translation>
+        <translation>RGB کی بورڈ لائٹنگ کنٹرول</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>Connecté</translation>
+        <translation>منسلک</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>MODE D'ÉCLAIRAGE</translation>
+        <translation>لائٹنگ موڈ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>Statique</translation>
+        <translation>جامد</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>Respiration</translation>
+        <translation>سانس</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>Arc-en-ciel</translation>
+        <translation>قوس قزح</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>Stroboscopique</translation>
+        <translation>چمک</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>APPLIQUER L'ÉCLAIRAGE</translation>
+        <translation>لائٹنگ کا اطلاق کریں</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>Initialiser</translation>
+        <translation>شروع کریں</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>SÉLECTION DE COULEUR</translation>
+        <translation>رنگ کا انتخاب</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>COMMANDES</translation>
+        <translation>کنٹرولز</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>VITESSE</translation>
+        <translation>رفتار</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation>Lent</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation>Moyen</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation>Rapide</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>LUMINOSITÉ</translation>
+        <translation>چمک</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation>Arrêt</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation>Bas</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation>Moy.</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation>Haut</translation>
+        <translation type="unfinished" />
     </message>
 </context>
 <context>
@@ -113,230 +113,230 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>GESTION BATTERIE</translation>
+        <translation>بیٹری مینجمنٹ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>En Charge</translation>
+        <translation>چارج ہو رہا ہے</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>Sur Batterie</translation>
+        <translation>بیٹری پر</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>CHARGE</translation>
+        <translation>چارج ہو رہا ہے</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>DÉCHARGE</translation>
+        <translation>ڈسچارج ہو رہا ہے</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <source>Battery</source>
-        <translation>Batterie</translation>
+        <translation>بیٹری</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>NIVEAU ACTUEL</translation>
+        <translation>موجودہ سطح</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>LIMITE DE CHARGE</translation>
+        <translation>چارج کی حد</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>STATUT</translation>
+        <translation>حیثیت</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>Décharge</translation>
+        <translation>ڈسچارج ہو رہا ہے</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>Plein</translation>
+        <translation>مکمل</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>Pas en charge</translation>
+        <translation>چارج نہیں ہو رہا</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>MODE SANTÉ</translation>
+        <translation>صحت کا موڈ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>ACTIVÉ</translation>
+        <translation>فعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>DÉSACTIVÉ</translation>
+        <translation>غیر فعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>Limiter la charge pour prolonger la batterie</translation>
+        <translation>Limit charging to extend battery lifespan</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>Personnalisé</translation>
+        <translation>اپنی مرضی</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>Durée Max</translation>
+        <translation>زیادہ سے زیادہ عمر</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>Recommandé</translation>
+        <translation>تجویز کردہ</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>Pleine Capacité</translation>
+        <translation>مکمل صلاحیت</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation>Limiter la charge à 60-80% peut prolonger considérablement la durée de vie de la batterie, idéal pour les portables sur secteur.</translation>
+        <translation type="unfinished" />
     </message>
-<message><source>Maximum 100%</source><translation>Maximum 100%</translation></message><message><source>Minimum 60%</source><translation>Minimum 60 %</translation></message><message><source>PLUGGED IN</source><translation>BRANCHÉ</translation></message><message><source>Plugged In</source><translation>Branché</translation></message><message><source>Full (Limit)</source><translation>Plein (limite)</translation></message></context>
+<message><source>PLUGGED IN</source><translation>پلگ ان</translation></message><message><source>Plugged In</source><translation>پلگ ان ہے</translation></message><message><source>Full (Limit)</source><translation>مکمل (حد)</translation></message><message><source>Minimum 60%</source><translation>کم از کم ۶۰٪</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>Aperçu Stockage</translation>
+        <translation>اسٹوریج کا جائزہ</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>disques détectés</translation>
+        <translation>ڈرائیوز دریافت</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>UTIL. CPU</translation>
+        <translation>CPU استعمال</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>UTIL. GPU</translation>
+        <translation>GPU استعمال</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>UTIL. RAM</translation>
+        <translation>RAM استعمال</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>RÉSEAU</translation>
+        <translation>نیٹ ورک</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>Historique</translation>
+        <translation>تاریخ</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>Mémoire Système</translation>
+        <translation>سسٹم میموری</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>Envoi: </translation>
+        <translation>Up: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>Go utilisés</translation>
+        <translation>GB استعمال</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>Go libres</translation>
+        <translation>GB خالی</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>de stockage utilisé</translation>
+        <translation>اسٹوریج استعمال شدہ</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>Disque non monté</translation>
+        <translation>ڈرائیو نصب نہیں</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(En charge)</translation>
+        <translation>(چارجنگ)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(Branché)</translation></message><message><source>Up:</source><translation>Envoi:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(پلگ ان)</translation></message><message><source>Up:</source><translation>اپ:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>Initialisation...</translation>
+        <translation>شروع ہو رہا ہے...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
         <source>Ready - Using Direct ACPI Control</source>
-        <translation>Prêt - Contrôle ACPI Direct</translation>
+        <translation>Ready - Using Direct ACPI Control</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="85" />
         <source>Ready - Using WMI PWM Control</source>
-        <translation>Prêt - Contrôle PWM WMI</translation>
+        <translation>Ready - Using WMI PWM Control</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="88" />
         <source>Ready - Using Thermal Policy</source>
-        <translation>Prêt - Politique Thermique</translation>
+        <translation>Ready - Using Thermal Policy</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="91" />
         <source>Ready - Using Direct EC Injection (Driverless)</source>
-        <translation>Prêt - Injection EC Directe</translation>
+        <translation>Ready - Using Direct EC Injection (Driverless)</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="96" />
         <source>Error: No fan control methods found. Run with sudo?</source>
-        <translation>Erreur: Aucune méthode de contrôle. Exécuter avec sudo?</translation>
+        <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Mode : %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silencieux (Silence Absolu)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Équilibré (Démarre &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Toujours Actif)</translation></message><message><source>Unknown Mode</source><translation>Mode Inconnu</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manuel : %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manuel : %1% (Synchronisé)</translation></message></context>
+<message><source> (OVERDRIVE)</source><translation> (اوور ڈرائیو)</translation></message><message><source>Manual: %1%</source><translation>دستی: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>دستی: %1% (مطابقت شدہ)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>MANUEL</translation>
+        <translation>دستی</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>AUTO</source>
-        <translation>AUTO</translation>
+        <translation>آٹو</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="221" />
@@ -347,153 +347,153 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>VENT. CPU</translation>
+        <translation>CPU فین</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>VENT. GPU</translation>
+        <translation>GPU فین</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>PASSIF (0 dB)</translation>
+        <translation>PASSIVE (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation>CONTRÔLE VENTILATEUR</translation>
+        <translation type="unfinished">فین کنٹرول</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>Contournement Manuel Actif</translation>
+        <translation>دستی اوور رائیڈ فعال</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>Mode Automatique</translation>
+        <translation>خودکار موڈ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>MODE MANUEL</translation>
+        <translation>دستی موڈ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>Contourner les courbes auto</translation>
+        <translation>خودکار فین منحنی خطوط کو اوور رائیڈ کریں</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>Vitesse Cible</translation>
+        <translation>ہدف فین رفتار</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation>SILENCIEUX</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation>ÉQUILIBRÉ</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
         <source>TURBO</source>
-        <translation>TURBO</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>COURBE AUTO VENTILATEUR</translation>
+        <translation>آٹو فین وکر</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>Ajuster automatiquement le mode ventilateur selon la température</translation>
+        <translation>درجہ حرارت کی بنیاد پر فین موڈ کو خود بخود ایڈجسٹ کریں</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
         <source>CPU: </source>
-        <translation>CPU :</translation>
+        <translation type="unfinished" />
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>Courbe Auto Désactivée</translation>
+        <translation>آٹو وکر بند</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>Mode Silencieux (dessous)</translation>
+        <translation>خاموش موڈ (نیچے)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>Mode Turbo (dessus)</translation>
+        <translation>ٹربو موڈ (اوپر)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>Silencieux &lt; </translation>
+        <translation>خاموش &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Équilibré </translation>
+        <translation>متوازن </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>Turbo &gt; </translation>
+        <translation>ٹربو &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>Préréglages</translation>
+        <translation>پری سیٹس</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>Jeu</translation>
+        <translation>گیمنگ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Équilibré</translation>
+        <translation>متوازن</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>Calme</translation>
+        <translation>خاموش</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>Performance</translation>
+        <translation>کارکردگی</translation>
     </message>
     <message>
         <source>Turbo</source>
-        <translation>Turbo</translation>
+        <translation>ٹربو</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation>Silencieux</translation>
+        <translation>خاموش</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">Performance Intelligente</translation>
+        <translation type="vanished">Intelligent Performance</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">Performance Max</translation>
+        <translation type="vanished">زیادہ سے زیادہ کارکردگی</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">Fonctionnement Silencieux</translation>
+        <translation type="vanished">خاموش آپریشن</translation>
     </message>
 </context>
 <context>
@@ -501,47 +501,47 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>Contrôle Ventilateur ASUS TUF</translation>
+        <translation>ASUS TUF فین کنٹرول</translation>
     </message>
-<message><source>Language Changed</source><translation>Langue changée</translation></message></context>
+<message><source>Language Changed</source><translation>زبان تبدیل ہو گئی</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>INFO SYSTÈME</translation>
+        <translation>سسٹم کی معلومات</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>CONTRÔLE VENTILATEUR</translation>
+        <translation>فین کنٹرول</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>SYNCHRONISATION AURA</translation>
+        <translation>اورا سنک</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>BATTERY</source>
-        <translation>BATTERIE</translation>
+        <translation>بیٹری</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>CONTRÔLEUR</translation>
+        <translation>کنٹرولر</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>Mode Sombre</translation>
+        <translation>ڈارک موڈ</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>Mode Clair</translation>
+        <translation>لائٹ موڈ</translation>
     </message>
-<message><source>SETTINGS</source><translation>PARAMÈTRES</translation></message></context>
+<message><source>SETTINGS</source><translation>ترتیبات</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -552,17 +552,17 @@
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>UTILISATION</translation>
+        <translation>استعمال</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>TEMPÉRATURE</translation>
+        <translation>درجہ حرارت</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>FRÉQUENCE</translation>
+        <translation>فریکوئنسی</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>Système</translation>
+        <translation>سسٹم</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>Accueil</translation>
+        <translation>ہوم</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>Volume</translation>
+        <translation>والیوم</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>Disque Local</translation>
+        <translation>لوکل ڈسک</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>GPU Générique</translation>
+        <translation>عام GPU</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>Échec Détection GPU</translation>
+        <translation>GPU کی شناخت ناکام</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>PARAMÈTRES</translation></message><message><source>Customize your experience</source><translation>Personnalisez votre expérience</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Auteur</translation></message><message><source>AUTHOR</source><translation>AUTEUR</translation></message><message><source>About the Developer</source><translation>À propos du développeur</translation></message><message><source>Software Developer</source><translation>Développeur logiciel</translation></message><message><source>Cyber Security Enthusiast</source><translation>Passionné de cybersécurité</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-mail</translation></message><message><source>Email Copied</source><translation>E-mail copié</translation></message><message><source>Appearance</source><translation>Apparence</translation></message><message><source>LANGUAGE</source><translation>LANGUE</translation></message><message><source>Select your preferred language</source><translation>Sélectionnez votre langue préférée</translation></message><message><source>Choose Language</source><translation>Choisir la langue</translation></message><message><source>Temperature Unit</source><translation>Unité de température</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Mode sombre actif</translation></message><message><source>Light Mode active</source><translation>Mode clair actif</translation></message><message><source>Security is not a product, but a process.</source><translation>La sécurité n'est pas un produit, mais un processus.</translation></message><message><source>Auto</source><translation>Auto</translation></message><message><source>"Security is not a product, but a process."</source><translation>"La sécurité n'est pas un produit, mais un processus."</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>ترتیبات</translation></message><message><source>Customize your experience</source><translation>اپنے تجربے کو حسب ضرورت بنائیں</translation></message><message><source>Karthigaiselvam R</source><translation>کارتھیگائیسیلوام آر</translation></message><message><source>Author</source><translation>مصنف</translation></message><message><source>AUTHOR</source><translation>مصنف</translation></message><message><source>About the Developer</source><translation>ڈیولپر کے بارے میں</translation></message><message><source>Software Developer</source><translation>سافٹ ویئر ڈیولپر</translation></message><message><source>Cyber Security Enthusiast</source><translation>سائبر سیکیورٹی کے شوقین</translation></message><message><source>LinkedIn</source><translation>لنکڈ ان</translation></message><message><source>GitHub</source><translation>گٹ ہب</translation></message><message><source>Email</source><translation>ای میل</translation></message><message><source>Email Copied</source><translation>ای میل کاپی ہو گئی</translation></message><message><source>Appearance</source><translation>ظاہری شکل</translation></message><message><source>LANGUAGE</source><translation>زبان</translation></message><message><source>Select your preferred language</source><translation>اپنی پسندیدہ زبان منتخب کریں</translation></message><message><source>Choose Language</source><translation>زبان منتخب کریں</translation></message><message><source>Temperature Unit</source><translation>درجہ حرارت کی اکائی</translation></message><message><source>Celsius (°C)</source><translation>سیلسیئس (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>فارن ہائیٹ (°F)</translation></message><message><source>Dark Mode active</source><translation>ڈارک موڈ فعال</translation></message><message><source>Light Mode active</source><translation>لائٹ موڈ فعال</translation></message><message><source>"Security is not a product, but a process."</source><translation>"سیکیورٹی کوئی پروڈکٹ نہیں بلکہ ایک عمل ہے۔"</translation></message><message><source>Auto</source><translation>خودکار</translation></message></context></TS>

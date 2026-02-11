@@ -1,111 +1,111 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TS version="2.1" language="es_ES">
+<TS version="2.1" language="ja">
 <context>
     <name>AuraPage</name>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="368" />
         <source>AURA SYNC</source>
-        <translation>SINCRONIZACIÓN AURA</translation>
+        <translation>AURA SYNC</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="382" />
         <source>RGB Keyboard Lighting Control</source>
-        <translation>Control de Iluminación RGB del Teclado</translation>
+        <translation>RGBキーボード照明制御</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="414" />
         <source>Connected</source>
-        <translation>Conectado</translation>
+        <translation>接続済み</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="456" />
         <source>LIGHTING MODE</source>
-        <translation>MODO DE ILUMINACIÓN</translation>
+        <translation>照明モード</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="466" />
         <source>Static</source>
-        <translation>Estático</translation>
+        <translation>固定</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="467" />
         <source>Breathing</source>
-        <translation>Respiración</translation>
+        <translation>ブリージング</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="468" />
         <source>Rainbow</source>
-        <translation>Arcoíris</translation>
+        <translation>レインボー</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="469" />
         <source>Strobing</source>
-        <translation>Estroboscópico</translation>
+        <translation>ストロボ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="532" />
         <source>APPLY LIGHTING</source>
-        <translation>APLICAR ILUMINACIÓN</translation>
+        <translation>照明を適用</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="569" />
         <source>Initialize</source>
-        <translation>Inicializar</translation>
+        <translation>初期化</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="595" />
         <source>COLOR SELECTION</source>
-        <translation>SELECCIÓN DE COLOR</translation>
+        <translation>色の選択</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="759" />
         <source>CONTROLS</source>
-        <translation>CONTROLES</translation>
+        <translation>コントロール</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="792" />
         <source>SPEED</source>
-        <translation>VELOCIDAD</translation>
+        <translation>速度</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Slow</source>
-        <translation>Lento</translation>
+        <translation>遅い</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Medium</source>
-        <translation>Medio</translation>
+        <translation>中</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="801" />
         <source>Fast</source>
-        <translation>Rápido</translation>
+        <translation>速い</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="865" />
         <source>BRIGHTNESS</source>
-        <translation>BRILLO</translation>
+        <translation>明るさ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Off</source>
-        <translation>Apagado</translation>
+        <translation>オフ</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Low</source>
-        <translation>Bajo</translation>
+        <translation>低</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>Med</source>
-        <translation>Med</translation>
+        <translation>中</translation>
     </message>
     <message>
         <location filename="../ui/pages/AuraPage.qml" line="874" />
         <source>High</source>
-        <translation>Alto</translation>
+        <translation>高</translation>
     </message>
 </context>
 <context>
@@ -113,307 +113,307 @@
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="164" />
         <source>BATTERY MANAGEMENT</source>
-        <translation>GESTIÓN DE BATERÍA</translation>
+        <translation>バッテリー管理</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <location filename="../ui/pages/BatteryPage.qml" line="371" />
         <source>Charging</source>
-        <translation>Cargando</translation>
+        <translation>充電中</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="171" />
         <source>On Battery</source>
-        <translation>En Batería</translation>
+        <translation>バッテリー使用中</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>CHARGING</source>
-        <translation>CARGANDO</translation>
+        <translation>充電中</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="207" />
         <source>DISCHARGING</source>
-        <translation>DESCARGANDO</translation>
+        <translation>放電中</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="308" />
         <source>Battery</source>
-        <translation>Batería</translation>
+        <translation>バッテリー</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="325" />
         <source>CURRENT LEVEL</source>
-        <translation>NIVEL ACTUAL</translation>
+        <translation>現在のレベル</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="343" />
         <location filename="../ui/pages/BatteryPage.qml" line="428" />
         <source>CHARGE LIMIT</source>
-        <translation>LÍMITE DE CARGA</translation>
+        <translation>充電制限</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="361" />
         <source>STATUS</source>
-        <translation>ESTADO</translation>
+        <translation>ステータス</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="370" />
         <source>Discharging</source>
-        <translation>Descargando</translation>
+        <translation>放電中</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="372" />
         <source>Full</source>
-        <translation>Completo</translation>
+        <translation>満充電</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="373" />
         <source>Not charging</source>
-        <translation>No cargando</translation>
+        <translation>充電していません</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="385" />
         <source>HEALTH MODE</source>
-        <translation>MODO SALUD</translation>
+        <translation>ヘルスモード</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>ENABLED</source>
-        <translation>ACTIVADO</translation>
+        <translation>有効</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="392" />
         <source>DISABLED</source>
-        <translation>DESACTIVADO</translation>
+        <translation>無効</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="435" />
         <source>Limit charging to extend battery lifespan</source>
-        <translation>Limitar carga para extender vida útil batería</translation>
+        <translation>バッテリー寿命を延ばすために充電を制限</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="465" />
         <source>Custom</source>
-        <translation>Personalizado</translation>
+        <translation>カスタム</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="715" />
         <source>Max Lifespan</source>
-        <translation>Vida Máxima</translation>
+        <translation>最大寿命</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="716" />
         <source>Recommended</source>
-        <translation>Recomendado</translation>
+        <translation>推奨</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="717" />
         <source>Full Capacity</source>
-        <translation>Capacidad Total</translation>
+        <translation>フル容量</translation>
     </message>
     <message>
         <location filename="../ui/pages/BatteryPage.qml" line="784" />
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
-        <translation>Limitar la carga al 60-80% puede extender significativamente la vida útil de la batería, ideal para portátiles siempre enchufados.</translation>
+        <translation>充電を60-80%に制限するとバッテリー寿命を大幅に延ばすことができ、AC電源で使用するノートPCに最適です。</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Máximo 100%</translation></message><message><source>Minimum 60%</source><translation>Mínimo 60%</translation></message><message><source>PLUGGED IN</source><translation>CONECTADO</translation></message><message><source>Plugged In</source><translation>Conectado</translation></message><message><source>Full (Limit)</source><translation>Lleno (Límite)</translation></message></context>
+<message><source>Maximum 100%</source><translation>最大 100%</translation></message><message><source>Minimum 60%</source><translation>最低 60%</translation></message><message><source>PLUGGED IN</source><translation>接続中</translation></message><message><source>Plugged In</source><translation>接続済み</translation></message><message><source>Full (Limit)</source><translation>満充電 (制限)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="321" />
         <source>Storage Overview</source>
-        <translation>Resumen de Almacenamiento</translation>
+        <translation>ストレージ概要</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="322" />
         <source>drives detected</source>
-        <translation>discos detectados</translation>
+        <translation>ドライブ検出</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="222" />
         <source>CPU USAGE</source>
-        <translation>USO DE CPU</translation>
+        <translation>CPU使用率</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="233" />
         <source>GPU USAGE</source>
-        <translation>USO DE GPU</translation>
+        <translation>GPU使用率</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="244" />
         <source>RAM USAGE</source>
-        <translation>USO DE RAM</translation>
+        <translation>RAM使用率</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="255" />
         <source>NETWORK</source>
-        <translation>RED</translation>
+        <translation>ネットワーク</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="226" />
         <location filename="../ui/pages/DashboardPage.qml" line="237" />
         <source>History</source>
-        <translation>Historial</translation>
+        <translation>履歴</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="248" />
         <source>System Memory</source>
-        <translation>Memoria del Sistema</translation>
+        <translation>システムメモリ</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="259" />
         <source>Up: </source>
-        <translation>Subida: </translation>
+        <translation>上り: </translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="400" />
         <source>GB used</source>
-        <translation>GB usados</translation>
+        <translation>GB使用</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="408" />
         <source>GB free</source>
-        <translation>GB libres</translation>
+        <translation>GB空き</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>de almacenamiento usado</translation>
+        <translation>のストレージを使用中</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
         <source>Drive not mounted</source>
-        <translation>Disco no montado</translation>
+        <translation>ドライブ未マウント</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="135" />
         <source>(Charging)</source>
-        <translation>(Cargando)</translation>
+        <translation>(充電中)</translation>
     </message>
-<message><source>(Plugged In)</source><translation>(Conectado)</translation></message><message><source>Up:</source><translation>Subida:</translation></message></context>
+<message><source>(Plugged In)</source><translation>(接続済み)</translation></message><message><source>Up:</source><translation>送信:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
         <location filename="../src/FanController.cpp" line="22" />
         <source>Initializing...</source>
-        <translation>Inicializando...</translation>
+        <translation>初期化中...</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="82" />
         <source>Ready - Using Direct ACPI Control</source>
-        <translation>Listo - Usando Control ACPI Directo</translation>
+        <translation>Ready - Using Direct ACPI Control</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="85" />
         <source>Ready - Using WMI PWM Control</source>
-        <translation>Listo - Usando Control PWM WMI</translation>
+        <translation>Ready - Using WMI PWM Control</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="88" />
         <source>Ready - Using Thermal Policy</source>
-        <translation>Listo - Usando Política Térmica</translation>
+        <translation>Ready - Using Thermal Policy</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="91" />
         <source>Ready - Using Direct EC Injection (Driverless)</source>
-        <translation>Listo - Usando Inyección EC Directa</translation>
+        <translation>Ready - Using Direct EC Injection (Driverless)</translation>
     </message>
     <message>
         <location filename="../src/FanController.cpp" line="96" />
         <source>Error: No fan control methods found. Run with sudo?</source>
-        <translation>Error: Métodos de control no encontrados. ¿Ejecutar con sudo?</translation>
+        <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Modo: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silencioso (Silencio Absoluto)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Equilibrado (Inicia &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Siempre Activo)</translation></message><message><source>Unknown Mode</source><translation>Modo Desconocido</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manual: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manual: %1% (Sincronizado)</translation></message></context>
+<message><source>Mode: %1</source><translation>モード: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>サイレント (完全静音)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>バランス (&gt; 60°Cで始動)</translation></message><message><source>Turbo (Always Active)</source><translation>ターボ (常時稼働)</translation></message><message><source>Unknown Mode</source><translation>不明なモード</translation></message><message><source> (OVERDRIVE)</source><translation> (オーバードライブ)</translation></message><message><source>Manual: %1%</source><translation>手動: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>手動: %1% (同期済み)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>MANUAL</source>
-        <translation>MANUAL</translation>
+        <translation>手動</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="172" />
         <source>AUTO</source>
-        <translation>AUTO</translation>
+        <translation>自動</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="221" />
         <location filename="../ui/pages/FanPage.qml" line="281" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>回転数</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="222" />
         <source>CPU FAN</source>
-        <translation>VENTILADOR CPU</translation>
+        <translation>CPUファン</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="282" />
         <source>GPU FAN</source>
-        <translation>VENTILADOR GPU</translation>
+        <translation>GPUファン</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="257" />
         <location filename="../ui/pages/FanPage.qml" line="317" />
         <source>PASSIVE (0 dB)</source>
-        <translation>PASIVO (0 dB)</translation>
+        <translation>パッシブ (0 dB)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="134" />
         <source>FAN CONTROL</source>
-        <translation>CONTROL DE VENTILADOR</translation>
+        <translation type="unfinished">ファン制御</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Manual Override Active</source>
-        <translation>Anulación Manual Activa</translation>
+        <translation>手動オーバーライド有効</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="141" />
         <source>Automatic Mode</source>
-        <translation>Modo Automático</translation>
+        <translation>自動モード</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="354" />
         <source>MANUAL MODE</source>
-        <translation>MODO MANUAL</translation>
+        <translation>手動モード</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="361" />
         <source>Override automatic fan curves</source>
-        <translation>Anular curvas de ventilador automáticas</translation>
+        <translation>自動ファンカーブを上書き</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="441" />
         <source>Target Fan Speed</source>
-        <translation>Velocidad Objetivo</translation>
+        <translation>目標ファン速度</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="571" />
         <source>SILENT</source>
-        <translation>SILENCIOSO</translation>
+        <translation>サイレント</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="572" />
         <source>BALANCED</source>
-        <translation>EQUILIBRADO</translation>
+        <translation>バランス</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="573" />
         <source>TURBO</source>
-        <translation>TURBO</translation>
+        <translation>ターボ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="769" />
         <source>AUTO FAN CURVE</source>
-        <translation>CURVA DE VENTILADOR AUTO</translation>
+        <translation>自動ファンカーブ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="776" />
         <source>Automatically adjust fan mode based on temperature</source>
-        <translation>Ajustar automáticamente el modo del ventilador según la temperatura</translation>
+        <translation>温度に基づいてファンモードを自動調整</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="871" />
@@ -423,77 +423,77 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="883" />
         <source>Auto Curve Off</source>
-        <translation>Curva Auto Desactivada</translation>
+        <translation>自動カーブ オフ</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="904" />
         <source>Silent Mode (below)</source>
-        <translation>Modo Silencioso (debajo)</translation>
+        <translation>サイレントモード (未満)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="987" />
         <source>Turbo Mode (above)</source>
-        <translation>Modo Turbo (arriba)</translation>
+        <translation>ターボモード (以上)</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>Silencioso &lt; </translation>
+        <translation>静音 &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Equilibrado </translation>
+        <translation>バランス </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>Turbo &gt; </translation>
+        <translation>ターボ &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
         <source>Presets</source>
-        <translation>Preajustes</translation>
+        <translation>プリセット</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1119" />
         <source>Gaming</source>
-        <translation>Juegos</translation>
+        <translation>ゲーミング</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Equilibrado</translation>
+        <translation>バランス</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
         <source>Quiet</source>
-        <translation>Tranquilo</translation>
+        <translation>静音</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1122" />
         <source>Performance</source>
-        <translation>Rendimiento</translation>
+        <translation>パフォーマンス</translation>
     </message>
     <message>
         <source>Turbo</source>
-        <translation>Turbo</translation>
+        <translation>ターボ</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation>Silencioso</translation>
+        <translation>静音</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
-        <translation type="vanished">Rendimiento Inteligente</translation>
+        <translation type="vanished">スマートパフォーマンス</translation>
     </message>
     <message>
         <source>Max Performance</source>
-        <translation type="vanished">Rendimiento Máximo</translation>
+        <translation type="vanished">最大パフォーマンス</translation>
     </message>
     <message>
         <source>Quiet Operation</source>
-        <translation type="vanished">Operación Silenciosa</translation>
+        <translation type="vanished">静音動作</translation>
     </message>
 </context>
 <context>
@@ -501,68 +501,68 @@
     <message>
         <location filename="../ui/Main.qml" line="16" />
         <source>ASUS TUF Fan Control</source>
-        <translation>Control de Ventilador ASUS TUF</translation>
+        <translation>ASUS TUFファン制御</translation>
     </message>
-<message><source>Language Changed</source><translation>Idioma cambiado</translation></message></context>
+<message><source>Language Changed</source><translation>言語が変更されました</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>SYSTEM INFO</source>
-        <translation>INFO DEL SISTEMA</translation>
+        <translation>システム情報</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>FAN CONTROL</source>
-        <translation>CONTROL DE VENTILADOR</translation>
+        <translation>ファン制御</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>AURA SYNC</source>
-        <translation>SINCRONIZACIÓN AURA</translation>
+        <translation>AURA SYNC</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="11" />
         <source>BATTERY</source>
-        <translation>BATERÍA</translation>
+        <translation>バッテリー</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="125" />
         <source>CONTROLLER</source>
-        <translation>CONTROLADOR</translation>
+        <translation>コントローラー</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Dark Mode</source>
-        <translation>Modo Oscuro</translation>
+        <translation>ダークモード</translation>
     </message>
     <message>
         <location filename="../ui/components/Sidebar.qml" line="456" />
         <source>Light Mode</source>
-        <translation>Modo Claro</translation>
+        <translation>ライトモード</translation>
     </message>
-<message><source>SETTINGS</source><translation>AJUSTES</translation></message></context>
+<message><source>SETTINGS</source><translation>設定</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>RPM</source>
-        <translation>RPM</translation>
+        <translation>回転数</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="310" />
         <source>USAGE</source>
-        <translation>USO</translation>
+        <translation>使用率</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="340" />
         <source>TEMPERATURE</source>
-        <translation>TEMPERATURA</translation>
+        <translation>温度</translation>
     </message>
     <message>
         <location filename="../ui/StatsCard.qml" line="391" />
         <source>FREQUENCY</source>
-        <translation>FRECUENCIA</translation>
+        <translation>周波数</translation>
     </message>
 </context>
 <context>
@@ -570,32 +570,32 @@
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="320" />
         <source>System</source>
-        <translation>Sistema</translation>
+        <translation>システム</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="326" />
         <source>Home</source>
-        <translation>Inicio</translation>
+        <translation>ホーム</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="328" />
         <source>Volume</source>
-        <translation>Volumen</translation>
+        <translation>ボリューム</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="330" />
         <source>Local Disk</source>
-        <translation>Disco Local</translation>
+        <translation>ローカルディスク</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="484" />
         <source>Generic GPU</source>
-        <translation>GPU Genérica</translation>
+        <translation>汎用GPU</translation>
     </message>
     <message>
         <location filename="../src/SystemStatsMonitor.cpp" line="488" />
         <source>GPU Detection Failed</source>
-        <translation>Fallo al Detectar GPU</translation>
+        <translation>GPU検出失敗</translation>
     </message>
 </context>
-<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>AJUSTES</translation></message><message><source>Customize your experience</source><translation>Personaliza tu experiencia</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>AUTHOR</source><translation>AUTOR</translation></message><message><source>About the Developer</source><translation>Sobre el desarrollador</translation></message><message><source>Software Developer</source><translation>Desarrollador de software</translation></message><message><source>Cyber Security Enthusiast</source><translation>Entusiasta de la ciberseguridad</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>Correo electrónico</translation></message><message><source>Email Copied</source><translation>Correo copiado</translation></message><message><source>Appearance</source><translation>Apariencia</translation></message><message><source>LANGUAGE</source><translation>IDIOMA</translation></message><message><source>Select your preferred language</source><translation>Selecciona tu idioma preferido</translation></message><message><source>Choose Language</source><translation>Elegir idioma</translation></message><message><source>Temperature Unit</source><translation>Unidad de temperatura</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Modo oscuro activo</translation></message><message><source>Light Mode active</source><translation>Modo claro activo</translation></message><message><source>Security is not a product, but a process.</source><translation>La seguridad no es un producto, sino un proceso.</translation></message><message><source>Auto</source><translation>Automático</translation></message><message><source>"Security is not a product, but a process."</source><translation>"La seguridad no es un producto, sino un proceso."</translation></message></context></TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>設定</translation></message><message><source>Customize your experience</source><translation>エクスペリエンスをカスタマイズ</translation></message><message><source>Karthigaiselvam R</source><translation>カールティガイセルヴァム・アール</translation></message><message><source>Author</source><translation>作者</translation></message><message><source>AUTHOR</source><translation>作者</translation></message><message><source>About the Developer</source><translation>開発者について</translation></message><message><source>Software Developer</source><translation>ソフトウェア開発者</translation></message><message><source>Cyber Security Enthusiast</source><translation>サイバーセキュリティ愛好家</translation></message><message><source>LinkedIn</source><translation>リンクトイン</translation></message><message><source>GitHub</source><translation>ギットハブ</translation></message><message><source>Email</source><translation>メール</translation></message><message><source>Email Copied</source><translation>メールをコピーしました</translation></message><message><source>Appearance</source><translation>外観</translation></message><message><source>LANGUAGE</source><translation>言語</translation></message><message><source>Select your preferred language</source><translation>ご希望の言語を選択してください</translation></message><message><source>Choose Language</source><translation>言語を選択</translation></message><message><source>Temperature Unit</source><translation>温度単位</translation></message><message><source>Celsius (°C)</source><translation>摂氏 (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>華氏 (°F)</translation></message><message><source>Dark Mode active</source><translation>ダークモード有効</translation></message><message><source>Light Mode active</source><translation>ライトモード有効</translation></message><message><source>"Security is not a product, but a process."</source><translation>"セキュリティは製品ではなく、プロセスである。"</translation></message><message><source>Auto</source><translation>自動</translation></message></context></TS>
