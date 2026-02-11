@@ -972,7 +972,7 @@ Item {
                                 Slider {
                                     id: silentSlider
                                     anchors.fill: parent
-                                    from: 20; to: 95
+                                    from: 0; to: 100
                                     value: curveController.silentThreshold
                                     
                                     background: Rectangle {
@@ -1015,9 +1015,10 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        var newVal = Math.round(20 + ratio * 75) // 20 to 95
-                                        // Enforce: Silent must stay at least 5°C below Turbo
-                                        silentSlider.value = Math.min(newVal, turboSlider.value - 5)
+                                        var newVal = Math.round(ratio * 100)
+                                        // Clamp: minimum 20°C, and must stay at least 5°C below Turbo
+                                        newVal = Math.max(20, Math.min(newVal, turboSlider.value - 5))
+                                        silentSlider.value = newVal
                                     }
                                     
                                     onPressed: updateValue(mouseX)
@@ -1057,7 +1058,7 @@ Item {
                                 Slider {
                                     id: turboSlider
                                     anchors.fill: parent
-                                    from: 25; to: 100
+                                    from: 0; to: 100
                                     value: curveController.balancedThreshold
                                     
                                     background: Rectangle {
@@ -1100,9 +1101,10 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        var newVal = Math.round(25 + ratio * 75) // 25 to 100
-                                        // Enforce: Turbo must stay at least 5°C above Silent
-                                        turboSlider.value = Math.max(newVal, silentSlider.value + 5)
+                                        var newVal = Math.round(ratio * 100)
+                                        // Clamp: maximum 100°C, and must stay at least 5°C above Silent
+                                        newVal = Math.min(100, Math.max(newVal, silentSlider.value + 5))
+                                        turboSlider.value = newVal
                                     }
                                     
                                     onPressed: updateValue(mouseX)
