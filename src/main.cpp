@@ -51,6 +51,13 @@ int main(int argc, char *argv[]) {
       "AsusTufFanControl", 1, 0, "FanCurveController", &fanCurveController);
 
   QQmlApplicationEngine engine;
+
+  // Instant Retranslation Logic: Link the Controller signal to the Engine
+  // retranslate slot. This forces all qsTr() calls in the entire app to update
+  // immediately when the language changes.
+  QObject::connect(&langController, &LanguageController::retranslateRequired,
+                   &engine, &QQmlApplicationEngine::retranslate);
+
   // Qt 6 Recommended: Load from Module URI
   // This allows "import AsusTufFanControl" to resolve correctly inside the main
   // entry
