@@ -175,4 +175,43 @@ ApplicationWindow {
             }
         }
     }
+
+    // ═══════════════════════════════════════════════════════════
+    // FLOATING TOAST — always visible, survives language changes
+    // ═══════════════════════════════════════════════════════════
+    Rectangle {
+        id: globalToast
+        width: Math.min(300, parent.width - 260 - 40)
+        height: 40
+        x: 260 + (parent.width - 260 - width) / 2
+        y: globalToast.opacity > 0 ? 20 : -50
+        color: theme.isDark ? "#1a1a2e" : "#ffffff"
+        radius: 20; opacity: 0; z: 9999
+        border.width: 1; border.color: "#2ecc71"
+
+        Behavior on opacity { NumberAnimation { duration: 250; easing.type: Easing.OutCubic } }
+        Behavior on y { NumberAnimation { duration: 300; easing.type: Easing.OutBack } }
+
+        Row {
+            anchors.centerIn: parent; spacing: 10
+            Text { text: "✓"; color: "#2ecc71"; font.pixelSize: 16; font.bold: true }
+            Text { id: globalToastText; text: ""; color: theme.textPrimary; font.pixelSize: 13; font.bold: true }
+        }
+
+        Timer { id: globalToastTimer; interval: 2500; onTriggered: globalToast.opacity = 0 }
+
+        function show(msg) {
+            globalToastText.text = msg
+            globalToast.opacity = 0.95
+            globalToastTimer.restart()
+        }
+    }
+
+    // Listen for language changes from LanguageController
+    Connections {
+        target: LanguageController
+        function onLanguageChanged() {
+            globalToast.show(qsTr("Language Changed"))
+        }
+    }
 }
