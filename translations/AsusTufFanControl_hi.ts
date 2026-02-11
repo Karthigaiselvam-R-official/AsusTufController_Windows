@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>चार्ज को 60-80% तक सीमित करने से बैटरी का जीवन काफी बढ़ सकता है, यह प्लग किए गए लैपटॉप के लिए आदर्श है।</translation>
     </message>
-<message><source>Maximum 100%</source><translation>अधिकतम 100%</translation></message><message><source>Minimum 60%</source><translation>न्यूनतम 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>अधिकतम 100%</translation></message><message><source>Minimum 60%</source><translation>न्यूनतम 60%</translation></message><message><source>PLUGGED IN</source><translation>प्लग इन किया गया</translation></message><message><source>Plugged In</source><translation>प्लग इन</translation></message><message><source>Full (Limit)</source><translation>पूर्ण (सीमा)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>उपयोग किया गया स्टोरेज</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(चार्जिंग)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(प्लग इन)</translation></message><message><source>Up:</source><translation>अप:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>मोड: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>शांत (पूर्ण मौन)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>संतुलित (&gt; 60°C पर शुरू)</translation></message><message><source>Turbo (Always Active)</source><translation>टर्बो (हमेशा सक्रिय)</translation></message><message><source>Unknown Mode</source><translation>अज्ञात मोड</translation></message></context>
+<message><source>Mode: %1</source><translation>मोड: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>शांत (पूर्ण मौन)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>संतुलित (&gt; 60°C पर शुरू)</translation></message><message><source>Turbo (Always Active)</source><translation>टर्बो (हमेशा सक्रिय)</translation></message><message><source>Unknown Mode</source><translation>अज्ञात मोड</translation></message><message><source> (OVERDRIVE)</source><translation> (ओवरड्राइव)</translation></message><message><source>Manual: %1%</source><translation>मैनुअल: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>मैनुअल: %1% (सिंक किया गया)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">टर्बो</translation>
+        <translation>टर्बो</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">शांत</translation>
+        <translation>साइलेंट</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF पंखा नियंत्रण</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>भाषा बदल दी गई</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>लाइट मोड</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>सेटिंग्स</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU पहचान विफल</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>सेटिंग्स</translation></message><message><source>Customize your experience</source><translation>अपने अनुभव को अनुकूलित करें</translation></message><message><source>Karthigaiselvam R</source><translation>कार्तिकेयसेलवम आर</translation></message><message><source>Author</source><translation>लेखक</translation></message><message><source>AUTHOR</source><translation>लेखक</translation></message><message><source>About the Developer</source><translation>डेवलपर के बारे में</translation></message><message><source>Software Developer</source><translation>सॉफ्टवेयर डेवलपर</translation></message><message><source>Cyber Security Enthusiast</source><translation>साइबर सुरक्षा उत्साही</translation></message><message><source>LinkedIn</source><translation>लिंक्डइन</translation></message><message><source>GitHub</source><translation>गिटहब</translation></message><message><source>Email</source><translation>ईमेल</translation></message><message><source>Email Copied</source><translation>ईमेल कॉपी किया गया</translation></message><message><source>Appearance</source><translation>दिखावट</translation></message><message><source>LANGUAGE</source><translation>भाषा</translation></message><message><source>Select your preferred language</source><translation>अपनी पसंदीदा भाषा चुनें</translation></message><message><source>Choose Language</source><translation>भाषा चुनें</translation></message><message><source>Temperature Unit</source><translation>तापमान इकाई</translation></message><message><source>Celsius (°C)</source><translation>सेल्सियस (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>फारेनहाइट (°F)</translation></message><message><source>Dark Mode active</source><translation>डार्क मोड सक्रिय</translation></message><message><source>Light Mode active</source><translation>लाइट मोड सक्रिय</translation></message><message><source>Security is not a product, but a process.</source><translation>सुरक्षा एक उत्पाद नहीं, बल्कि एक प्रक्रिया है।</translation></message><message><source>Auto</source><translation>स्वचालित</translation></message><message><source>"Security is not a product, but a process."</source><translation>"सुरक्षा एक उत्पाद नहीं, बल्कि एक प्रक्रिया है।"</translation></message></context></TS>

@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>تحديد الشحن بنسبة 60-80% يمكن أن يطيل عمر البطارية بشكل كبير، وهو مثالي لأجهزة الكمبيوتر المحمولة المتصلة بالكهرباء.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>الحد الأقصى 100%</translation></message><message><source>Minimum 60%</source><translation>الحد الأدنى 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>الحد الأقصى 100%</translation></message><message><source>Minimum 60%</source><translation>الحد الأدنى 60%</translation></message><message><source>PLUGGED IN</source><translation>متصل بالكهرباء</translation></message><message><source>Plugged In</source><translation>متصل</translation></message><message><source>Full (Limit)</source><translation>ممتلئ (حد)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>من المساحة المستخدمة</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(شحن)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(متصل)</translation></message><message><source>Up:</source><translation>رفع:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>الوضع: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>صامت (هدوء مطلق)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>متوازن (يبدأ &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>تيربو (نشط دائماً)</translation></message><message><source>Unknown Mode</source><translation>وضع غير معروف</translation></message></context>
+<message><source>Mode: %1</source><translation>الوضع: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>صامت (هدوء مطلق)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>متوازن (يبدأ &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>تيربو (نشط دائماً)</translation></message><message><source>Unknown Mode</source><translation>وضع غير معروف</translation></message><message><source> (OVERDRIVE)</source><translation> (سرعة فائقة)</translation></message><message><source>Manual: %1%</source><translation>يدوي: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>يدوي: %1% (متزامن)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -438,7 +438,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>صامت &lt; </translation>
+        <translation>هادئ &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
@@ -448,7 +448,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>تيربو &gt; </translation>
+        <translation>تربو &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">توربو</translation>
+        <translation>تربو</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">صامت</translation>
+        <translation>هادئ</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>تحكم مروحة ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>تم تغيير اللغة</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>الوضع الفاتح</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>الإعدادات</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>فشل الكشف عن الرسوميات</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>الإعدادات</translation></message><message><source>Customize your experience</source><translation>خصص تجربتك</translation></message><message><source>Karthigaiselvam R</source><translation>كارثيغايسيلفام ر</translation></message><message><source>Author</source><translation>المؤلف</translation></message><message><source>AUTHOR</source><translation>المؤلف</translation></message><message><source>About the Developer</source><translation>حول المطور</translation></message><message><source>Software Developer</source><translation>مطور برمجيات</translation></message><message><source>Cyber Security Enthusiast</source><translation>مهتم بالأمن السيبراني</translation></message><message><source>LinkedIn</source><translation>لينكد إن</translation></message><message><source>GitHub</source><translation>جيت هاب</translation></message><message><source>Email</source><translation>البريد الإلكتروني</translation></message><message><source>Email Copied</source><translation>تم نسخ البريد الإلكتروني</translation></message><message><source>Appearance</source><translation>المظهر</translation></message><message><source>LANGUAGE</source><translation>اللغة</translation></message><message><source>Select your preferred language</source><translation>اختر لغتك المفضلة</translation></message><message><source>Choose Language</source><translation>اختر لغة</translation></message><message><source>Temperature Unit</source><translation>وحدة الحرارة</translation></message><message><source>Celsius (°C)</source><translation>سيليزي (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>فهرنهايت (°F)</translation></message><message><source>Dark Mode active</source><translation>الوضع الداكن نشط</translation></message><message><source>Light Mode active</source><translation>الوضع الفاتح نشط</translation></message><message><source>Security is not a product, but a process.</source><translation>الأمن ليس منتجًا، بل عملية.</translation></message><message><source>Auto</source><translation>تلقائي</translation></message><message><source>"Security is not a product, but a process."</source><translation>"الأمن ليس منتجًا، بل عملية."</translation></message></context></TS>

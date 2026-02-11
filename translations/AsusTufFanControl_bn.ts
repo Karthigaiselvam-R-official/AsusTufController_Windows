@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>চার্জ ৬০-৮০% এর মধ্যে সীমাবদ্ধ রাখলে ব্যাটারির আয়ু উল্লেখযোগ্যভাবে বাড়তে পারে, যা প্লাগ করা ল্যাপটপের জন্য আদর্শ।</translation>
     </message>
-<message><source>Maximum 100%</source><translation>সর্বোচ্চ 100%</translation></message><message><source>Minimum 60%</source><translation>সর্বনিম্ন 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>সর্বোচ্চ 100%</translation></message><message><source>Minimum 60%</source><translation>সর্বনিম্ন ৬০%</translation></message><message><source>PLUGGED IN</source><translation>প্লাগড ইন</translation></message><message><source>Plugged In</source><translation>প্লাগ ইন করা হয়েছে</translation></message><message><source>Full (Limit)</source><translation>পূর্ণ (সীমা)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>স্টোরেজ ব্যবহার করা হয়েছে</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(চার্জিং)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(প্লাগ ইন)</translation></message><message><source>Up:</source><translation>আপ:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>মোড: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>সাইলেন্ট (পুরোপুসি শান্ত)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>ভারসাম্য (&gt; ৬০°C এ শুরু)</translation></message><message><source>Turbo (Always Active)</source><translation>টার্বো (সর্বদা সক্রিয়)</translation></message><message><source>Unknown Mode</source><translation>অজানা মোড</translation></message></context>
+<message><source>Mode: %1</source><translation>মোড: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>সাইলেন্ট (পুরোপুসি শান্ত)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>ভারসাম্য (&gt; ৬০°C এ শুরু)</translation></message><message><source>Turbo (Always Active)</source><translation>টার্বো (সর্বদা সক্রিয়)</translation></message><message><source>Unknown Mode</source><translation>অজানা মোড</translation></message><message><source> (OVERDRIVE)</source><translation> (ওভারড্রাইভ)</translation></message><message><source>Manual: %1%</source><translation>ম্যানুয়াল: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>ম্যানুয়াল: %1% (সিঙ্ক করা হয়েছে)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>ভারসাম্যপূর্ণ </translation>
+        <translation>ব্যালেন্সড </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
@@ -463,7 +463,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>ভারসাম্যপূর্ণ</translation>
+        <translation>ব্যালেন্সড</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">টার্বো</translation>
+        <translation>টার্বো</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">নীরব</translation>
+        <translation>সাইলেন্ট</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF ফ্যান নিয়ন্ত্রণ</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>ভাষা পরিবর্তন করা হয়েছে</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>লাইট মোড</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>সেটিংস</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU সনাক্তকরণ ব্যর্থ</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>সেটিংস</translation></message><message><source>Customize your experience</source><translation>আপনার অভিজ্ঞতা কাস্টমাইজ করুন</translation></message><message><source>Karthigaiselvam R</source><translation>কার্তিকাইসেলভাম রা</translation></message><message><source>Author</source><translation>লেখক</translation></message><message><source>AUTHOR</source><translation>লেখক</translation></message><message><source>About the Developer</source><translation>ডেভেলপার সম্পর্কে</translation></message><message><source>Software Developer</source><translation>সফটওয়্যার ডেভেলপার</translation></message><message><source>Cyber Security Enthusiast</source><translation>সাইবার সুরক্ষা উৎসাহী</translation></message><message><source>LinkedIn</source><translation>লিঙ্কডইন</translation></message><message><source>GitHub</source><translation>গিটহাব</translation></message><message><source>Email</source><translation>ইমেইল</translation></message><message><source>Email Copied</source><translation>ইমেইল কপি করা হয়েছে</translation></message><message><source>Appearance</source><translation>চেহারা</translation></message><message><source>LANGUAGE</source><translation>ভাষা</translation></message><message><source>Select your preferred language</source><translation>আপনার পছন্দের ভাষা নির্বাচন করুন</translation></message><message><source>Choose Language</source><translation>ভাষা চয়ন করুন</translation></message><message><source>Temperature Unit</source><translation>তাপমাত্রার একক</translation></message><message><source>Celsius (°C)</source><translation>সেলসিয়াস (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>ফারেনহাইট (°F)</translation></message><message><source>Dark Mode active</source><translation>ডার্ক মোড সক্রিয়</translation></message><message><source>Light Mode active</source><translation>লাইট মোড সক্রিয়</translation></message><message><source>Security is not a product, but a process.</source><translation>নিরাপত্তা কেবল পণ্য নয়, এটি একটি প্রক্রিয়া।</translation></message><message><source>Auto</source><translation>স্বয়ংক্রিয়</translation></message><message><source>"Security is not a product, but a process."</source><translation>"নিরাপত্তা কোনো পণ্য নয়, এটি একটি প্রক্রিয়া।"</translation></message></context></TS>

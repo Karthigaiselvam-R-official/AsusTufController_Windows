@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>محدود کردن شارژ به 60-80٪ می تواند عمر باتری را به طور قابل توجهی افزایش دهد، ایده آل برای لپ تاپ هایی که همیشه به برق متصل هستند.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>حداکثر 100%</translation></message><message><source>Minimum 60%</source><translation>حداقل 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>حداکثر 100%</translation></message><message><source>Minimum 60%</source><translation>حداقل ۶۰٪</translation></message><message><source>PLUGGED IN</source><translation>متصل</translation></message><message><source>Plugged In</source><translation>متصل به شارژر</translation></message><message><source>Full (Limit)</source><translation>پر (محدودیت)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>از حافظه مصرف شده</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(شارژ)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(متصل)</translation></message><message><source>Up:</source><translation>بالا:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>حالت: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>ساکت (سکوت مطلق)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>متعادل (شروع &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>توربو (همیشه فعال)</translation></message><message><source>Unknown Mode</source><translation>حالت ناشناخته</translation></message></context>
+<message><source>Mode: %1</source><translation>حالت: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>ساکت (سکوت مطلق)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>متعادل (شروع &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>توربو (همیشه فعال)</translation></message><message><source>Unknown Mode</source><translation>حالت ناشناخته</translation></message><message><source> (OVERDRIVE)</source><translation> (اوردرایو)</translation></message><message><source>Manual: %1%</source><translation>دستی: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>دستی: %1% (همگام‌سازی شده)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -438,7 +438,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>ساکت &lt; </translation>
+        <translation>بی صدا &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">توربو</translation>
+        <translation>توربو</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">بی‌صدا</translation>
+        <translation>بی صدا</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>کنترل فن ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>زبان تغییر کرد</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>حالت روشن</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>تنظيمات</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>شناسایی گرافیک ناموفق</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>تنظيمات</translation></message><message><source>Customize your experience</source><translation>تجربه خود را شخصی سازی کنید</translation></message><message><source>Karthigaiselvam R</source><translation>کارتیگایسلوان را</translation></message><message><source>Author</source><translation>نویسنده</translation></message><message><source>AUTHOR</source><translation>نویسنده</translation></message><message><source>About the Developer</source><translation>درباره توسعه دهنده</translation></message><message><source>Software Developer</source><translation>توسعه دهنده نرم افزار</translation></message><message><source>Cyber Security Enthusiast</source><translation>علاقه مند به امنیت سایبری</translation></message><message><source>LinkedIn</source><translation>لینکدین</translation></message><message><source>GitHub</source><translation>گیت‌هاب</translation></message><message><source>Email</source><translation>ایمیل</translation></message><message><source>Email Copied</source><translation>ایمیل کپی شد</translation></message><message><source>Appearance</source><translation>ظاهر</translation></message><message><source>LANGUAGE</source><translation>زبان</translation></message><message><source>Select your preferred language</source><translation>زبان مورد نظر خود را انتخاب کنید</translation></message><message><source>Choose Language</source><translation>انتخاب زبان</translation></message><message><source>Temperature Unit</source><translation>واحد دما</translation></message><message><source>Celsius (°C)</source><translation>سلسیوس (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>فارنهایت (°F)</translation></message><message><source>Dark Mode active</source><translation>حالت تیره فعال</translation></message><message><source>Light Mode active</source><translation>حالت روشن فعال</translation></message><message><source>Security is not a product, but a process.</source><translation>امنیت یک محصول نیست، بلکه یک فرآیند است.</translation></message><message><source>Auto</source><translation>خودکار</translation></message><message><source>"Security is not a product, but a process."</source><translation>"امنیت یک محصول نیست، بلکه یک فرآیند است."</translation></message></context></TS>

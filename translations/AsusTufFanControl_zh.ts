@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>将充电限制在60-80%可以显著延长电池寿命，非常适合一直插电使用的笔记本电脑。</translation>
     </message>
-<message><source>Maximum 100%</source><translation>最大 100%</translation></message><message><source>Minimum 60%</source><translation>最小 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>最大 100%</translation></message><message><source>Minimum 60%</source><translation>最低 60%</translation></message><message><source>PLUGGED IN</source><translation>已连接电源</translation></message><message><source>Plugged In</source><translation>已接通电源</translation></message><message><source>Full (Limit)</source><translation>已充满 (限制)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>存储已用</translation>
+        <translation>已使用的存储空间</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(充电中)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(已接通)</translation></message><message><source>Up:</source><translation>上载:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>错误: 未找到控制方法。使用sudo运行？</translation>
     </message>
-<message><source>Mode: %1</source><translation>模式: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>静音 (绝对安静)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>平衡 (启动 &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>涡轮 (始终激活)</translation></message><message><source>Unknown Mode</source><translation>未知模式</translation></message></context>
+<message><source>Mode: %1</source><translation>模式: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>静音 (绝对安静)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>平衡 (启动 &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>涡轮 (始终激活)</translation></message><message><source>Unknown Mode</source><translation>未知模式</translation></message><message><source> (OVERDRIVE)</source><translation> (超频)</translation></message><message><source>Manual: %1%</source><translation>手动: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>手动: %1% (已同步)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -438,7 +438,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>静音 &lt; </translation>
+        <translation>低音 &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
@@ -448,7 +448,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
         <source>Turbo &gt; </source>
-        <translation>涡轮 &gt; </translation>
+        <translation>增强 &gt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1108" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">增强</translation>
+        <translation>增强</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">静音</translation>
+        <translation>低音</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>华硕TUF风扇控制</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>语言已更改</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>浅色模式</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>设置</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU检测失败</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>设置</translation></message><message><source>Customize your experience</source><translation>个性化您的体验</translation></message><message><source>Karthigaiselvam R</source><translation>卡尔提盖塞尔万·拉</translation></message><message><source>Author</source><translation>作者</translation></message><message><source>AUTHOR</source><translation>作者</translation></message><message><source>About the Developer</source><translation>关于开发者</translation></message><message><source>Software Developer</source><translation>软件开发工程师</translation></message><message><source>Cyber Security Enthusiast</source><translation>网络安全爱好者</translation></message><message><source>LinkedIn</source><translation>领英</translation></message><message><source>GitHub</source><translation>吉特哈布</translation></message><message><source>Email</source><translation>电子邮件</translation></message><message><source>Email Copied</source><translation>电子邮箱已复制</translation></message><message><source>Appearance</source><translation>外观</translation></message><message><source>LANGUAGE</source><translation>语言</translation></message><message><source>Select your preferred language</source><translation>选择您首选的语言</translation></message><message><source>Choose Language</source><translation>选择语言</translation></message><message><source>Temperature Unit</source><translation>温度单位</translation></message><message><source>Celsius (°C)</source><translation>摄氏度 (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>华氏度 (°F)</translation></message><message><source>Dark Mode active</source><translation>深色模式已激活</translation></message><message><source>Light Mode active</source><translation>浅色模式已激活</translation></message><message><source>Security is not a product, but a process.</source><translation>安全不是一种产品，而是一个过程。</translation></message><message><source>Auto</source><translation>自动</translation></message><message><source>"Security is not a product, but a process."</source><translation>"安全不是一种产品，而是一个过程。"</translation></message></context></TS>

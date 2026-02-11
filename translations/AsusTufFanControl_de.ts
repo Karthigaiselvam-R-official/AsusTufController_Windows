@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Eine Begrenzung der Ladung auf 60-80% kann die Lebensdauer Ihres Akkus erheblich verlängern, ideal für Laptops im Netzbetrieb.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Maximum 100%</translation></message><message><source>Minimum 60%</source><translation>Minimum 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Maximum 100%</translation></message><message><source>Minimum 60%</source><translation>Mindestens 60%</translation></message><message><source>PLUGGED IN</source><translation>ANGESCHLOSSEN</translation></message><message><source>Plugged In</source><translation>Angeschlossen</translation></message><message><source>Full (Limit)</source><translation>Voll (Limit)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Laden)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Am Netz)</translation></message><message><source>Up:</source><translation>Hoch:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Fehler: Keine Steuerungsmethoden. Mit sudo ausführen?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Modus: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Leise (Absolut Ruhig)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Ausgewogen (Startet &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Immer Aktiv)</translation></message><message><source>Unknown Mode</source><translation>Unbekannter Modus</translation></message></context>
+<message><source>Mode: %1</source><translation>Modus: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Leise (Absolut Ruhig)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Ausgewogen (Startet &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Immer Aktiv)</translation></message><message><source>Unknown Mode</source><translation>Unbekannter Modus</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manuell: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manuell: %1% (Synchronisiert)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Ausgewogen </translation>
+        <translation>Ausbalanciert </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
@@ -463,7 +463,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Ausgewogen</translation>
+        <translation>Ausbalanciert</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Turbo</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Leise</translation>
+        <translation>Leise</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF Lüftersteuerung</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Sprache geändert</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Heller Modus</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>EINSTELLUNGEN</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU-Erkennung fehlgeschlagen</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>EINSTELLUNGEN</translation></message><message><source>Customize your experience</source><translation>Passen Sie Ihr Erlebnis an</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>AUTHOR</source><translation>AUTOR</translation></message><message><source>About the Developer</source><translation>Über den Entwickler</translation></message><message><source>Software Developer</source><translation>Softwareentwickler</translation></message><message><source>Cyber Security Enthusiast</source><translation>Cybersicherheits-Enthusiast</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-Mail</translation></message><message><source>Email Copied</source><translation>E-Mail kopiert</translation></message><message><source>Appearance</source><translation>Erscheinungsbild</translation></message><message><source>LANGUAGE</source><translation>SPRACHE</translation></message><message><source>Select your preferred language</source><translation>Wählen Sie Ihre bevorzugte Sprache</translation></message><message><source>Choose Language</source><translation>Sprache wählen</translation></message><message><source>Temperature Unit</source><translation>Temperatureinheit</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Dunkelmodus aktiv</translation></message><message><source>Light Mode active</source><translation>Hellmodus aktiv</translation></message><message><source>Security is not a product, but a process.</source><translation>Sicherheit ist kein Produkt, sondern ein Prozess.</translation></message><message><source>Auto</source><translation>Auto</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Sicherheit ist kein Produkt, sondern ein Prozess."</translation></message></context></TS>
