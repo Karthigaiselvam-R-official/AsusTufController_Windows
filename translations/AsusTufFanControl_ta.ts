@@ -120,6 +120,10 @@
 <context>
     <name>BatteryPage</name>
 <message>
+    <source>Full (Limit)</source>
+<translation>முழுமையானது (வரம்பு)</translation>
+</message>
+<message>
     <source>Minimum 60%</source>
 <translation>குறைந்தபட்சம் 60%</translation>
 </message>
@@ -830,5 +834,7 @@
     <name>SystemStatsMonitor</name>
 </context>
 </TS>
+
+
 
 

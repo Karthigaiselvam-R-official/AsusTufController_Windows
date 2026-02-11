@@ -373,8 +373,10 @@ Item {
                                 if (s === "Discharging") return qsTr("Discharging")
                                 if (s === "Charging") return qsTr("Charging")
                                 if (s === "Full") return qsTr("Full")
+                                if (s === "Full (Limit)") return qsTr("Full (Limit)")
+                                if (s === "Plugged In") return qsTr("Plugged In")
                                 if (s === "Not charging") return qsTr("Not charging")
-                                return s
+                                return qsTr(s)
                             }                            color: theme ? theme.textPrimary : "#fff"
                             font.pixelSize: 16
                             font.bold: true
@@ -563,7 +565,7 @@ Item {
                                         onTextChanged: {
                                             var val = parseInt(text)
                                             if (val < 60 && text.length > 0) {
-                                                validationMsg.text = "Minimum 60%"
+                                                validationMsg.text = qsTr("Minimum 60%")
                                             } else if (val > 100) {
                                                 validationMsg.text = qsTr("Maximum 100%")
                                             } else {
