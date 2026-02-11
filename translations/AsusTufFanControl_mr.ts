@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation type="unfinished" />
     </message>
-</context>
+<message><source>PLUGGED IN</source><translation>प्लग इन</translation></message><message><source>Plugged In</source><translation>प्लग इन केले</translation></message><message><source>Full (Limit)</source><translation>पूर्ण (मर्यादा)</translation></message><message><source>Minimum 60%</source><translation>किमान ६०%</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>स्टोरेज वापरले</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(चार्जिंग)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(प्लग इन)</translation></message><message><source>Up:</source><translation>अप:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-</context>
+<message><source> (OVERDRIVE)</source><translation> (ओव्हरड्राइव्ह)</translation></message><message><source>Manual: %1%</source><translation>मॅन्युअल: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>मॅन्युअल: %1% (सिंक केले)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">टर्बो</translation>
+        <translation>टर्बो</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">शांत</translation>
+        <translation>सायलेंट</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF पंखा नियंत्रण</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>भाषा बदलली</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>लाइट मोड</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>सेटिंग्ज</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU शोध अयशस्वी</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>सेटिंग्ज</translation></message><message><source>Customize your experience</source><translation>तुमचा अनुभव सानुकूलित करा</translation></message><message><source>Karthigaiselvam R</source><translation>कार्तिगैसेल्वम आर</translation></message><message><source>Author</source><translation>लेखक</translation></message><message><source>AUTHOR</source><translation>लेखक</translation></message><message><source>About the Developer</source><translation>विकासकाबद्दल</translation></message><message><source>Software Developer</source><translation>सॉफ्टवेअर विकासक</translation></message><message><source>Cyber Security Enthusiast</source><translation>सायबर सुरक्षा उत्साही</translation></message><message><source>LinkedIn</source><translation>लिंक्डइन</translation></message><message><source>GitHub</source><translation>गिटहब</translation></message><message><source>Email</source><translation>ईमेल</translation></message><message><source>Email Copied</source><translation>ईमेल कॉपी केला</translation></message><message><source>Appearance</source><translation>दिसावट</translation></message><message><source>LANGUAGE</source><translation>भाषा</translation></message><message><source>Select your preferred language</source><translation>तुमची पसंतीची भाषा निवडा</translation></message><message><source>Choose Language</source><translation>भाषा निवडा</translation></message><message><source>Temperature Unit</source><translation>तापमान एकक</translation></message><message><source>Celsius (°C)</source><translation>सेल्सियस (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>फॅरेनहाईट (°F)</translation></message><message><source>Dark Mode active</source><translation>डार्क मोड सक्रिय</translation></message><message><source>Light Mode active</source><translation>लाइट मोड सक्रिय</translation></message><message><source>"Security is not a product, but a process."</source><translation>"सुरक्षा हे उत्पादन नाही, तर एक प्रक्रिया आहे."</translation></message><message><source>Auto</source><translation>स्वयंचलित</translation></message></context></TS>
