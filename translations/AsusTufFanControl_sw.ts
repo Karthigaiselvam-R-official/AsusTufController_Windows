@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Kupunguza chaji hadi 60-80% kunaweza kuongeza muda wa maisha ya betri, bora kwa kompyuta mpakato zinazochajiwa kila wakati.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Kiwango cha juu 100%</translation></message><message><source>Minimum 60%</source><translation>Kiwango cha chini 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Kiwango cha juu 100%</translation></message><message><source>Minimum 60%</source><translation>Kiwango cha chini 60%</translation></message><message><source>PLUGGED IN</source><translation>IMEUNGANISHWA</translation></message><message><source>Plugged In</source><translation>Imeunganishwa</translation></message><message><source>Full (Limit)</source><translation>Imejaa (Kikomo)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>of storage used</translation>
+        <translation>ya hifadhi imetumika</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Inachaji)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Imeunganishwa)</translation></message><message><source>Up:</source><translation>Pakia:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Modi: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Kimya (Utulivu Kabisa)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Sawazisha (Huanza &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Inatumika Daima)</translation></message><message><source>Unknown Mode</source><translation>Modi Isiyojulikana</translation></message></context>
+<message><source>Mode: %1</source><translation>Modi: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Kimya (Utulivu Kabisa)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Sawazisha (Huanza &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Inatumika Daima)</translation></message><message><source>Unknown Mode</source><translation>Modi Isiyojulikana</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Mwongozo: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Mwongozo: %1% (Imesawazishwa)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Sawazisha </translation>
+        <translation>Usawa </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
@@ -463,7 +463,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1120" />
         <source>Balanced</source>
-        <translation>Sawazisha</translation>
+        <translation>Usawa</translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1121" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Turbo</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Kimya</translation>
+        <translation>Kimya</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>Udhibiti wa Feni ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Lugha Imebadilishwa</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Modi ya Nuru</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>MIPANGILIO</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>Kugundua GPU Kumeshindwa</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>MIPANGILIO</translation></message><message><source>Customize your experience</source><translation>Binafsisha uzoefu wako</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Mwandishi</translation></message><message><source>AUTHOR</source><translation>MWANDISHI</translation></message><message><source>About the Developer</source><translation>Kuhusu Msanidi Programu</translation></message><message><source>Software Developer</source><translation>Msanidi Programu</translation></message><message><source>Cyber Security Enthusiast</source><translation>Mpenzi wa Usalama wa Mtandao</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>Barua pepe</translation></message><message><source>Email Copied</source><translation>Barua pepe imenakiliwa</translation></message><message><source>Appearance</source><translation>Muonekano</translation></message><message><source>LANGUAGE</source><translation>LUGHA</translation></message><message><source>Select your preferred language</source><translation>Chagua lugha unayoipendelea</translation></message><message><source>Choose Language</source><translation>Chagua Lugha</translation></message><message><source>Temperature Unit</source><translation>Kipimo cha Joto</translation></message><message><source>Celsius (°C)</source><translation>Selsiasi (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Farenhaiti (°F)</translation></message><message><source>Dark Mode active</source><translation>Hali ya Giza imewashwa</translation></message><message><source>Light Mode active</source><translation>Hali ya Mwanga imewashwa</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Usalama si bidhaa, bali ni mchakato."</translation></message><message><source>Auto</source><translation>Otomatiki</translation></message></context></TS>
