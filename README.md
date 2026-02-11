@@ -13,6 +13,10 @@
 *Native. Lightweight. Powerful.*
 
 <p align="center">
+  <video src="resources/AsusTufController.mp4" width="800" autoplay loop muted playsinline></video>
+</p>
+
+<p align="center">
   <img src="resources/SystemInfo.png" width="800" alt="Dashboard Preview">
 </p>
 
