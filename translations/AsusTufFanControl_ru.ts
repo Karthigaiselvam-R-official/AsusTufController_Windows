@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Ограничение заряда до 60-80% может значительно продлить срок службы батареи, идеально для ноутбуков, работающих от сети.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Максимум 100%</translation></message><message><source>Minimum 60%</source><translation>Минимум 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Максимум 100%</translation></message><message><source>Minimum 60%</source><translation>Минимум 60%</translation></message><message><source>PLUGGED IN</source><translation>ПОДКЛЮЧЕНО</translation></message><message><source>Plugged In</source><translation>Подключено</translation></message><message><source>Full (Limit)</source><translation>Полный (Лимит)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>хранилища занято</translation>
+        <translation>хранилища использовано</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Зарядка)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Подключено)</translation></message><message><source>Up:</source><translation>Загрузка:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Режим: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Тихий (Абсолютная тишина)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Сбаланс. (Старт &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Турбо (Всегда активен)</translation></message><message><source>Unknown Mode</source><translation>Неизвестный режим</translation></message></context>
+<message><source>Mode: %1</source><translation>Режим: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Тихий (Абсолютная тишина)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Сбаланс. (Старт &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Турбо (Всегда активен)</translation></message><message><source>Unknown Mode</source><translation>Неизвестный режим</translation></message><message><source> (OVERDRIVE)</source><translation> (ОВЕРДРАЙВ)</translation></message><message><source>Manual: %1%</source><translation>Ручной: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Ручной: %1% (Синхронизирован)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -443,7 +443,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
         <source>Balanced </source>
-        <translation>Сбаланс. </translation>
+        <translation>Сбалансированный </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1081" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Турбо</translation>
+        <translation>Турбо</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Тихий</translation>
+        <translation>Тихий</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>Управление вентиляторами ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Язык изменён</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Светлый режим</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>НАСТРОЙКИ</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>Ошибка определения GPU</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>НАСТРОЙКИ</translation></message><message><source>Customize your experience</source><translation>Настройте свой опыт</translation></message><message><source>Karthigaiselvam R</source><translation>Картигайселвам Р</translation></message><message><source>Author</source><translation>Автор</translation></message><message><source>AUTHOR</source><translation>АВТОР</translation></message><message><source>About the Developer</source><translation>О разработчике</translation></message><message><source>Software Developer</source><translation>Разработчик программного обеспечения</translation></message><message><source>Cyber Security Enthusiast</source><translation>Энтузиаст кибербезопасности</translation></message><message><source>LinkedIn</source><translation>ЛинкедИн</translation></message><message><source>GitHub</source><translation>ГитХаб</translation></message><message><source>Email</source><translation>Электронная почта</translation></message><message><source>Email Copied</source><translation>Электронная почта скопирована</translation></message><message><source>Appearance</source><translation>Внешний вид</translation></message><message><source>LANGUAGE</source><translation>ЯЗЫК</translation></message><message><source>Select your preferred language</source><translation>Выберите предпочтительный язык</translation></message><message><source>Choose Language</source><translation>Выбрать язык</translation></message><message><source>Temperature Unit</source><translation>Единица температуры</translation></message><message><source>Celsius (°C)</source><translation>Цельсий (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Фаренгейт (°F)</translation></message><message><source>Dark Mode active</source><translation>Тёмный режим активен</translation></message><message><source>Light Mode active</source><translation>Светлый режим активен</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Безопасность — это не продукт, а процесс."</translation></message><message><source>Auto</source><translation>Авто</translation></message></context></TS>
