@@ -911,7 +911,7 @@ Item {
                                 }
                                 
                                 Text {
-                                    text: qsTr("CPU: ") + curveController.currentCpuTemp + "°C"
+                                    text: qsTr("CPU: ") + (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.currentCpuTemp) : curveController.currentCpuTemp) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                                     color: theme.textPrimary
                                     font.pixelSize: 16
                                     font.bold: true
@@ -957,7 +957,7 @@ Item {
                                 }
                                 Item { Layout.fillWidth: true }
                                 Text {
-                                    text: FanCurveController.silentThreshold + "°C"
+                                    text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(FanCurveController.silentThreshold) : FanCurveController.silentThreshold) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                                     color: theme.textPrimary
                                     font.pixelSize: 13
                                     font.bold: true
@@ -1040,7 +1040,7 @@ Item {
                                 }
                                 Item { Layout.fillWidth: true }
                                 Text {
-                                    text: curveController.balancedThreshold + "°C"
+                                    text: (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.balancedThreshold) : curveController.balancedThreshold) + (ThemeController.tempUnit === 1 ? "°F" : "°C")
                                     color: theme.textPrimary
                                     font.pixelSize: 13
                                     font.bold: true
@@ -1117,17 +1117,17 @@ Item {
                             Row {
                                 spacing: 6
                                 Rectangle { width: 12; height: 12; radius: 6; color: "#27ae60" }
-                                Text { text: qsTr("Silent < ") + curveController.silentThreshold + "°C"; color: theme.textSecondary; font.pixelSize: 11 }
+                                Text { text: qsTr("Silent < ") + (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.silentThreshold) : curveController.silentThreshold) + (ThemeController.tempUnit === 1 ? "°F" : "°C"); color: theme.textSecondary; font.pixelSize: 11 }
                             }
                             Row {
                                 spacing: 6
                                 Rectangle { width: 12; height: 12; radius: 6; color: "#f39c12" }
-                                Text { text: qsTr("Balanced ") + curveController.silentThreshold + "-" + curveController.balancedThreshold + "°C"; color: theme.textSecondary; font.pixelSize: 11 }
+                                Text { text: qsTr("Balanced ") + (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.silentThreshold) : curveController.silentThreshold) + "-" + (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.balancedThreshold) : curveController.balancedThreshold) + (ThemeController.tempUnit === 1 ? "°F" : "°C"); color: theme.textSecondary; font.pixelSize: 11 }
                             }
                             Row {
                                 spacing: 6
                                 Rectangle { width: 12; height: 12; radius: 6; color: "#e74c3c" }
-                                Text { text: qsTr("Turbo > ") + curveController.balancedThreshold + "°C"; color: theme.textSecondary; font.pixelSize: 11 }
+                                Text { text: qsTr("Turbo > ") + (ThemeController.tempUnit === 1 ? ThemeController.toFahrenheit(curveController.balancedThreshold) : curveController.balancedThreshold) + (ThemeController.tempUnit === 1 ? "°F" : "°C"); color: theme.textSecondary; font.pixelSize: 11 }
                             }
                         }
                         
@@ -1176,10 +1176,10 @@ Item {
                             // Preset Buttons
                                 Repeater {
                                 model: [
-                                    { name: qsTr("Gaming"), color: "#e74c3c" },
-                                    { name: qsTr("Balanced"), color: "#f39c12" },
-                                    { name: qsTr("Quiet"), color: "#27ae60" },
-                                    { name: qsTr("Performance"), color: "#9b59b6" }
+                                    { key: "Gaming", name: qsTr("Gaming"), color: "#e74c3c" },
+                                    { key: "Balanced", name: qsTr("Balanced"), color: "#f39c12" },
+                                    { key: "Quiet", name: qsTr("Quiet"), color: "#27ae60" },
+                                    { key: "Performance", name: qsTr("Performance"), color: "#9b59b6" }
                                 ]
                                 
                                 Rectangle {
@@ -1190,9 +1190,10 @@ Item {
                                     radius: 18
                                     
                                     property color btnColor: modelData.color
+                                    property bool isSelected: curveController.currentPreset === modelData.key
                                     
-                                    color: presetMouse.containsMouse ? btnColor : (theme.isDark ? "#333" : "#e0e0e0")
-                                    border.width: presetMouse.containsMouse ? 0 : 2
+                                    color: isSelected ? btnColor : (presetMouse.containsMouse ? btnColor : (theme.isDark ? "#333" : "#e0e0e0"))
+                                    border.width: (presetMouse.containsMouse || isSelected) ? 0 : 2
                                     border.color: btnColor
                                     
                                     scale: presetMouse.containsMouse ? 1.08 : 1.0
@@ -1205,7 +1206,7 @@ Item {
                                         // Strict Text Binding
                                         width: parent.width - 16
                                         text: modelData.name
-                                        color: presetMouse.containsMouse ? "white" : btnColor
+                                        color: (presetMouse.containsMouse || bottomPresetBtn.isSelected) ? "white" : btnColor
                                         font.pixelSize: 12
                                         font.bold: true
                                         horizontalAlignment: Text.AlignHCenter
@@ -1226,7 +1227,7 @@ Item {
                                         hoverEnabled: true
                                         cursorShape: Qt.PointingHandCursor
                                         enabled: curveController.autoCurveEnabled
-                                        onClicked: curveController.applyPreset(modelData.name)
+                                        onClicked: curveController.applyPreset(modelData.key)
                                     }
                                 }
                             }
