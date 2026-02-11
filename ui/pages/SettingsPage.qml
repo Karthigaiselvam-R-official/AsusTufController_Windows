@@ -2,9 +2,9 @@ import QtQuick 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15
 import QtQuick.Shapes 1.15
-import AsusTufFanControl 1.0
+import AsusTufController 1.0
 import ".."
-import "qrc:/AsusTufFanControl/ui/Translations.js" as Trans
+import "qrc:/AsusTufController/ui/Translations.js" as Trans
 
 Item {
     id: settingsPage
@@ -1301,7 +1301,7 @@ Item {
                         // Version Footer
                         Text {
                             Layout.fillWidth: true
-                            text: "v1.0.0 • AsusTufFanControl"
+                            text: "v1.0.0 • AsusTufController"
                             color: theme.textDisabled
                             font.pixelSize: 10
                             horizontalAlignment: Text.AlignRight

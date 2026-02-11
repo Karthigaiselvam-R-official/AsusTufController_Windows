@@ -2,7 +2,7 @@ import QtQuick 2.15
 import QtQuick.Window 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
-import AsusTufFanControl 1.0
+import AsusTufController 1.0
 import "components"
 import "pages"
 
@@ -13,7 +13,7 @@ ApplicationWindow {
     height: 800
     minimumWidth: 1000
     minimumHeight: 700
-    title: qsTr("ASUS TUF Fan Control")
+    title: qsTr("ASUS TUF Controller")
     color: theme.background
     
     // Restore Aura on close (logic remains)

@@ -1,6 +1,7 @@
 import QtQuick 2.15
-import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15
+import QtQuick.Layouts 1.15
+import AsusTufController 1.0
 
 Rectangle {
     id: sidebar
@@ -80,7 +81,7 @@ Rectangle {
                     }
                     
                     Image {
-                        source: "qrc:/AsusTufFanControl/ui/app_icon.png"
+                        source: "qrc:/AsusTufController/ui/app_icon.png"
                         anchors.centerIn: parent
                         sourceSize.width: 40
                         sourceSize.height: 40

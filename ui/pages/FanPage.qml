@@ -1,7 +1,7 @@
 import QtQuick 2.15
 import QtQuick.Layouts 1.15
 import QtQuick.Controls 2.15
-import AsusTufFanControl 1.0
+import AsusTufController 1.0
 import ".."
 
 Item {
