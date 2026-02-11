@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Giới hạn sạc ở mức 60-80% có thể kéo dài đáng kể tuổi thọ pin, lý tưởng cho laptop luôn cắm sạc.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Tối đa 100%</translation></message><message><source>Minimum 60%</source><translation>Tối thiểu 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Tối đa 100%</translation></message><message><source>Minimum 60%</source><translation>Tối thiểu 60%</translation></message><message><source>PLUGGED IN</source><translation>ĐÃ CẮM SẠC</translation></message><message><source>Plugged In</source><translation>Đã cắm sạc</translation></message><message><source>Full (Limit)</source><translation>Đầy (Giới hạn)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>lưu trữ đã dùng</translation>
+        <translation>bộ nhớ đã sử dụng</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Đang Sạc)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Đã cắm sạc)</translation></message><message><source>Up:</source><translation>Tải lên:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Chế độ: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Im lặng (Yên tĩnh tuyệt đối)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Cân bằng (Bắt đầu &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Luôn hoạt động)</translation></message><message><source>Unknown Mode</source><translation>Chế độ không xác định</translation></message></context>
+<message><source>Mode: %1</source><translation>Chế độ: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Im lặng (Yên tĩnh tuyệt đối)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Cân bằng (Bắt đầu &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Luôn hoạt động)</translation></message><message><source>Unknown Mode</source><translation>Chế độ không xác định</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Thủ công: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Thủ công: %1% (Đã đồng bộ)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Turbo</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Im Lặng</translation>
+        <translation>Im lặng</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>Điều Khiển Quạt ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Đã thay đổi ngôn ngữ</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Chế độ Sáng</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>CÀI ĐẶT</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>Phát Hiện GPU Thất Bại</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>CÀI ĐẶT</translation></message><message><source>Customize your experience</source><translation>Tùy chỉnh trải nghiệm của bạn</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Tác giả</translation></message><message><source>AUTHOR</source><translation>TÁC GIẢ</translation></message><message><source>About the Developer</source><translation>Về nhà phát triển</translation></message><message><source>Software Developer</source><translation>Nhà phát triển phần mềm</translation></message><message><source>Cyber Security Enthusiast</source><translation>Người đam mê an ninh mạng</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>Email</translation></message><message><source>Email Copied</source><translation>Đã sao chép email</translation></message><message><source>Appearance</source><translation>Giao diện</translation></message><message><source>LANGUAGE</source><translation>NGÔN NGỮ</translation></message><message><source>Select your preferred language</source><translation>Chọn ngôn ngữ ưa thích của bạn</translation></message><message><source>Choose Language</source><translation>Chọn ngôn ngữ</translation></message><message><source>Temperature Unit</source><translation>Đơn vị nhiệt độ</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Chế độ tối đang bật</translation></message><message><source>Light Mode active</source><translation>Chế độ sáng đang bật</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Bảo mật không phải là sản phẩm, mà là một quy trình."</translation></message><message><source>Auto</source><translation>Tự động</translation></message></context></TS>
