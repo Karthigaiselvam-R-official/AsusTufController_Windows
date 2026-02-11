@@ -614,7 +614,7 @@ Item {
                             Layout.preferredWidth: 1 // FORCE EQUAL WIDTHS (Ignore content implicit width)
                             Layout.preferredHeight: 60
                             
-                            property bool isActive: fanSlider.value === modelData.v
+                            property bool isActive: backend.isManualModeActive && fanSlider.value === modelData.v
                             property string btnColor: modelData.c
                             enabled: backend.isManualModeActive
                             hoverEnabled: enabled
@@ -972,7 +972,7 @@ Item {
                                 Slider {
                                     id: silentSlider
                                     anchors.fill: parent
-                                    from: 30; to: 75
+                                    from: 0; to: 100
                                     value: curveController.silentThreshold
                                     
                                     background: Rectangle {
@@ -1015,7 +1015,7 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        silentSlider.value = Math.round(30 + ratio * 45) // 30 to 75
+                                        silentSlider.value = Math.round(ratio * 100) // 0 to 100
                                     }
                                     
                                     onPressed: updateValue(mouseX)
@@ -1055,7 +1055,7 @@ Item {
                                 Slider {
                                     id: turboSlider
                                     anchors.fill: parent
-                                    from: 45; to: 95
+                                    from: 0; to: 100
                                     value: curveController.balancedThreshold
                                     
                                     background: Rectangle {
@@ -1098,7 +1098,7 @@ Item {
                                     
                                     function updateValue(xPos) {
                                         var ratio = Math.max(0, Math.min(1, xPos / width))
-                                        turboSlider.value = Math.round(45 + ratio * 50) // 45 to 95
+                                        turboSlider.value = Math.round(ratio * 100) // 0 to 100
                                     }
                                     
                                     onPressed: updateValue(mouseX)
