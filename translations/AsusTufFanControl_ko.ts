@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>충전을 60-80%로 제한하면 배터리 수명을 크게 늘릴 수 있으며, 전원이 계속 연결된 노트북에 이상적입니다.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>최대 100%</translation></message><message><source>Minimum 60%</source><translation>최소 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>최대 100%</translation></message><message><source>Minimum 60%</source><translation>최소 60%</translation></message><message><source>PLUGGED IN</source><translation>연결됨</translation></message><message><source>Plugged In</source><translation>전원 연결됨</translation></message><message><source>Full (Limit)</source><translation>완충 (제한)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>스토리지 사용됨</translation>
+        <translation>저장 공간 사용 중</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(충전 중)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(연결됨)</translation></message><message><source>Up:</source><translation>업로드:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>모드: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>저소음 (완전 조용함)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>균형 (60°C 이상 시작)</translation></message><message><source>Turbo (Always Active)</source><translation>터보 (항상 활성)</translation></message><message><source>Unknown Mode</source><translation>알 수 없는 모드</translation></message></context>
+<message><source>Mode: %1</source><translation>모드: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>저소음 (완전 조용함)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>균형 (60°C 이상 시작)</translation></message><message><source>Turbo (Always Active)</source><translation>터보 (항상 활성)</translation></message><message><source>Unknown Mode</source><translation>알 수 없는 모드</translation></message><message><source> (OVERDRIVE)</source><translation> (오버드라이브)</translation></message><message><source>Manual: %1%</source><translation>수동: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>수동: %1% (동기화됨)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">터보</translation>
+        <translation>터보</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">저소음</translation>
+        <translation>저소음</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUF 팬 컨트롤</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>언어가 변경되었습니다</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>라이트 모드</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>설정</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU 감지 실패</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>설정</translation></message><message><source>Customize your experience</source><translation>경험을 사용자 정의하세요</translation></message><message><source>Karthigaiselvam R</source><translation>카르티가이셀밤 아르</translation></message><message><source>Author</source><translation>저자</translation></message><message><source>AUTHOR</source><translation>저자</translation></message><message><source>About the Developer</source><translation>개발자 소개</translation></message><message><source>Software Developer</source><translation>소프트웨어 개발자</translation></message><message><source>Cyber Security Enthusiast</source><translation>사이버 보안 애호가</translation></message><message><source>LinkedIn</source><translation>링크드인</translation></message><message><source>GitHub</source><translation>깃허브</translation></message><message><source>Email</source><translation>이메일</translation></message><message><source>Email Copied</source><translation>이메일이 복사되었습니다</translation></message><message><source>Appearance</source><translation>외관</translation></message><message><source>LANGUAGE</source><translation>언어</translation></message><message><source>Select your preferred language</source><translation>원하는 언어를 선택하세요</translation></message><message><source>Choose Language</source><translation>언어 선택</translation></message><message><source>Temperature Unit</source><translation>온도 단위</translation></message><message><source>Celsius (°C)</source><translation>섭씨 (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>화씨 (°F)</translation></message><message><source>Dark Mode active</source><translation>다크 모드 활성</translation></message><message><source>Light Mode active</source><translation>라이트 모드 활성</translation></message><message><source>"Security is not a product, but a process."</source><translation>"보안은 제품이 아니라 과정이다."</translation></message><message><source>Auto</source><translation>자동</translation></message></context></TS>
