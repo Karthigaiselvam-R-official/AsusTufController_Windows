@@ -833,7 +833,6 @@ Item {
                                                             if (modelData && modelData.code) {
                                                                 LanguageController.setLanguage(modelData.code)
                                                                 langPopup.close()
-                                                                toast.show(qsTr("Language Changed"))
                                                             }
                                                         }
                                                     }
@@ -930,25 +929,7 @@ Item {
                         z: -1
                     }
                     
-                    // Toast - MOVED TO ROOT in previous steps but kept here for stability if root one missing
-                    // Ideally Toast should be at Root, but sticking to existing structure
-                    Rectangle {
-                        id: toast
-                        width: Math.min(250, parent.width - 40)
-                        height: 36
-                        anchors.bottom: parent.bottom; anchors.bottomMargin: 16
-                        anchors.horizontalCenter: parent.horizontalCenter
-                        color: "#333"; radius: 18; opacity: 0; z: 99
-                        border.width: 1; border.color: "#444"
-                        RowLayout {
-                            anchors.centerIn: parent; spacing: 8
-                            Text { text: "✓"; color: "#2ecc71"; font.bold: true }
-                            Text { id: toastText; text: ""; color: "#fff"; font.pixelSize: 12 }
-                        }
-                        Behavior on opacity { NumberAnimation { duration: 200 } }
-                        Timer { id: toastTimer; interval: 2000; onTriggered: toast.opacity = 0 }
-                        function show(msg) { toastText.text = msg; toast.opacity = 0.95; toastTimer.restart() }
-                    }
+
 
                     ColumnLayout {
                         id: authorContent
@@ -1324,4 +1305,5 @@ Item {
             } // End ColumnLayout (Main)
         } // End centerWrapper
     } // End Flickable
+
 } // End Root Item
