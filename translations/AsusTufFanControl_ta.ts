@@ -606,6 +606,10 @@
     <source>ASUS TUF Fan Control</source>
 <translation>ASUS TUF விசிறி கட்டுப்பாடு</translation>
 </message>
+<message>
+    <source>Language Changed</source>
+<translation>மொழி மாற்றப்பட்டது</translation>
+</message>
 </context>
 <context>
     <name>SettingsPage</name>
@@ -834,6 +838,12 @@
     <name>SystemStatsMonitor</name>
 </context>
 </TS>
+
+
+
+
+
+
 
 
 

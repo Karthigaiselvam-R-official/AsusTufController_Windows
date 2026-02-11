@@ -207,11 +207,18 @@ ApplicationWindow {
         }
     }
 
+    // We store the translated message to show it in the CURRENT language before the switch
+    // This solves the issue of switching away from Tamil and seeing English confirmation
+    property string _cachedLangMsg: qsTr("Language Changed")
+
     // Listen for language changes from LanguageController
     Connections {
         target: LanguageController
         function onLanguageChanged() {
-            globalToast.show(qsTr("Language Changed"))
+            // Show the Toast using the PREVIOUSLY captured translation
+            globalToast.show(_cachedLangMsg)
+            // Refresh the cache for the NEXT transition
+            _cachedLangMsg = qsTr("Language Changed")
         }
     }
 }
