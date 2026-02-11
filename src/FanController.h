@@ -43,6 +43,9 @@ public:
   Q_INVOKABLE void setThermalPolicy(int policy);
   Q_INVOKABLE void setAutoFanSpeed(int percentage); // New: For dynamic curves
 
+public slots:
+  void refreshStatusMessage(); // Handle instant retranslation
+
 signals:
   void cpuFanRpmChanged();
   void gpuFanRpmChanged();
@@ -69,6 +72,20 @@ private:
   QString m_statusMessage;
   int m_fanCount; // Number of controllable fans (from driver)
   int m_targetFanSpeed;
+
+  enum MessageSource {
+    None,
+    Manual,
+    Auto,
+    AutoCurve,
+    ThermalPolicy,
+    Sync,
+    Fallback,
+    Error
+  } m_lastSource;
+  int m_lastPercent;
+  int m_lastPolicy;
+  QString m_lastError;
 
   QTimer *m_updateTimer;
 
