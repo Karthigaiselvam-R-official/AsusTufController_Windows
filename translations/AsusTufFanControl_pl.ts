@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Ograniczenie naładowania do 60-80% może znacznie wydłużyć żywotność baterii, idealne dla laptopów podłączonych do zasilania.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Maksimum 100%</translation></message><message><source>Minimum 60%</source><translation>Minimum 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Maksimum 100%</translation></message><message><source>Minimum 60%</source><translation>Minimum 60%</translation></message><message><source>PLUGGED IN</source><translation>PODŁĄCZONY</translation></message><message><source>Plugged In</source><translation>Podłączony</translation></message><message><source>Full (Limit)</source><translation>Pełny (Limit)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>pamięci użyte</translation>
+        <translation>wykorzystanej pamięci</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Ładowanie)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Podłączony)</translation></message><message><source>Up:</source><translation>Wysyłanie:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Tryb: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Cichy (Całkowita Cisza)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Zrównoważony (Start &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Zawsze Aktywny)</translation></message><message><source>Unknown Mode</source><translation>Nieznany Tryb</translation></message></context>
+<message><source>Mode: %1</source><translation>Tryb: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Cichy (Całkowita Cisza)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Zrównoważony (Start &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Zawsze Aktywny)</translation></message><message><source>Unknown Mode</source><translation>Nieznany Tryb</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Ręczny: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Ręczny: %1% (Zsynchronizowany)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Turbo</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Cichy</translation>
+        <translation>Cichy</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>Sterowanie Wentylatorami ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Język zmieniony</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Tryb Jasny</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>USTAWIENIA</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>Wykrycie GPU Nie Powiodło Się</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>USTAWIENIA</translation></message><message><source>Customize your experience</source><translation>Dostosuj swoje doświadczenie</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>AUTHOR</source><translation>AUTOR</translation></message><message><source>About the Developer</source><translation>O programiście</translation></message><message><source>Software Developer</source><translation>Programista</translation></message><message><source>Cyber Security Enthusiast</source><translation>Entuzjasta cyberbezpieczeństwa</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-mail</translation></message><message><source>Email Copied</source><translation>E-mail skopiowany</translation></message><message><source>Appearance</source><translation>Wygląd</translation></message><message><source>LANGUAGE</source><translation>JĘZYK</translation></message><message><source>Select your preferred language</source><translation>Wybierz preferowany język</translation></message><message><source>Choose Language</source><translation>Wybierz język</translation></message><message><source>Temperature Unit</source><translation>Jednostka temperatury</translation></message><message><source>Celsius (°C)</source><translation>Celsjusz (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Tryb ciemny aktywny</translation></message><message><source>Light Mode active</source><translation>Tryb jasny aktywny</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Bezpieczeństwo to nie produkt, lecz proces."</translation></message><message><source>Auto</source><translation>Automatyczny</translation></message></context></TS>
