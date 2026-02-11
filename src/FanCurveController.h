@@ -21,6 +21,8 @@ class FanCurveController : public QObject {
       QString currentPolicy READ currentPolicy NOTIFY currentPolicyChanged)
   Q_PROPERTY(FanController *fanController READ fanController WRITE
                  setFanController NOTIFY fanControllerChanged)
+  Q_PROPERTY(
+      QString currentPreset READ currentPreset NOTIFY currentPresetChanged)
 
 public:
   explicit FanCurveController(QObject *parent = nullptr);
@@ -31,6 +33,7 @@ public:
   int currentCpuTemp() const { return m_currentCpuTemp; }
   QString currentPolicy() const { return m_currentPolicy; }
   FanController *fanController() const { return m_fanController; }
+  QString currentPreset() const { return m_currentPreset; }
 
   void setAutoCurveEnabled(bool enabled);
   void setSilentThreshold(int temp);
@@ -45,6 +48,7 @@ signals:
   void currentCpuTempChanged();
   void currentPolicyChanged();
   void fanControllerChanged();
+  void currentPresetChanged();
 
 private slots:
   void evaluateTemperature();
@@ -64,6 +68,7 @@ private:
   int m_currentCpuTemp;
   QString m_currentPolicy;
   int m_lastAppliedPolicy;
+  QString m_currentPreset;
 };
 
 #endif // FANCURVECONTROLLER_H
