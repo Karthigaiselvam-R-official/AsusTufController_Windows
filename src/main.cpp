@@ -57,6 +57,8 @@ int main(int argc, char *argv[]) {
   // immediately when the language changes.
   QObject::connect(&langController, &LanguageController::retranslateRequired,
                    &engine, &QQmlApplicationEngine::retranslate);
+  QObject::connect(&langController, &LanguageController::retranslateRequired,
+                   &fanController, &FanController::refreshStatusMessage);
 
   // Qt 6 Recommended: Load from Module URI
   // This allows "import AsusTufFanControl" to resolve correctly inside the main
