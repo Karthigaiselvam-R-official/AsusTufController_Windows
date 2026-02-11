@@ -16,7 +16,7 @@
   <a href="https://drive.google.com/file/d/1gzrBFWGWBN8fweB-L-DPERvdoOlELrUA/view?usp=sharing">
     <img src="resources/SystemInfo.png" width="800" alt="Watch the Demo Video">
     <br>
-    🎬 <b>Click here to watch the full Application Demo</b>
+    ▶️ <b>Click to Watch the Application Demo</b> 🎬
   </a>
 </p>
 
