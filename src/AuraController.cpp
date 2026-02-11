@@ -3,7 +3,7 @@
 #include <QColor>
 
 AuraController::AuraController(QObject *parent) : QObject(parent) {
-  m_settings = new QSettings("AsusTufFanControl", "Aura", this);
+  m_settings = new QSettings("AsusTuf", "Aura", this);
   m_strobeTimer = new QTimer(this);
   connect(m_strobeTimer, &QTimer::timeout, this,
           &AuraController::onStrobeTimeout);

@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(AsusTufFanControl_Windows VERSION 0.1 LANGUAGES CXX)
+project(AsusTufController_Windows VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -11,28 +11,28 @@ qt_standard_project_setup()
 
 # Translation files
 set(TS_FILES
-    translations/AsusTufFanControl_ar.ts
-    translations/AsusTufFanControl_bn.ts
-    translations/AsusTufFanControl_de.ts
-    translations/AsusTufFanControl_es.ts
-    translations/AsusTufFanControl_fa.ts
-    translations/AsusTufFanControl_fr.ts
-    translations/AsusTufFanControl_hi.ts
-    translations/AsusTufFanControl_id.ts
-    translations/AsusTufFanControl_it.ts
-    translations/AsusTufFanControl_ja.ts
-    translations/AsusTufFanControl_ko.ts
-    translations/AsusTufFanControl_mr.ts
-    translations/AsusTufFanControl_pa.ts
-    translations/AsusTufFanControl_pl.ts
-    translations/AsusTufFanControl_pt.ts
-    translations/AsusTufFanControl_ru.ts
-    translations/AsusTufFanControl_sw.ts
-    translations/AsusTufFanControl_ta.ts
-    translations/AsusTufFanControl_tr.ts
-    translations/AsusTufFanControl_ur.ts
-    translations/AsusTufFanControl_vi.ts
-    translations/AsusTufFanControl_zh.ts
+    translations/AsusTufController_ar.ts
+    translations/AsusTufController_bn.ts
+    translations/AsusTufController_de.ts
+    translations/AsusTufController_es.ts
+    translations/AsusTufController_fa.ts
+    translations/AsusTufController_fr.ts
+    translations/AsusTufController_hi.ts
+    translations/AsusTufController_id.ts
+    translations/AsusTufController_it.ts
+    translations/AsusTufController_ja.ts
+    translations/AsusTufController_ko.ts
+    translations/AsusTufController_mr.ts
+    translations/AsusTufController_pa.ts
+    translations/AsusTufController_pl.ts
+    translations/AsusTufController_pt.ts
+    translations/AsusTufController_ru.ts
+    translations/AsusTufController_sw.ts
+    translations/AsusTufController_ta.ts
+    translations/AsusTufController_tr.ts
+    translations/AsusTufController_ur.ts
+    translations/AsusTufController_vi.ts
+    translations/AsusTufController_zh.ts
 )
 
 set(PROJECT_SOURCES
@@ -50,7 +50,7 @@ set(PROJECT_SOURCES
     src/platform/windows/AtkAcpi.h src/platform/windows/AtkAcpi.cpp
 )
 
-qt_add_executable(AsusTufFanControl_Windows
+qt_add_executable(AsusTufController_Windows
     WIN32
     MANUAL_FINALIZATION
     src/app.rc
@@ -58,9 +58,10 @@ qt_add_executable(AsusTufFanControl_Windows
 )
 
 # QML and Resources
-qt_add_qml_module(AsusTufFanControl_Windows
-    URI "AsusTufFanControl"
+qt_add_qml_module(AsusTufController_Windows
+    URI "AsusTufController"
     VERSION 1.0
+    RESOURCE_PREFIX "/"
     QML_FILES
         ui/Main.qml
         ui/GraphCard.qml
@@ -82,13 +83,13 @@ qt_add_qml_module(AsusTufFanControl_Windows
 )
 
 # Compile translations (.ts -> .qm) and embed them
-qt_add_translations(AsusTufFanControl_Windows
+qt_add_translations(AsusTufController_Windows
     TS_FILES ${TS_FILES}
     RESOURCE_PREFIX "/translations"
 )
 
 # Libs
-target_link_libraries(AsusTufFanControl_Windows
+target_link_libraries(AsusTufController_Windows
     PRIVATE
     Qt6::Core
     Qt6::Gui
@@ -101,31 +102,31 @@ target_link_libraries(AsusTufFanControl_Windows
 )
 
 # Copy the DLL to the build directory
-add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+add_custom_command(TARGET AsusTufController_Windows POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
     "${CMAKE_SOURCE_DIR}/AsusWinIO64.dll"
-    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/AsusWinIO64.dll"
+    "$<TARGET_FILE_DIR:AsusTufController_Windows>/AsusWinIO64.dll"
 )
 
 # Copy PsExec.exe and run.bat to the build directory
-add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+add_custom_command(TARGET AsusTufController_Windows POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
     "${CMAKE_SOURCE_DIR}/PsExec.exe"
-    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/PsExec.exe"
+    "$<TARGET_FILE_DIR:AsusTufController_Windows>/PsExec.exe"
 )
-add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+add_custom_command(TARGET AsusTufController_Windows POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_if_different
     "${CMAKE_SOURCE_DIR}/run.bat"
-    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/run.bat"
+    "$<TARGET_FILE_DIR:AsusTufController_Windows>/run.bat"
 )
 
-add_custom_command(TARGET AsusTufFanControl_Windows POST_BUILD
+add_custom_command(TARGET AsusTufController_Windows POST_BUILD
     COMMAND ${CMAKE_COMMAND} -E copy_directory
     "${CMAKE_SOURCE_DIR}/resources"
-    "$<TARGET_FILE_DIR:AsusTufFanControl_Windows>/resources"
+    "$<TARGET_FILE_DIR:AsusTufController_Windows>/resources"
 )
 
-install(TARGETS AsusTufFanControl_Windows
+install(TARGETS AsusTufController_Windows
     BUNDLE DESTINATION .
     LIBRARY DESTINATION .
     RUNTIME DESTINATION .

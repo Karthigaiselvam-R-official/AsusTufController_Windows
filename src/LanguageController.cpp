@@ -114,7 +114,7 @@ bool LanguageController::loadTranslation(const QString &langCode) {
   }
 
   // Try to load from resources
-  QString basePath = ":/translations/AsusTufFanControl_" + langCode;
+  QString basePath = ":/translations/AsusTufController_" + langCode;
 
   if (m_translator->load(basePath) || m_translator->load(basePath + ".qm")) {
     QGuiApplication::instance()->removeTranslator(m_translator);

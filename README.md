@@ -176,10 +176,19 @@ graph TD
 
 ### Option 1: Binary (Recommended)
 1.  Go to the [**Releases Page**](../../releases).
-2.  Download the latest `AsusTufFanControl_Windows.zip`.
+2.  Download the latest `AsusTufFanControl_v1.0.0.zip`.
 3.  Extract the folder to a permanent location (e.g., `C:\Program Files\AsusTufFanControl`).
-4.  Right-click `AsusTufFanControl_Windows.exe` and select **"Run as Administrator"**.
-    *   *Why Admin?* Reading CPU temps and controlling hardware requires high-level permissions.
+
+4.  **🚀 Primary Launch Method:**  
+    > [!IMPORTANT]
+    > **Always launch via `run.bat` for full control!**  
+    > ![Run with Admin](https://img.shields.io/badge/Launch-run.bat-FF0000?style=for-the-badge&logo=powershell&logoColor=white)  
+    > This script automatically requests **Administrator** privileges and uses **PsExec** to launch the software as a **SYSTEM** service. This is strictly required to bypass firmware locks on fan speeds and battery limits.  
+    > *Ensure `AsusWinIO64.dll` is in the same folder.*
+
+5.  **Alternative Launch Method:**  
+    Right-click `AsusTufController_Windows.exe` and select **"Run as Administrator"**.  
+    *   *Note: This may have limited control over certain hardware registers compared to the `run.bat` method.*
 
 ### Option 2: Build from Source
 Perfect for developers who want to contribute.
@@ -193,8 +202,8 @@ Perfect for developers who want to contribute.
 **Steps:**
 1.  **Clone the Repo:**
     ```powershell
-    git clone https://github.com/Karthigaiselvam-R-official/AsusTufFanControl_Windows.git
-    cd AsusTufFanControl_Windows
+    git clone https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows.git
+    cd AsusTufController_Windows
     ```
 
 2.  **Generate Project:**
@@ -209,8 +218,14 @@ Perfect for developers who want to contribute.
     cmake --build . --config Release
     ```
 
-4.  **Run:**
-    The binary will be in `build/Release/`.
+4.  **🚀 Run (Full Power):**
+    > [!IMPORTANT]
+    > **To unlock full hardware power when building from source:**
+    > 1. Copy **`run.bat`**, **`PsExec.exe`**, and **`AsusWinIO64.dll`** from the root directory into `build/Release/`.
+    > 2. ![Dev Launch](https://img.shields.io/badge/Launch-run.bat-FF0000?style=for-the-badge&logo=powershell&logoColor=white)  
+    > 3. Run **`run.bat`** from the `build/Release/` folder.
+    >
+    > *This is strictly required to gain **SYSTEM** privileges for direct EC/WMI communication.*
 
 ---
 

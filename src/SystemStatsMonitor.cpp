@@ -105,7 +105,7 @@ SystemStatsMonitor::SystemStatsMonitor(QObject *parent) : QObject(parent) {
   readChargeLimit();
 
   // Restore Saved Limit
-  QSettings settings("AsusTuf", "FanControl");
+  QSettings settings("AsusTuf", "Controller");
   int savedLimit = settings.value("ChargeLimit", -1).toInt();
   if (savedLimit >= 60 && savedLimit <= 100) {
     if (m_chargeLimit != savedLimit) {
@@ -762,7 +762,7 @@ void SystemStatsMonitor::applyPendingChargeLimit() {
 
   // 4. Persistence Config
   // Save to QSettings (mimics /etc/asus_battery_limit.conf)
-  QSettings settings("AsusTuf", "FanControl");
+  QSettings settings("AsusTuf", "Controller");
   settings.setValue("ChargeLimit", limit);
   settings.sync(); // Force write to disk immediately
 

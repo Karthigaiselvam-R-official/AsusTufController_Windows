@@ -16,5 +16,5 @@ if not exist "%~dp0PsExec.exe" (
     exit
 )
 
-"%~dp0PsExec.exe" -i -s -d "%~dp0AsusTufFanControl_Windows.exe"
+"%~dp0PsExec.exe" -i -s -d "%~dp0AsusTufController_Windows.exe"
 exit
