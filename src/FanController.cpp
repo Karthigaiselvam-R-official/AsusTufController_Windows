@@ -13,7 +13,8 @@
 FanController::FanController(QObject *parent)
     : QObject(parent), m_cpuFanRpm(0), m_gpuFanRpm(0), m_cpuTemp(0),
       m_gpuTemp(0), m_isManualModeActive(false), m_statusMessage("Ready"),
-      m_fanCount(2), m_targetFanSpeed(0) {
+      m_fanCount(2), m_targetFanSpeed(0), m_lastSource(None), m_lastPercent(0),
+      m_lastPolicy(0) {
   // Initialize Hardware Interfaces
   bool winIoSuccess = AsusWinIO::instance().initialize();
   if (winIoSuccess) {
@@ -23,7 +24,9 @@ FanController::FanController(QObject *parent)
       m_fanCount = 2; // Default to 2 fans
     }
   } else {
-    setStatusMessage(qsTr("Error: WinIO Driver Failed"));
+    m_lastSource = Error;
+    m_lastError = qsTr("Error: WinIO Driver Failed");
+    setStatusMessage(m_lastError);
   }
 
   WmiWrapper::instance().initialize(); // Attempt WMI init
@@ -87,6 +90,9 @@ void FanController::setFanSpeed(int percentage) {
   m_targetFanSpeed = percentage;
   startRamp(percentage); // Use Ramp
 
+  m_lastSource = Manual;
+  m_lastPercent = percentage;
+
   QString msg = qsTr("Manual: %1%").arg(percentage);
   if (percentage > 99)
     msg += qsTr(" (OVERDRIVE)");
@@ -106,6 +112,7 @@ void FanController::enableAutoMode() {
   // 0 = Balanced, 1 = Turbo, 2 = Silent (Check mapping)
   WmiWrapper::instance().setDevice(0x00110019, 0);
 
+  m_lastSource = Auto;
   setStatusMessage(qsTr("Auto Mode Active"));
 }
 
@@ -141,6 +148,8 @@ void FanController::enableManualModeWithSync() {
   startRamp(
       safeStartPercent); // Effectively holds current speed or minor adjustment
 
+  m_lastSource = Sync;
+  m_lastPercent = safeStartPercent;
   setStatusMessage(qsTr("Manual: %1% (Synced)").arg(safeStartPercent));
 }
 
@@ -152,6 +161,8 @@ void FanController::setAutoFanSpeed(int percentage) {
   m_targetFanSpeed = percentage;
   startRamp(percentage); // Use Ramp
 
+  m_lastSource = AutoCurve;
+  m_lastPercent = percentage;
   setStatusMessage(qsTr("Auto (Curve): %1%").arg(percentage));
 }
 
@@ -169,7 +180,8 @@ void FanController::setThermalPolicy(int policy) {
     modeName = qsTr("Turbo");
 
   if (success) {
-
+    m_lastSource = ThermalPolicy;
+    m_lastPolicy = policy;
     setStatusMessage(qsTr("Auto: %1 Mode").arg(modeName));
     m_rampTimer->stop(); // Ensure manual ramp is stopped
     return;
@@ -192,6 +204,8 @@ void FanController::setThermalPolicy(int policy) {
   m_targetFanSpeed = fanPercent;
   startRamp(fanPercent); // Use Ramp for smooth fallback transition
 
+  m_lastSource = Fallback;
+  m_lastPercent = fanPercent;
   setStatusMessage(qsTr("Auto (Fallback): %1%").arg(fanPercent));
 }
 
@@ -263,4 +277,45 @@ void FanController::setStatusMessage(const QString &message) {
     m_statusMessage = message;
     emit statusMessageChanged();
   }
+}
+
+void FanController::refreshStatusMessage() {
+  QString refreshed;
+  switch (m_lastSource) {
+  case Manual: {
+    refreshed = qsTr("Manual: %1%").arg(m_lastPercent);
+    if (m_lastPercent > 99)
+      refreshed += qsTr(" (OVERDRIVE)");
+    break;
+  }
+  case Auto:
+    refreshed = qsTr("Auto Mode Active");
+    break;
+  case AutoCurve:
+    refreshed = qsTr("Auto (Curve): %1%").arg(m_lastPercent);
+    break;
+  case ThermalPolicy: {
+    QString modeName;
+    if (m_lastPolicy == 2)
+      modeName = qsTr("Silent");
+    else if (m_lastPolicy == 0)
+      modeName = qsTr("Balanced");
+    else
+      modeName = qsTr("Turbo");
+    refreshed = qsTr("Auto: %1 Mode").arg(modeName);
+    break;
+  }
+  case Sync:
+    refreshed = qsTr("Manual: %1% (Synced)").arg(m_lastPercent);
+    break;
+  case Fallback:
+    refreshed = qsTr("Auto (Fallback): %1%").arg(m_lastPercent);
+    break;
+  case Error:
+    refreshed = m_lastError;
+    break;
+  default:
+    return;
+  }
+  setStatusMessage(refreshed);
 }
