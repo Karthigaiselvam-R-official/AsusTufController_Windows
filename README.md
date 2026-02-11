@@ -13,11 +13,11 @@
 *Native. Lightweight. Powerful.*
 
 <p align="center">
-  <video src="https://media.githubusercontent.com/media/Karthigaiselvam-R-official/AsusTufController_Windows/main/resources/AsusTufController.mp4" width="800" autoplay loop muted playsinline></video>
-</p>
-
-<p align="center">
-  <img src="resources/SystemInfo.png" width="800" alt="Dashboard Preview">
+  <a href="https://drive.google.com/file/d/1gzrBFWGWBN8fweB-L-DPERvdoOlELrUA/view?usp=sharing">
+    <img src="resources/SystemInfo.png" width="800" alt="Watch the Demo Video">
+    <br>
+    🎬 <b>Click here to watch the full Application Demo</b>
+  </a>
 </p>
 
 [![Download v1.0.0](https://img.shields.io/badge/Download-v1.0.0_Stable-0078D6?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases/download/v1.0.0/AsusTufController_v1.0.0.zip)
