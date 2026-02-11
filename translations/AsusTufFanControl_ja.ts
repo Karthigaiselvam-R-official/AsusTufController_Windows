@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>充電を60-80%に制限するとバッテリー寿命を大幅に延ばすことができ、AC電源で使用するノートPCに最適です。</translation>
     </message>
-<message><source>Maximum 100%</source><translation>最大 100%</translation></message><message><source>Minimum 60%</source><translation>最小 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>最大 100%</translation></message><message><source>Minimum 60%</source><translation>最低 60%</translation></message><message><source>PLUGGED IN</source><translation>接続中</translation></message><message><source>Plugged In</source><translation>接続済み</translation></message><message><source>Full (Limit)</source><translation>満充電 (制限)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -280,7 +280,7 @@
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="442" />
         <source>of storage used</source>
-        <translation>のストレージ使用</translation>
+        <translation>のストレージを使用中</translation>
     </message>
     <message>
         <location filename="../ui/pages/DashboardPage.qml" line="452" />
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(充電中)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(接続済み)</translation></message><message><source>Up:</source><translation>送信:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>モード: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>サイレント (完全静音)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>バランス (&gt; 60°Cで始動)</translation></message><message><source>Turbo (Always Active)</source><translation>ターボ (常時稼働)</translation></message><message><source>Unknown Mode</source><translation>不明なモード</translation></message></context>
+<message><source>Mode: %1</source><translation>モード: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>サイレント (完全静音)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>バランス (&gt; 60°Cで始動)</translation></message><message><source>Turbo (Always Active)</source><translation>ターボ (常時稼働)</translation></message><message><source>Unknown Mode</source><translation>不明なモード</translation></message><message><source> (OVERDRIVE)</source><translation> (オーバードライブ)</translation></message><message><source>Manual: %1%</source><translation>手動: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>手動: %1% (同期済み)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -438,7 +438,7 @@
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1071" />
         <source>Silent &lt; </source>
-        <translation>サイレント &lt; </translation>
+        <translation>静音 &lt; </translation>
     </message>
     <message>
         <location filename="../ui/pages/FanPage.qml" line="1076" />
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">ターボ</translation>
+        <translation>ターボ</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">静音</translation>
+        <translation>静音</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>ASUS TUFファン制御</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>言語が変更されました</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>ライトモード</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>設定</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>GPU検出失敗</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>設定</translation></message><message><source>Customize your experience</source><translation>エクスペリエンスをカスタマイズ</translation></message><message><source>Karthigaiselvam R</source><translation>カールティガイセルヴァム・アール</translation></message><message><source>Author</source><translation>作者</translation></message><message><source>AUTHOR</source><translation>作者</translation></message><message><source>About the Developer</source><translation>開発者について</translation></message><message><source>Software Developer</source><translation>ソフトウェア開発者</translation></message><message><source>Cyber Security Enthusiast</source><translation>サイバーセキュリティ愛好家</translation></message><message><source>LinkedIn</source><translation>リンクトイン</translation></message><message><source>GitHub</source><translation>ギットハブ</translation></message><message><source>Email</source><translation>メール</translation></message><message><source>Email Copied</source><translation>メールをコピーしました</translation></message><message><source>Appearance</source><translation>外観</translation></message><message><source>LANGUAGE</source><translation>言語</translation></message><message><source>Select your preferred language</source><translation>ご希望の言語を選択してください</translation></message><message><source>Choose Language</source><translation>言語を選択</translation></message><message><source>Temperature Unit</source><translation>温度単位</translation></message><message><source>Celsius (°C)</source><translation>摂氏 (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>華氏 (°F)</translation></message><message><source>Dark Mode active</source><translation>ダークモード有効</translation></message><message><source>Light Mode active</source><translation>ライトモード有効</translation></message><message><source>"Security is not a product, but a process."</source><translation>"セキュリティは製品ではなく、プロセスである。"</translation></message><message><source>Auto</source><translation>自動</translation></message></context></TS>
