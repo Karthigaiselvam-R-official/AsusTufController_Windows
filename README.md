@@ -13,7 +13,7 @@
 *Native. Lightweight. Powerful.*
 
 <p align="center">
-  <video src="resources/AsusTufController.mp4" width="800" autoplay loop muted playsinline></video>
+  <video src="https://raw.githubusercontent.com/Karthigaiselvam-R-official/AsusTufController_Windows/main/resources/AsusTufController.mp4" width="800" autoplay loop muted playsinline></video>
 </p>
 
 <p align="center">
