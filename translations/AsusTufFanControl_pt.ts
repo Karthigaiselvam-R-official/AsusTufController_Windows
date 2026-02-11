@@ -218,7 +218,7 @@
         <source>Limiting charge to 60-80% can significantly extend your battery's total lifespan, ideal for laptops that stay plugged in.</source>
         <translation>Limitar a carga a 60-80% pode estender significativamente a vida útil da bateria, ideal para portáteis ligados à corrente.</translation>
     </message>
-<message><source>Maximum 100%</source><translation>Máximo 100%</translation></message><message><source>Minimum 60%</source><translation>Mínimo 60%</translation></message></context>
+<message><source>Maximum 100%</source><translation>Máximo 100%</translation></message><message><source>Minimum 60%</source><translation>Mínimo 60%</translation></message><message><source>PLUGGED IN</source><translation>CONECTADO</translation></message><message><source>Plugged In</source><translation>Conectado</translation></message><message><source>Full (Limit)</source><translation>Cheio (Limite)</translation></message></context>
 <context>
     <name>DashboardPage</name>
     <message>
@@ -292,7 +292,7 @@
         <source>(Charging)</source>
         <translation>(Carregando)</translation>
     </message>
-</context>
+<message><source>(Plugged In)</source><translation>(Conectado)</translation></message><message><source>Up:</source><translation>Envio:</translation></message></context>
 <context>
     <name>FanController</name>
     <message>
@@ -325,7 +325,7 @@
         <source>Error: No fan control methods found. Run with sudo?</source>
         <translation>Error: No fan control methods found. Run with sudo?</translation>
     </message>
-<message><source>Mode: %1</source><translation>Modo: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silencioso (Silêncio Absoluto)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Equilibrado (Inicia &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Sempre Ativo)</translation></message><message><source>Unknown Mode</source><translation>Modo Desconhecido</translation></message></context>
+<message><source>Mode: %1</source><translation>Modo: %1</translation></message><message><source>Silent (Absolute Quiet)</source><translation>Silencioso (Silêncio Absoluto)</translation></message><message><source>Balanced (Starts &gt; 60°C)</source><translation>Equilibrado (Inicia &gt; 60°C)</translation></message><message><source>Turbo (Always Active)</source><translation>Turbo (Sempre Ativo)</translation></message><message><source>Unknown Mode</source><translation>Modo Desconhecido</translation></message><message><source> (OVERDRIVE)</source><translation> (OVERDRIVE)</translation></message><message><source>Manual: %1%</source><translation>Manual: %1%</translation></message><message><source>Manual: %1% (Synced)</source><translation>Manual: %1% (Sincronizado)</translation></message></context>
 <context>
     <name>FanPage</name>
     <message>
@@ -477,11 +477,11 @@
     </message>
     <message>
         <source>Turbo</source>
-        <translation type="vanished">Turbo</translation>
+        <translation>Turbo</translation>
     </message>
     <message>
         <source>Silent</source>
-        <translation type="vanished">Silencioso</translation>
+        <translation>Silencioso</translation>
     </message>
     <message>
         <source>Intelligent Performance</source>
@@ -503,7 +503,7 @@
         <source>ASUS TUF Fan Control</source>
         <translation>Controle de Ventilador ASUS TUF</translation>
     </message>
-</context>
+<message><source>Language Changed</source><translation>Idioma alterado</translation></message></context>
 <context>
     <name>Sidebar</name>
     <message>
@@ -541,7 +541,7 @@
         <source>Light Mode</source>
         <translation>Modo Claro</translation>
     </message>
-</context>
+<message><source>SETTINGS</source><translation>CONFIGURAÇÕES</translation></message></context>
 <context>
     <name>StatsCard</name>
     <message>
@@ -598,4 +598,4 @@
         <translation>Falha na Detecção GPU</translation>
     </message>
 </context>
-</TS>
+<context><name>SettingsPage</name><message><source>SETTINGS</source><translation>CONFIGURAÇÕES</translation></message><message><source>Customize your experience</source><translation>Personalize sua experiência</translation></message><message><source>Karthigaiselvam R</source><translation>Karthigaiselvam R</translation></message><message><source>Author</source><translation>Autor</translation></message><message><source>AUTHOR</source><translation>AUTOR</translation></message><message><source>About the Developer</source><translation>Sobre o desenvolvedor</translation></message><message><source>Software Developer</source><translation>Desenvolvedor de software</translation></message><message><source>Cyber Security Enthusiast</source><translation>Entusiasta de segurança cibernética</translation></message><message><source>LinkedIn</source><translation>LinkedIn</translation></message><message><source>GitHub</source><translation>GitHub</translation></message><message><source>Email</source><translation>E-mail</translation></message><message><source>Email Copied</source><translation>E-mail copiado</translation></message><message><source>Appearance</source><translation>Aparência</translation></message><message><source>LANGUAGE</source><translation>IDIOMA</translation></message><message><source>Select your preferred language</source><translation>Selecione seu idioma preferido</translation></message><message><source>Choose Language</source><translation>Escolher idioma</translation></message><message><source>Temperature Unit</source><translation>Unidade de temperatura</translation></message><message><source>Celsius (°C)</source><translation>Celsius (°C)</translation></message><message><source>Fahrenheit (°F)</source><translation>Fahrenheit (°F)</translation></message><message><source>Dark Mode active</source><translation>Modo escuro ativo</translation></message><message><source>Light Mode active</source><translation>Modo claro ativo</translation></message><message><source>"Security is not a product, but a process."</source><translation>"Segurança não é um produto, mas um processo."</translation></message><message><source>Auto</source><translation>Automático</translation></message></context></TS>
