@@ -147,6 +147,11 @@ void FanCurveController::applyPreset(const QString &presetName) {
   saveSettings();
   emit thresholdsChanged();
 
+  if (m_currentPreset != presetName) {
+    m_currentPreset = presetName;
+    emit currentPresetChanged();
+  }
+
   // Force re-evaluation
   if (m_autoCurveEnabled) {
     evaluateTemperature();
@@ -158,10 +163,12 @@ void FanCurveController::loadSettings() {
   m_silentThreshold = settings.value("FanCurve/SilentThreshold", 55).toInt();
   m_balancedThreshold =
       settings.value("FanCurve/BalancedThreshold", 75).toInt();
+  m_currentPreset = settings.value("FanCurve/CurrentPreset", "").toString();
 }
 
 void FanCurveController::saveSettings() {
   QSettings settings("AsusTuf", "FanControl");
   settings.setValue("FanCurve/SilentThreshold", m_silentThreshold);
   settings.setValue("FanCurve/BalancedThreshold", m_balancedThreshold);
+  settings.setValue("FanCurve/CurrentPreset", m_currentPreset);
 }
