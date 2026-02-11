@@ -454,31 +454,35 @@ Item {
                     RowLayout {
                         spacing: 12
                         
-                        // Styled Label with Hover
-                        Rectangle {
-                            id: customLabel
-                            width: labelText.width + 24
-                            height: 34
-                            radius: 8
-                            color: customLabelMouse.containsMouse ? (theme ? theme.accent : "#2ecc71") : (theme && theme.isDark ? Qt.rgba(1,1,1,0.08) : Qt.rgba(0,0,0,0.06))
-                            border.width: customLabelMouse.containsMouse ? 0 : 1
-                            border.color: theme && theme.isDark ? Qt.rgba(1,1,1,0.15) : Qt.rgba(0,0,0,0.1)
-                            
-                            scale: customLabelMouse.containsMouse ? 1.05 : 1.0
-                            
-                            Behavior on color { ColorAnimation { duration: 150 } }
-                            Behavior on scale { NumberAnimation { duration: 150; easing.type: Easing.OutCubic } }
-                            
-                            Text {
-                                id: labelText
-                                anchors.centerIn: parent
-                                text: qsTr("Custom")
-                                color: customLabelMouse.containsMouse ? "white" : (theme ? theme.textSecondary : "#aaa")
-                                font.pixelSize: 13
-                                font.bold: true
-                                
-                                Behavior on color { ColorAnimation { duration: 150 } }
-                            }
+                         // Styled Label with Hover
+                         Rectangle {
+                             id: customLabel
+                             width: 100
+                             height: 34
+                             radius: 8
+                             color: customLabelMouse.containsMouse ? (theme ? theme.accent : "#2ecc71") : (theme && theme.isDark ? Qt.rgba(1,1,1,0.08) : Qt.rgba(0,0,0,0.06))
+                             border.width: customLabelMouse.containsMouse ? 0 : 1
+                             border.color: theme && theme.isDark ? Qt.rgba(1,1,1,0.15) : Qt.rgba(0,0,0,0.1)
+                             
+                             scale: customLabelMouse.containsMouse ? 1.05 : 1.0
+                             
+                             Behavior on color { ColorAnimation { duration: 150 } }
+                             Behavior on scale { NumberAnimation { duration: 150; easing.type: Easing.OutCubic } }
+                             
+                             Text {
+                                 id: labelText
+                                 anchors.centerIn: parent
+                                 width: parent.width - 16
+                                 text: qsTr("Custom")
+                                 color: customLabelMouse.containsMouse ? "white" : (theme ? theme.textSecondary : "#aaa")
+                                 font.pixelSize: 13
+                                 font.bold: true
+                                 fontSizeMode: Text.HorizontalFit
+                                 minimumPixelSize: 9
+                                 horizontalAlignment: Text.AlignHCenter
+                                 
+                                 Behavior on color { ColorAnimation { duration: 150 } }
+                             }
                             
                             MouseArea {
                                 id: customLabelMouse
