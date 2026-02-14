@@ -256,8 +256,10 @@ Perfect for developers who want to contribute.
 **Q: Fan Control isn't working / Fans are stuck.**
 *   **A:** Some newer 2024/2025 models use a different ACPI interface. Check the `logs/` folder for "WMI Error" codes. Try restarting the app as Administrator.
 
-**Q: Battery limit is set to 80% but it charged to 81%.**
-*   **A:** This is normal calibration drift. The hardware cuts power *around* the limit. If it goes to 100%, check if the "Enforcement" timer is active in Settings.
+**Q: I set a battery limit (e.g., 85%) but it keeps charging past it?**
+*   **A:** This usually means your **Battery Health** is degraded. If your *current maximum capacity* is much lower than the *original design capacity*, Windows may force the battery to charge to 100% of its *remaining* life to keep the laptop usable.
+    *   **Diagnostic:** Open Terminal and run: `powercfg /batteryreport`
+    *   Open the generated HTML report. Compare **Design Capacity** vs **Full Charge Capacity**. If the gap is large, the firmware is likely overriding your limit.
 
 **Q: Does this void my warranty?**
 *   **A:** No software can void hardware warranties typically, but **use at your own risk**. Forcing fans to 0% while gaming *will* cause overheating. The app has fail-safes, but common sense is required.
