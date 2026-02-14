@@ -13,7 +13,21 @@ ApplicationWindow {
     height: 800
     minimumWidth: 1000
     minimumHeight: 700
-    title: qsTr("ASUS TUF Controller")
+    // Dynamic Branding Logic
+    function getBrandName(model) {
+        if (!model) return "ASUS TUF" // Default fallback while loading
+        var m = model.toUpperCase()
+        if (m.indexOf("ROG") !== -1 || m.indexOf("ZEPHYRUS") !== -1 || m.indexOf("STRIX") !== -1 || m.indexOf("SCAR") !== -1) return "ASUS ROG"
+        if (m.indexOf("TUF") !== -1 || m.indexOf("DASH") !== -1 || m.indexOf("FX") !== -1) return "ASUS TUF"
+        if (m.indexOf("VIVOBOOK") !== -1) return "ASUS VIVOBOOK"
+        if (m.indexOf("ZENBOOK") !== -1) return "ASUS ZENBOOK"
+        if (m.indexOf("EXPERTBOOK") !== -1) return "ASUS EXPERTBOOK"
+        if (m.indexOf("PROART") !== -1) return "ASUS PROART"
+        return "ASUS" // Generic fallback for other models
+    }
+
+    property string brandName: getBrandName(monitor.laptopModel)
+    title: qsTr(brandName + " Controller")
     color: theme.background
     
     // Restore Aura on close (logic remains)
@@ -122,6 +136,9 @@ ApplicationWindow {
             Layout.preferredWidth: 260
             currentIndex: 0
             theme: theme
+
+            // Dynamic Branding
+            brandName: window.brandName
         }
         
         // 2. Content Area
