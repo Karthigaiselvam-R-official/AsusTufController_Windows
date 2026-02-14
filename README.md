@@ -195,7 +195,10 @@ graph TD
 ## 📥 Installation Guide
 
 ### Option 1: Binary (Recommended)
-1.  **[Download the latest AsusTufController_v1.0.0.zip](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases/download/v1.0.0/AsusTufController_v1.0.0.zip)**.
+1.  ## Download
+Get the latest version from the [Releases](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases) page.
+
+**Latest Version:** [v1.0.0](https://github.com/Karthigaiselvam-R-official/AsusTufController_Windows/releases/download/v1.0.0/AsusTufController_v1.0.0.zip)**.
 2.  Extract the folder to a permanent location (e.g., `C:\Program Files\AsusTufController`).
 
 3.  **🚀 Primary Launch Method:**  
