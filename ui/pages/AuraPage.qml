@@ -96,7 +96,7 @@ Item {
             // Premium Header with gradient accent
             Rectangle {
                 Layout.fillWidth: true
-                Layout.leftMargin: 30; Layout.rightMargin: 30; Layout.topMargin: 20
+                Layout.topMargin: 20
                 height: 100
                 radius: 16
                 color: "transparent"
@@ -460,7 +460,6 @@ Item {
             // Main content card
             Rectangle {
                 Layout.fillWidth: true
-                Layout.leftMargin: 30; Layout.rightMargin: 30
                 Layout.preferredHeight: controlsColumn.implicitHeight + 60
                 radius: 16
                 color: theme.isDark ? Qt.rgba(25/255, 25/255, 30/255, 0.95) : Qt.rgba(255/255, 255/255, 255/255, 0.98)
