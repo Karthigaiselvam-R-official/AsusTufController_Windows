@@ -134,6 +134,7 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 | **ROG Strix** | G15, G17, Scar 15, Scar 17, G513, G713, G533, G733 |
 | **ROG Zephyrus** | G14, G15, M15, M16, Duo 15/16 |
 | **ROG Flow** | X13, X16, Z13 |
+| **Professional** | **Vivobook, Zenbook, ProArt** (Fan/Battery control supported) |
 
 ### 🧠 Processors & Graphics
 | Component | Support |
@@ -148,13 +149,14 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 
 ### ⚠️ Hardware Specifics & Limitations
 
-1.  **Single-Fan Laptops (e.g., TUF Dash F15):**
+1.  **Single-Fan Laptops (e.g., TUF Dash F15, Vivobook):**
     *   Fully supported! The application will correctly control your single CPU fan.
     *   The second fan gauge (GPU) will simply show **0 RPM** or appear inactive. This is expected behavior as the hardware does not exist.
 
-2.  **White-Only Backlit Keyboards:**
-    *   **Brightness Control:** Fully supported.
-    *   **Color/Effects:** Not supported. Changing colors in the app will have no effect because the hardware is physically limited to white LEDs.
+2.  **No RGB / White-Only Backlight:**
+    *   **White-Only Keyboards:** Brightness control works perfectly.
+    *   **No Backlight / Non-RGB:** If your laptop does not have RGB hardware, **kindly ignore the Aura Sync section entirely.**
+    *   *Please do not waste time trying to change colors on hardware that supports only white (or no) light. The application cannot force hardware to do what it physically cannot do.*
 
 ---
 
