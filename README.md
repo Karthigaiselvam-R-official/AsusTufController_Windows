@@ -66,6 +66,7 @@ Take control of your thermals. Unlike standard tools that just offer "Silent", w
         <li><b>🌪️ MAX RPM Injection (New):</b> <br>
         Bypasses standard limits to force fans to <b>100% (approx 6800 RPM)</b>. Essential for benchmarking or extreme overclocking. Uses direct EC (Embedded Controller) writes via <code>AsusWinIO</code>.</li>
       </ul>
+      <p><b>⚠️ Hardware Limitation:</b> If your system has only **One Fan** (e.g., some TUF Dash F15 models), the application will correctly display/control only that single fan. The second fan gauge may appear inactive or show 0 RPM.</p>
     </td>
   </tr>
 </table>
@@ -84,7 +85,6 @@ Your keyboard, your style. No heavy background services required.
         <li><b>Rainbow:</b> (Soak Test) A localized hardware effect that cycles through the spectrum.</li>
       </ul>
       <p><i>Note: Supports 4-Zone RGB and Single-Zone RGB keyboards automatically.</i></p>
-      <p><b>⚠️ Hardware Limitation:</b> For laptops with **White-Only Backlight** (Non-RGB), color changes will not take effect. However, **Brightness Control** and **Breathing Effects** are fully supported.</p>
     </td>
     <td width="60%"><img src="resources/AuraSync.png" width="100%" alt="Aura Sync UI"></td>
   </tr>
@@ -146,6 +146,16 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 | **Intel Arc** | A-Series Mobile Graphics (Universal Usage Monitoring) |
 
 *If you have the "ASUS System Control Interface" driver installed, it will likely work!*
+
+### ⚠️ Hardware Specifics & Limitations
+
+1.  **Single-Fan Laptops (e.g., TUF Dash F15):**
+    *   Fully supported! The application will correctly control your single CPU fan.
+    *   The second fan gauge (GPU) will simply show **0 RPM** or appear inactive. This is expected behavior as the hardware does not exist.
+
+2.  **White-Only Backlit Keyboards:**
+    *   **Brightness Control:** Fully supported.
+    *   **Color/Effects:** Not supported. Changing colors in the app will have no effect because the hardware is physically limited to white LEDs.
 
 ---
 
