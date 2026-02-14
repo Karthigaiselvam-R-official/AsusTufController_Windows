@@ -84,6 +84,7 @@ Your keyboard, your style. No heavy background services required.
         <li><b>Rainbow:</b> (Soak Test) A localized hardware effect that cycles through the spectrum.</li>
       </ul>
       <p><i>Note: Supports 4-Zone RGB and Single-Zone RGB keyboards automatically.</i></p>
+      <p><b>⚠️ Hardware Limitation:</b> For laptops with **White-Only Backlight** (Non-RGB), color changes will not take effect. However, **Brightness Control** and **Breathing Effects** are fully supported.</p>
     </td>
     <td width="60%"><img src="resources/AuraSync.png" width="100%" alt="Aura Sync UI"></td>
   </tr>
