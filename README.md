@@ -30,6 +30,26 @@
 
 ---
 
+> [!CAUTION]
+> ### 🛑 **IMPORTANT: FIX "Smart App Control" BLOCK FIRST**
+> If Windows blocks the app, you **MUST** unblock it or it will not launch!
+>
+> **✅ The Quick Fix (Unblock the Zip):**
+> 1. Right-click the downloaded **`.zip`** file ➡️ **Properties**
+> 2. Check the **"Unblock"** box at the bottom ➡️ **Apply** ➡️ **OK**
+> 3. **Extract the zip again.**
+>
+> **🔄 Alternative (If files are still blocked):**
+> Unblock these 3 files individually inside the extracted folder:
+> - `run.bat` ➡️ **Properties** ➡️ **Unblock**
+> - `AsusTufController_Windows.exe` ➡️ **Properties** ➡️ **Unblock**
+> - `PsExec.exe` ➡️ **Properties** ➡️ **Unblock**
+>
+> **Then launch via `run.bat` 🚀**
+
+---
+
+
 ## 📖 Introduction
 
 **AsusTufController** is a custom-built, open-source control center designed specifically for ASUS TUF and ROG gaming laptops. Frustrated by the bloatware of *Armoury Crate* and the limitations of generic tools, this project aims to provide a **native, resource-efficient** alternative that gives you full control over your hardware.
@@ -212,37 +232,7 @@ Get the latest version from the [Releases](https://github.com/Karthigaiselvam-R-
     Right-click `AsusTufController_Windows.exe` and select **"Run as Administrator"**.  
     *   *Note: This may have limited control over certain hardware registers compared to the `run.bat` method.*
 
----
 
-## ⚠️ Troubleshooting Installation (Smart App Control)
-
-If you see a popup saying **"Smart App Control blocked a file that may be unsafe"** or **"Windows protected your PC"**:
-
-This happens because the app is not digitally signed (which costs $400+/year). Windows blocks it by default.
-
-### ✅ **The Fix (Do this BEFORE extracting):**
-1.  **Delete** the folder you just extracted.
-2.  **Right-click** on the downloaded `AsusTufController_v1.0.0.zip`.
-3.  Select **Properties**.
-4.  At the bottom, check the **"Unblock"** box.
-5.  Click **Apply** -> **OK**.
-6.  **Extract the zip again.**
-
-### � **STILL BLOCKED? Do this for specific files:**
-If unblocking the zip didn't work, you **MUST** unblock these 3 files individually:
-
-> [!WARNING]
-> **You cannot run the app until these files are unblocked!**
-
-1.  Right-click `run.bat` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
-2.  Right-click `AsusTufController_Windows.exe` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
-3.  Right-click `PsExec.exe` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
-
-**Then try running `run.bat` again.**
-
-Now `run.bat` will work perfectly! 🚀
-
----
 
 ### Option 2: Build from Source
 Perfect for developers who want to contribute.
