@@ -212,6 +212,38 @@ Get the latest version from the [Releases](https://github.com/Karthigaiselvam-R-
     Right-click `AsusTufController_Windows.exe` and select **"Run as Administrator"**.  
     *   *Note: This may have limited control over certain hardware registers compared to the `run.bat` method.*
 
+---
+
+## ⚠️ Troubleshooting Installation (Smart App Control)
+
+If you see a popup saying **"Smart App Control blocked a file that may be unsafe"** or **"Windows protected your PC"**:
+
+This happens because the app is not digitally signed (which costs $400+/year). Windows blocks it by default.
+
+### ✅ **The Fix (Do this BEFORE extracting):**
+1.  **Delete** the folder you just extracted.
+2.  **Right-click** on the downloaded `AsusTufController_v1.0.0.zip`.
+3.  Select **Properties**.
+4.  At the bottom, check the **"Unblock"** box.
+5.  Click **Apply** -> **OK**.
+6.  **Extract the zip again.**
+
+### � **STILL BLOCKED? Do this for specific files:**
+If unblocking the zip didn't work, you **MUST** unblock these 3 files individually:
+
+> [!WARNING]
+> **You cannot run the app until these files are unblocked!**
+
+1.  Right-click `run.bat` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
+2.  Right-click `AsusTufController_Windows.exe` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
+3.  Right-click `PsExec.exe` ➡️ **Properties** ➡️ Check **"Unblock"** ➡️ **OK**
+
+**Then try running `run.bat` again.**
+
+Now `run.bat` will work perfectly! 🚀
+
+---
+
 ### Option 2: Build from Source
 Perfect for developers who want to contribute.
 
