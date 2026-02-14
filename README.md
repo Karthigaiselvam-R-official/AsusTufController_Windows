@@ -66,7 +66,6 @@ Take control of your thermals. Unlike standard tools that just offer "Silent", w
         <li><b>🌪️ MAX RPM Injection (New):</b> <br>
         Bypasses standard limits to force fans to <b>100% (approx 6800 RPM)</b>. Essential for benchmarking or extreme overclocking. Uses direct EC (Embedded Controller) writes via <code>AsusWinIO</code>.</li>
       </ul>
-      <p><b>⚠️ Hardware Limitation:</b> If your system has only **One Fan** (e.g., some TUF Dash F15 models), the application will correctly display/control only that single fan. The second fan gauge may appear inactive or show 0 RPM.</p>
     </td>
   </tr>
 </table>
