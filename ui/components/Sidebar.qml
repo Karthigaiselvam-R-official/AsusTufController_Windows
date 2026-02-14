@@ -12,6 +12,7 @@ Rectangle {
     property var menuItems: [qsTr("SYSTEM INFO"), qsTr("FAN CONTROL"), qsTr("AURA SYNC"), qsTr("BATTERY"), qsTr("SETTINGS")]
     property var menuColors: ["#00bcd4", "#ff9800", "#9b59b6", "#2ecc71", "#607d8b"]
     property var theme
+    property string brandName: "ASUS TUF" // Default Fallback
     
     // Premium gradient background
     gradient: Gradient {
@@ -103,10 +104,15 @@ Rectangle {
                     
                     // Brand Name with Gradient Effect
                     Text {
-                        text: "ASUS TUF"
+                        text: sidebar.brandName // Dynamic Branding
+                        Layout.fillWidth: true
+                        Layout.maximumWidth: 220 
                         font.weight: Font.Black
                         font.pixelSize: 24
-                        font.letterSpacing: 3
+                        minimumPixelSize: 16
+                        fontSizeMode: Text.Fit
+                        elide: Text.ElideRight
+                        font.letterSpacing: 1
                         color: theme.isDark ? "#00d4ff" : "#0078d4"
                     }
                     
