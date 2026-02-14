@@ -94,6 +94,12 @@ Item {
             width: pageFlickable.width
             height: Math.max(pageFlickable.height, mainColumn.implicitHeight + 60)
             
+            // Clipboard Helper (Hidden but functional - opacity:0 allows copy, visible:false does not)
+            // Placed here to be outside the ColumnLayout flow and avoid affecting spacing
+            // Clipboard Helper (Hidden but functional - opacity:0 allows copy, visible:false does not)
+            // Placed here to be outside the ColumnLayout flow and avoid affecting spacing
+            TextEdit { id: clipboardHelper; opacity: 0; width: 0; height: 0 }
+            
             ColumnLayout {
                 id: mainColumn
                 anchors.horizontalCenter: parent.horizontalCenter
@@ -567,7 +573,7 @@ Item {
                 Rectangle {
                     id: languageCard
                     Layout.fillWidth: true
-                    Layout.preferredHeight: languageContent.implicitHeight + 56
+                    Layout.preferredHeight: languageContent.implicitHeight + 40 // Reduced from 56 to match standard
                     color: theme ? Qt.rgba(theme.surface.r, theme.surface.g, theme.surface.b, 0.9) : "#1a1a2e"
                     radius: 20
                     border.width: 1
@@ -913,8 +919,8 @@ Item {
                 // SECTION 3: AUTHOR & ATTRIBUTIONS - Premium Redesign
                 // ══════════════════════════════════════════════════════════════
                 
-                // Clipboard Helper (Hidden)
-                TextEdit { id: clipboardHelper; visible: false }
+                // Clipboard moved out of layout flow to prevent extra spacing
+
 
                 Rectangle {
                     Layout.fillWidth: true
@@ -1254,8 +1260,10 @@ Item {
 
                         // --- Social Buttons (Centered Row) ---
                         RowLayout {
+                            id: socialBtnRow
                             Layout.fillWidth: true
                             spacing: 12
+                            z: 2 // Ensure buttons overlap footer
                             
                             // Spacer to center align the group
                             Item { Layout.fillWidth: true }
@@ -1282,6 +1290,7 @@ Item {
 
                             // 3. Email
                             SocialBtn {
+                                id: emailBtn
                                 label: qsTr("Email")
                                 btnColor: "#d44638"
                                 hoverColor: "#e0584b"
@@ -1290,14 +1299,66 @@ Item {
                                 onClicked: {
                                     clipboardHelper.text = "karthigaiselvamr.cs2022@gmail.com"
                                     clipboardHelper.selectAll(); clipboardHelper.copy()
-                                    toast.show(qsTr("Email Copied"))
+                                    emailToast.show()
+                                }
+
+                                // Toast now lives inside the button for perfect positioning
+                                Rectangle {
+                                    id: emailToast
+                                    // Default to below, but we will override y in show()
+                                    anchors.horizontalCenter: parent.horizontalCenter
+                                    y: parent.height + 8 
+                                    
+                                    width: toastText.implicitWidth + 24
+                                    height: 28
+                                    radius: 14
+                                    color: theme.isDark ? Qt.rgba(0, 200/255, 83/255, 0.15) : Qt.rgba(0, 200/255, 83/255, 0.1)
+                                    border.width: 1
+                                    border.color: Qt.rgba(0, 200/255, 83/255, 0.4)
+                                    opacity: 0
+                                    visible: opacity > 0
+                                    z: 100 
+
+                                    Text {
+                                        id: toastText
+                                        anchors.centerIn: parent
+                                        text: qsTr("Email Copied")
+                                        color: "#00c853"
+                                        font.bold: true
+                                        font.pixelSize: 11
+                                    }
+
+                                    function show() {
+                                        // Smart Positioning Logic
+                                        var point = emailBtn.mapToItem(pageFlickable, 0, 0)
+                                        var distFromBottom = pageFlickable.height - (point.y + emailBtn.height)
+                                        
+                                        // If close to bottom (less than 80px space), show above
+                                        if (distFromBottom < 80) {
+                                            emailToast.y = -emailToast.height - 8
+                                        } else {
+                                            emailToast.y = emailBtn.height + 8
+                                        }
+
+                                        opacity = 1
+                                        toastTimer.restart()
+                                    }
+
+                                    Timer {
+                                        id: toastTimer
+                                        interval: 2000
+                                        onTriggered: emailToast.opacity = 0
+                                    }
+
+                                    Behavior on opacity { NumberAnimation { duration: 300; easing.type: Easing.InOutQuad } }
+                                    Behavior on y { NumberAnimation { duration: 200; easing.type: Easing.OutBack } }
                                 }
                             }
                             
                             // Spacer to center align the group
                             Item { Layout.fillWidth: true }
                         } // End RowLayout
-                        
+
                         // Version Footer
                         Text {
                             Layout.fillWidth: true
@@ -1307,6 +1368,8 @@ Item {
                             horizontalAlignment: Text.AlignRight
                         }
                     } // End ColumnLayout (Author Content)
+
+
                 } // End Rectangle (Author Section)
             } // End ColumnLayout (Main)
         } // End centerWrapper
