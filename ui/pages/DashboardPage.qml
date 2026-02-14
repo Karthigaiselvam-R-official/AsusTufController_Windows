@@ -58,18 +58,25 @@ Item {
         return "#00e5ff" // Cyan
     }
 
-    ScrollView {
+    Flickable {
+        id: pageFlickable
         anchors.fill: parent
-        contentWidth: parent.width
-        contentHeight: contentCol.implicitHeight + 40
+        contentWidth: width
+        contentHeight: Math.max(height, contentCol.implicitHeight + 60)
         clip: true
-        ScrollBar.vertical.policy: ScrollBar.AsNeeded
+        boundsBehavior: Flickable.StopAtBounds
 
-        ColumnLayout {
-            id: contentCol
-            width: dashboardPage.width
-            spacing: 30 // Increased from 20 for better visual separation
-            anchors.margins: 20
+        // Vertical centering wrapper
+        Item {
+            id: centerWrapper
+            width: pageFlickable.width
+            height: Math.max(pageFlickable.height, contentCol.implicitHeight + 60)
+
+            ColumnLayout {
+                id: contentCol
+                anchors.horizontalCenter: parent.horizontalCenter
+                width: Math.min(parent.width, dashboardPage.width)
+                spacing: 30
             
             // Spacer top
             Item { height: 10; Layout.fillWidth: true }
@@ -469,6 +476,7 @@ Item {
             }
             
             Item { Layout.preferredHeight: 20 } // Bottom padding
+            }
         }
     }
 }
