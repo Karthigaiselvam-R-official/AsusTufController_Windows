@@ -188,6 +188,7 @@ ApplicationWindow {
                     id: settingsPage
                     theme: theme
                     monitor: monitor
+                    brandName: window.brandName
                 }
             }
         }
