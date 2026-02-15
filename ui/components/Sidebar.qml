@@ -59,7 +59,8 @@ Rectangle {
             }
             
             RowLayout {
-                anchors.centerIn: parent
+                anchors.left: parent.left
+                anchors.verticalCenter: parent.verticalCenter
                 spacing: 16
                 
                 // Animated Logo Container
@@ -106,10 +107,10 @@ Rectangle {
                     Text {
                         text: sidebar.brandName // Dynamic Branding
                         Layout.fillWidth: true
-                        Layout.maximumWidth: 220 
+                        Layout.maximumWidth: 140 
                         font.weight: Font.Black
                         font.pixelSize: 24
-                        minimumPixelSize: 16
+                        minimumPixelSize: 10
                         fontSizeMode: Text.Fit
                         elide: Text.ElideRight
                         font.letterSpacing: 1

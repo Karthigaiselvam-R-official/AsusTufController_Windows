@@ -19,10 +19,10 @@ ApplicationWindow {
         var m = model.toUpperCase()
         if (m.indexOf("ROG") !== -1 || m.indexOf("ZEPHYRUS") !== -1 || m.indexOf("STRIX") !== -1 || m.indexOf("SCAR") !== -1) return "ASUS ROG"
         if (m.indexOf("TUF") !== -1 || m.indexOf("DASH") !== -1 || m.indexOf("FX") !== -1) return "ASUS TUF"
-        if (m.indexOf("VIVOBOOK") !== -1) return "ASUS VIVOBOOK"
-        if (m.indexOf("ZENBOOK") !== -1) return "ASUS ZENBOOK"
-        if (m.indexOf("EXPERTBOOK") !== -1) return "ASUS EXPERTBOOK"
-        if (m.indexOf("PROART") !== -1) return "ASUS PROART"
+        if (m.indexOf("VIVOBOOK") !== -1) return "ASUS VivoBook"
+        if (m.indexOf("ZENBOOK") !== -1) return "ASUS ZenBook"
+        if (m.indexOf("EXPERTBOOK") !== -1) return "ASUS ExpertBook"
+        if (m.indexOf("PROART") !== -1) return "ASUS ProArt"
         return "ASUS" // Generic fallback for other models
     }
 
