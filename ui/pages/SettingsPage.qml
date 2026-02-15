@@ -12,6 +12,28 @@ Item {
     property var theme
     property var monitor
     
+    // Brand Name Property (Must be at root level for Main.qml to access)
+    property string brandName: "ASUS TUF" // Default Fallback
+
+    // Dynamic Controller Name Generator (PascalCase)
+    // "ASUS TUF" -> "AsusTufController"
+    // "ASUS ROG" -> "AsusRogController" 
+    // "ASUS VivoBook" -> "AsusVivoBookController"
+    function getControllerName() {
+        var name = brandName
+        // 1. Normalize ASUS prefix
+        name = name.replace("ASUS", "Asus")
+        
+        // 2. Handle specific acronyms (ROG, TUF) -> Title case
+        name = name.replace("ROG", "Rog")
+        name = name.replace("TUF", "Tuf")
+        
+        // 3. Remove spaces to make it PascalCase
+        name = name.replace(/\s+/g, '')
+        
+        return name + "Controller"
+    }
+    
     // Track current language for instant switching
     property string currentLang: LanguageController.currentLanguage
     
@@ -1362,7 +1384,7 @@ Item {
                         // Version Footer
                         Text {
                             Layout.fillWidth: true
-                            text: "v1.0.0 • AsusTufController"
+                            text: "v1.0.0 • " + getControllerName()
                             color: theme.textDisabled
                             font.pixelSize: 10
                             horizontalAlignment: Text.AlignRight
