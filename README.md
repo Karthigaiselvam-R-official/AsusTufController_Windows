@@ -140,7 +140,7 @@ A truly global application, designed for everyone.
 
 *   **23 Languages Supported:** From Tamil to Japanese, Arabic (RTL), English, and more.
 *   **Theme Engine:** Seamlessly switch between Dark Mode (OLED friendly) and Light Mode.
-*   **Auto-Start:** Option to launch silently to tray on Windows boot.
+*   **Auto-Start:** Option to launch silently to tray on Windows boot comming soon.
 
 ---
 
