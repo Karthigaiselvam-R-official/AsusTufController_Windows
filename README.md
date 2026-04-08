@@ -169,7 +169,7 @@ This application is designed to work on **all modern ASUS Gaming Laptops** (2020
 
 ### ⚠️ Hardware Specifics & Limitations
 
-1.  **Single-Fan Laptops (e.g., TUF Dash F15, Vivobook):**
+1.  **Single-Fan Laptops (e.g., Asus Zenbook, Vivobook):**
     *   Fully supported! The application will correctly control your single CPU fan.
     *   The second fan gauge (GPU) will simply show **0 RPM** or appear inactive. This is expected behavior as the hardware does not exist.
 
