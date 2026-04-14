@@ -13,7 +13,7 @@
 *Native. Lightweight. Powerful.*
 
 <p align="center">
-  <a href="https://drive.google.com/file/d/1gzrBFWGWBN8fweB-L-DPERvdoOlELrUA/view?usp=sharing">
+  <a href="https://www.youtube.com/watch?v=0g2iBUVHFcA">
     <img src="resources/SystemInfo.png" width="800" alt="Watch the Demo Video">
     <br>
     <img src="https://img.shields.io/badge/▶️_Watch_Video_Demo-Play-red?style=for-the-badge&logo=google-drive&logoColor=white" alt="Play Demo">
